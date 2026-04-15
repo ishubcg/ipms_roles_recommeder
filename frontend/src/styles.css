@@ -535,6 +535,37 @@ button {
   color: #1f2544;
 }
 
+.success-action {
+  background: linear-gradient(135deg, #16a34a, #22c55e) !important;
+  color: white !important;
+  box-shadow: 0 14px 26px rgba(34, 197, 94, 0.22) !important;
+}
+
+.success-outline-action {
+  background: white !important;
+  color: #15803d !important;
+  border: 1.5px solid #86efac !important;
+  box-shadow: 0 10px 20px rgba(34, 197, 94, 0.10) !important;
+}
+
+.success-action:hover,
+.success-outline-action:hover {
+  transform: translateY(-1px);
+}
+
+.select-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.selection-limit-note {
+  margin: 6px 0 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #15803d;
+}
+
 .summary-table-wrap {
   border-radius: 18px;
   overflow: hidden;

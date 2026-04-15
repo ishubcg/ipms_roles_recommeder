@@ -95,7 +95,12 @@ function ProgressBar({ step }) {
       </div>
       <div className="progress-steps">
         {STEP_ORDER.map((stepKey, idx) => {
-          const className = idx < currentIndex ? 'progress-step done' : idx === currentIndex ? 'progress-step active' : 'progress-step'
+          const className =
+            idx < currentIndex
+              ? 'progress-step done'
+              : idx === currentIndex
+                ? 'progress-step active'
+                : 'progress-step'
           return (
             <div key={stepKey} className={className}>
               {idx < currentIndex ? '✓ ' : ''}
@@ -127,7 +132,10 @@ function SelectedRoles({ level, vertical, primaryRole, secondaryRoles }) {
 
 function RoleRecommendationTable({
   roles,
-  selectedToken,
+  selectedToken = '',
+  selectedTokens = [],
+  multiSelect = false,
+  maxSelections = 1,
   onSelect,
   filterText,
   onFilterChange,
@@ -144,6 +152,7 @@ function RoleRecommendationTable({
     <div className="section-card">
       <div className="section-title">{title}</div>
       {helperText ? <div className="helper-text">{helperText}</div> : null}
+
       <div className="field-group compact-bottom">
         <label className="field-label">Filter by role name</label>
         <input
@@ -166,20 +175,31 @@ function RoleRecommendationTable({
       ) : (
         filteredRoles.map((role, index) => {
           const token = roleToken(role)
-          const isSelected = token === selectedToken
+          const isSelected = multiSelect
+            ? selectedTokens.includes(token)
+            : token === selectedToken
+
+          const disableNewSelection =
+            multiSelect &&
+            !isSelected &&
+            selectedTokens.length >= maxSelections
+
           return (
             <div className="role-grid role-grid-row" key={token}>
               <div className={`grid-cell select-cell ${isSelected ? 'selected' : ''}`}>
                 <button
                   className={`select-button ${isSelected ? 'selected' : ''}`}
                   onClick={() => onSelect(token)}
+                  disabled={disableNewSelection}
                 >
                   {isSelected ? 'Selected' : 'Select'}
                 </button>
               </div>
+
               <div className={`grid-cell number-cell ${isSelected ? 'selected' : ''}`}>
                 <span className="row-number">{index + 1}</span>
               </div>
+
               <div className={`grid-cell role-name-cell ${isSelected ? 'selected' : ''}`}>
                 <div>
                   <div className="role-title">{role.role}</div>
@@ -188,6 +208,7 @@ function RoleRecommendationTable({
                   <div className="role-score">Relevance: {Math.round(role.relevance_score || 0)}%</div>
                 </div>
               </div>
+
               <div className={`grid-cell kpi-cell ${isSelected ? 'selected' : ''}`}>
                 <ol className="kpi-list">
                   {role.kpis.map((kpi, idx) => (
@@ -265,7 +286,7 @@ export default function App() {
   const [secondaryVertical, setSecondaryVertical] = useState('')
   const [secondaryRecommendations, setSecondaryRecommendations] = useState([])
   const [secondaryFilter, setSecondaryFilter] = useState('')
-  const [selectedSecondaryToken, setSelectedSecondaryToken] = useState('')
+  const [selectedSecondaryTokens, setSelectedSecondaryTokens] = useState([])
   const [secondaryRoles, setSecondaryRoles] = useState([])
   const [usedLlmForSecondary, setUsedLlmForSecondary] = useState(false)
 
@@ -292,9 +313,12 @@ export default function App() {
     [primaryRecommendations, selectedPrimaryToken],
   )
 
-  const selectedSecondaryRole = useMemo(
-    () => secondaryRecommendations.find((role) => roleToken(role) === selectedSecondaryToken) || null,
-    [secondaryRecommendations, selectedSecondaryToken],
+  const selectedSecondaryRolesFromCurrentView = useMemo(
+    () =>
+      secondaryRecommendations.filter((role) =>
+        selectedSecondaryTokens.includes(roleToken(role))
+      ),
+    [secondaryRecommendations, selectedSecondaryTokens],
   )
 
   async function loadVerticals(nextLevel) {
@@ -307,8 +331,10 @@ export default function App() {
       setError('Please select an office level.')
       return
     }
+
     setError('')
     setLoading(true)
+
     try {
       await loadVerticals(level)
       setVertical('')
@@ -325,6 +351,7 @@ export default function App() {
       setError('Please select a vertical.')
       return
     }
+
     setError('')
     setStep('daily_work')
   }
@@ -344,8 +371,10 @@ export default function App() {
       setError('Please describe the work you do on a daily basis.')
       return
     }
+
     setError('')
     setLoading(true)
+
     try {
       const response = await generateRecommendations(vertical, [])
       setPrimaryRecommendations(response.recommendations || [])
@@ -371,11 +400,13 @@ export default function App() {
     setSelectedPrimaryToken('')
     setSecondaryRoles([])
     setSecondaryFilter('')
+    setSelectedSecondaryTokens([])
 
     if (isBaLevel(level)) {
       const nextVertical = vertical
       setSecondaryVertical(nextVertical)
       setLoading(true)
+
       try {
         const response = await generateRecommendations(nextVertical, [selectedPrimaryRole.role])
         setSecondaryRecommendations(response.recommendations || [])
@@ -387,7 +418,9 @@ export default function App() {
       }
     } else {
       setSecondaryVertical(vertical)
-      setSecondaryRecommendations(primaryRecommendations.filter((role) => role.role !== selectedPrimaryRole.role))
+      setSecondaryRecommendations(
+        primaryRecommendations.filter((role) => role.role !== selectedPrimaryRole.role)
+      )
       setUsedLlmForSecondary(usedLlmForPrimary)
     }
 
@@ -402,11 +435,12 @@ export default function App() {
 
     setLoading(true)
     setError('')
+
     try {
       const response = await generateRecommendations(nextVertical, excludeRoles)
       setSecondaryRecommendations(response.recommendations || [])
       setUsedLlmForSecondary(Boolean(response.used_llm))
-      setSelectedSecondaryToken('')
+      setSelectedSecondaryTokens([])
     } catch (err) {
       setError(err.message || 'Unable to refresh secondary recommendations.')
     } finally {
@@ -414,34 +448,78 @@ export default function App() {
     }
   }
 
+  function toggleSecondaryRoleSelection(token) {
+    setSelectedSecondaryTokens((prev) => {
+      if (prev.includes(token)) {
+        return prev.filter((item) => item !== token)
+      }
+
+      const remainingSlots = maxSecondaryRoles - secondaryRoles.length
+      if (prev.length >= remainingSlots) {
+        return prev
+      }
+
+      return [...prev, token]
+    })
+  }
+
+  function getUniqueSelectedSecondaryRoles() {
+    const existingRoleKeys = new Set(
+      secondaryRoles.map((role) => `${role.role}|||${role.vertical}`)
+    )
+
+    return selectedSecondaryRolesFromCurrentView.filter(
+      (role) => !existingRoleKeys.has(`${role.role}|||${role.vertical}`)
+    )
+  }
+
   async function handleAddSecondaryRole() {
-    if (!selectedSecondaryRole) {
-      setError('Please select one secondary role.')
-      return
-    }
-    if (secondaryRoles.some((role) => role.role === selectedSecondaryRole.role && role.vertical === selectedSecondaryRole.vertical)) {
-      setError('This secondary role is already selected.')
-      return
-    }
-    if (secondaryRoles.length >= maxSecondaryRoles) {
-      setError(`You can add up to ${maxSecondaryRoles} secondary roles.`)
+    if (selectedSecondaryRolesFromCurrentView.length === 0) {
+      setError('Please select at least one secondary role.')
       return
     }
 
-    const nextSecondaryRoles = [...secondaryRoles, selectedSecondaryRole]
+    const uniqueNewRoles = getUniqueSelectedSecondaryRoles()
+
+    if (uniqueNewRoles.length === 0) {
+      setError('The selected secondary roles are already added.')
+      return
+    }
+
+    const totalAfterAdd = secondaryRoles.length + uniqueNewRoles.length
+    if (totalAfterAdd > maxSecondaryRoles) {
+      setError(`You can add up to ${maxSecondaryRoles} secondary roles in total.`)
+      return
+    }
+
+    const nextSecondaryRoles = [...secondaryRoles, ...uniqueNewRoles]
     setSecondaryRoles(nextSecondaryRoles)
-    setSelectedSecondaryToken('')
+    setSelectedSecondaryTokens([])
     setError('')
 
     if (isBaLevel(level)) {
       await refreshSecondaryRecommendations(secondaryVertical || vertical)
     } else {
-      const excluded = new Set([primaryRole?.role, ...nextSecondaryRoles.map((role) => role.role)].filter(Boolean))
-      setSecondaryRecommendations(primaryRecommendations.filter((role) => !excluded.has(role.role)))
+      const excluded = new Set(
+        [primaryRole?.role, ...nextSecondaryRoles.map((role) => role.role)].filter(Boolean)
+      )
+      setSecondaryRecommendations(
+        primaryRecommendations.filter((role) => !excluded.has(role.role))
+      )
     }
   }
 
   function handleFinishSelection() {
+    const uniqueNewRoles = getUniqueSelectedSecondaryRoles()
+
+    if (secondaryRoles.length + uniqueNewRoles.length > maxSecondaryRoles) {
+      setError(`You can add up to ${maxSecondaryRoles} secondary roles in total.`)
+      return
+    }
+
+    const nextSecondaryRoles = [...secondaryRoles, ...uniqueNewRoles]
+    setSecondaryRoles(nextSecondaryRoles)
+    setSelectedSecondaryTokens([])
     setError('')
     setStep('output')
   }
@@ -459,11 +537,13 @@ export default function App() {
     setSecondaryVertical('')
     setSecondaryRecommendations([])
     setSecondaryFilter('')
-    setSelectedSecondaryToken('')
+    setSelectedSecondaryTokens([])
     setSecondaryRoles([])
     setUsedLlmForSecondary(false)
     setError('')
   }
+
+  const remainingSecondarySlots = maxSecondaryRoles - secondaryRoles.length
 
   return (
     <div className="app-page">
@@ -531,10 +611,6 @@ export default function App() {
         {step === 'daily_work' && (
           <div className="section-card">
             <div className="section-title">Step 3 of 5 — Daily Work</div>
-            {/* <div className="chat-prompt-card">
-              <div className="prompt-label">Assistant</div>
-              <div className="prompt-text">What work do you do on daily basis?</div>
-            </div> */}
             <StepPrompt text="What work do you do on daily basis?" />
             <div className="field-group">
               <label className="field-label">Your response</label>
@@ -558,13 +634,23 @@ export default function App() {
               <div className="section-title">Step 4 of 5 — Recommended Primary Roles</div>
               <StepPrompt text="Here are the recommended primary roles based on your daily work. Please select one primary role." />
               <div className="helper-text">
-                Review the recommended roles for <strong>{vertical}</strong>. {usedLlmForPrimary ? 'Recommendations were generated using the configured LLM.' : 'Recommendations are using the fallback KPI similarity engine.'}
+                Review the recommended roles for <strong>{vertical}</strong>.{' '}
+                {usedLlmForPrimary
+                  ? 'Recommendations were generated using the configured LLM.'
+                  : 'Recommendations are using the fallback KPI similarity engine.'}
               </div>
             </div>
-            <button className="primary-action" onClick={handleConfirmPrimaryRole}>Confirm Primary Role →</button>
+
+            <button className="primary-action success-action" onClick={handleConfirmPrimaryRole}>
+              Confirm Primary Role →
+            </button>
+
             <RoleRecommendationTable
               roles={primaryRecommendations}
               selectedToken={selectedPrimaryToken}
+              selectedTokens={[]}
+              multiSelect={false}
+              maxSelections={1}
               onSelect={setSelectedPrimaryToken}
               filterText={primaryFilter}
               onFilterChange={setPrimaryFilter}
@@ -582,17 +668,32 @@ export default function App() {
               <div className="helper-text">
                 Add up to {maxSecondaryRoles} secondary roles. For BA levels, you can select a different vertical and refresh recommendations for each additional role.
               </div>
+
+              <div className="selection-limit-note">
+                You can still select up to {remainingSecondarySlots} more secondary role(s).
+              </div>
+
               {isBaLevel(level) ? (
                 <div className="secondary-toolbar">
                   <div className="field-group slim-field">
                     <label className="field-label">Vertical for this secondary role</label>
-                    <select className="select-input" value={secondaryVertical} onChange={(event) => setSecondaryVertical(event.target.value)}>
+                    <select
+                      className="select-input"
+                      value={secondaryVertical}
+                      onChange={(event) => setSecondaryVertical(event.target.value)}
+                    >
                       {verticals.map((item) => (
-                        <option key={item} value={item}>{item}</option>
+                        <option key={item} value={item}>
+                          {item}
+                        </option>
                       ))}
                     </select>
                   </div>
-                  <button className="secondary-action" onClick={() => refreshSecondaryRecommendations(secondaryVertical || vertical)}>
+
+                  <button
+                    className="secondary-action"
+                    onClick={() => refreshSecondaryRecommendations(secondaryVertical || vertical)}
+                  >
                     Refresh recommendations
                   </button>
                 </div>
@@ -602,28 +703,44 @@ export default function App() {
             </div>
 
             <div className="action-row">
-            <button className="primary-action" onClick={handleAddSecondaryRole}>Add this Secondary Role</button>
-            <button className="secondary-action" onClick={handleFinishSelection}>Done — Show Summary</button>
+              <button className="primary-action success-action" onClick={handleAddSecondaryRole}>
+                Confirm Secondary Role(s)
+              </button>
+              <button className="secondary-action success-outline-action" onClick={handleFinishSelection}>
+                Done — Show Summary
+              </button>
             </div>
 
             <RoleRecommendationTable
               roles={secondaryRecommendations}
-              selectedToken={selectedSecondaryToken}
-              onSelect={setSelectedSecondaryToken}
+              selectedToken=""
+              selectedTokens={selectedSecondaryTokens}
+              multiSelect={true}
+              maxSelections={remainingSecondarySlots}
+              onSelect={toggleSecondaryRoleSelection}
               filterText={secondaryFilter}
               onFilterChange={setSecondaryFilter}
               title="Secondary role recommendations"
-              helperText={usedLlmForSecondary ? 'Choose a secondary role from the recommended list below.' : 'Choose a secondary role from the similarity-based recommendation list below.'}
+              helperText={
+                usedLlmForSecondary
+                  ? `Choose up to ${remainingSecondarySlots} secondary role(s) from the recommended list below.`
+                  : `Choose up to ${remainingSecondarySlots} secondary role(s) from the similarity-based recommendation list below.`
+              }
             />
-
           </>
         )}
 
         {step === 'output' && (
           <div className="section-card">
             <div className="section-title">Final Summary</div>
-            <div className="summary-intro">You selected {primaryRole ? 1 + secondaryRoles.length : secondaryRoles.length} role(s).</div>
-            {[...(primaryRole ? [{ ...primaryRole, roleType: 'Primary' }] : []), ...secondaryRoles.map((role) => ({ ...role, roleType: 'Secondary' }))].map((role) => (
+            <div className="summary-intro">
+              You selected {primaryRole ? 1 + secondaryRoles.length : secondaryRoles.length} role(s).
+            </div>
+
+            {[
+              ...(primaryRole ? [{ ...primaryRole, roleType: 'Primary' }] : []),
+              ...secondaryRoles.map((role) => ({ ...role, roleType: 'Secondary' })),
+            ].map((role) => (
               <div className="output-card" key={`${roleToken(role)}-${role.roleType}`}>
                 <div className="output-top">
                   <div className="output-role">{role.role}</div>
@@ -639,15 +756,18 @@ export default function App() {
             ))}
 
             <div className="summary-toolbar">
-              <h3>Full KPI Summary Table</h3>
-              <button className="secondary-action" onClick={() => downloadCsv(summaryRows)}>Download CSV</button>
+              <h3>Eligible KPI Summary Table</h3>
+              <h3>Please Select 5-6 KPIs to submit in IPMS Portal</h3>
+              <button className="secondary-action" onClick={() => downloadCsv(summaryRows)}>
+                Download CSV
+              </button>
             </div>
+
             <SummaryTable rows={summaryRows} />
 
-            {/* <button className="primary-action" onClick={handleRestart}>Start Over</button> */}
             <div className="restart-button-wrap">
-            <button className="primary-action" onClick={handleRestart}>Start Over</button>
-          </div>
+              <button className="primary-action" onClick={handleRestart}>Start Over</button>
+            </div>
           </div>
         )}
       </div>
