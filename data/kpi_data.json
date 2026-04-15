@@ -1,0 +1,5345 @@
+[
+  {
+    "vertical": "CM",
+    "level": "Corporate",
+    "role": "CM Sales Head",
+    "short_role_name": "CM Sales Head",
+    "role_description": "Responsible for SIM sales, customer onboarding (SIM activation), and customer retention",
+    "kpis": [
+      {
+        "kpi": "# of SIM sales",
+        "short_kpi": "# of SIM sales"
+      },
+      {
+        "kpi": "% of new customers active after 90 days of onboarding (3 Month Quality of acquisition)",
+        "short_kpi": "% new cust acti afte 90 days o"
+      },
+      {
+        "kpi": "CM Revenue",
+        "short_kpi": "CM Revenue"
+      },
+      {
+        "kpi": "% growth in ARPU",
+        "short_kpi": "% growth in ARPU"
+      },
+      {
+        "kpi": "% of active subscribers (Peak VLR)",
+        "short_kpi": "% acti subs (Pea VLR)"
+      },
+      {
+        "kpi": "% of customers upgraded to 4G",
+        "short_kpi": "% of customers upgraded to 4G"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Corporate",
+    "role": "CM Infrastructure",
+    "short_role_name": "CM Infrastructure",
+    "role_description": "Responsible for revenue growth, collection efficiency, penalty reduction, and network reliability through high uptime.",
+    "kpis": [
+      {
+        "kpi": "Increase in ABF from Tower Leased out",
+        "short_kpi": "Incr ABF from Towe Leas out"
+      },
+      {
+        "kpi": "% collection out of total ABF for Quarter",
+        "short_kpi": "% coll out tota ABF Quar"
+      },
+      {
+        "kpi": "Reduction in penalty imposed by TSPs",
+        "short_kpi": "Redu pena impo by TSPs"
+      },
+      {
+        "kpi": "% of IP Sites with Uptime > 99%",
+        "short_kpi": "% IP Sites Uptime > 99%"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Corporate",
+    "role": "CM NW Operations Head",
+    "short_role_name": "CM NW Oper Head",
+    "role_description": "Responsible for network uptime, fault resolution, call quality, throughput, data growth, and subscriber expansion.",
+    "kpis": [
+      {
+        "kpi": "% of Cells with uptime >98%",
+        "short_kpi": "% of Cells with uptime >98%"
+      },
+      {
+        "kpi": "% of Faults resolved in <4Hr",
+        "short_kpi": "% of Faults resolved in <4Hr"
+      },
+      {
+        "kpi": "% of Cells with call drop <2%",
+        "short_kpi": "% of Cells with call drop <2%"
+      },
+      {
+        "kpi": "% of cells with DL User Throughput >3 Mbps",
+        "short_kpi": "% cell DL User Thro >3 Mbps"
+      },
+      {
+        "kpi": "% growth in data usage over last quarter",
+        "short_kpi": "% grow data usag over last qua"
+      },
+      {
+        "kpi": "% growth in unique VLR over last quarter",
+        "short_kpi": "% grow uniq VLR over last quar"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Corporate",
+    "role": "CM NW Planning Head",
+    "short_role_name": "CM NW Planning Head",
+    "role_description": "Responsible for network expansion planning, upgrade progress, infrastructure readiness, and overall execution against defined scope targets.",
+    "kpis": [
+      {
+        "kpi": "% of New Sites Planned Vs Total Scope",
+        "short_kpi": "% New Site Plan Vs Tota Scop"
+      },
+      {
+        "kpi": "% of sites planned for upgrade",
+        "short_kpi": "% of sites planned for upgrade"
+      },
+      {
+        "kpi": "% of Sites Upgraded Vs Total Scope",
+        "short_kpi": "% Site Upgr Vs Tota Scop"
+      },
+      {
+        "kpi": "% of Sites RFI cleared Vs Total Scope",
+        "short_kpi": "% Site RFI clea Vs Tota Scop"
+      },
+      {
+        "kpi": "% of Microwave planned Vs Total Scope",
+        "short_kpi": "% Micr plan Vs Tota Scop"
+      },
+      {
+        "kpi": "% of Core/RAN Nodes Planned Vs Total Scope",
+        "short_kpi": "% Core Node Plan Vs Tota Scop"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Corporate",
+    "role": "CM NW Deployment Head",
+    "short_role_name": "CM NW Depl Head",
+    "role_description": "Responsible for deployment progress, integration efficiency, acceptance milestones, vendor performance, and network rollout completion status.",
+    "kpis": [
+      {
+        "kpi": "% of Sites AT cleared Vs Total On-Air",
+        "short_kpi": "% Site AT clea Vs Tota -Air"
+      },
+      {
+        "kpi": "% of Sites On-Air Vs Total Integrated",
+        "short_kpi": "% Site -Air Vs Tota Inte"
+      },
+      {
+        "kpi": "% of Core/RAN Nodes AT Accepted Vs deployed by vendor",
+        "short_kpi": "% Core Node AT Acce Vs depl by"
+      },
+      {
+        "kpi": "% of Microwave On-air Vs Total installed",
+        "short_kpi": "% Micr -air Vs Tota inst"
+      },
+      {
+        "kpi": "% of Core/RAN Nodes deployed by vendor within SLA",
+        "short_kpi": "% Core Node depl by vend with"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Corporate",
+    "role": "VAS Manager",
+    "short_role_name": "VAS Manager",
+    "role_description": "Responsible for revenue growth from services and efficiency in timely execution of customer proposals.",
+    "kpis": [
+      {
+        "kpi": "Revenue from CNPN (In Cr.)",
+        "short_kpi": "Revenue from CNPN (In Cr.)"
+      },
+      {
+        "kpi": "Revenue from A2P (In Cr.)",
+        "short_kpi": "Revenue from A2P (In Cr.)"
+      },
+      {
+        "kpi": "ECT within 3 days of proposal",
+        "short_kpi": "ECT within 3 days of proposal"
+      },
+      {
+        "kpi": "Revenue from VAS (In Cr.)",
+        "short_kpi": "Revenue from VAS (In Cr.)"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Corporate",
+    "role": "Corporate Marketing",
+    "short_role_name": "Corporate Marketing",
+    "role_description": "Responsible for digital engagement, brand visibility, marketing efficiency, revenue growth, and cost effectiveness of customer acquisition.",
+    "kpis": [
+      {
+        "kpi": "Avg. number of hits per post on SMP",
+        "short_kpi": "Avg. number hits per post SMP"
+      },
+      {
+        "kpi": "% increase in followers on SMPs",
+        "short_kpi": "% increase followers SMPs"
+      },
+      {
+        "kpi": "% of BSNL customers active (MAU) on Selfcare app",
+        "short_kpi": "% BSNL cust acti (MAU Self app"
+      },
+      {
+        "kpi": "SEO ranking of BSNL Website",
+        "short_kpi": "SEO ranking of BSNL Website"
+      },
+      {
+        "kpi": "Click through rate for BSNL ads across digital platforms",
+        "short_kpi": "Clic thro rate BSNL ads acro d"
+      },
+      {
+        "kpi": "Number of marketing events conducted",
+        "short_kpi": "Numb mark even cond"
+      },
+      {
+        "kpi": "% Utilization of Marketing Budget",
+        "short_kpi": "% Utilization Marketing Budget"
+      },
+      {
+        "kpi": "Revenue (Sim & FTTH sales)",
+        "short_kpi": "Revenue (Sim & FTTH sales)"
+      },
+      {
+        "kpi": "Customer Acquisition cost",
+        "short_kpi": "Customer Acquisition cost"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Corporate",
+    "role": "Regulation Officer",
+    "short_role_name": "Regulation Officer",
+    "role_description": "Responsible for compliance improvement, fraud reduction, and effectiveness in minimizing regulatory penalties and operational risks.",
+    "kpis": [
+      {
+        "kpi": "% reduction in Penalties due to delay in TRAI report submission",
+        "short_kpi": "% redu Pena due dela TRAI repo"
+      },
+      {
+        "kpi": "% reduction in Penalty due to fraudulent CAFs",
+        "short_kpi": "% redu Pena due frau CAFs"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Circle",
+    "role": "CM Sales Head – Circle",
+    "short_role_name": "CM Sale Head – Circ",
+    "role_description": "Responsible for SIM sales, customer onboarding (SIM activation), and customer retention",
+    "kpis": [
+      {
+        "kpi": "# of SIM sales",
+        "short_kpi": "# of SIM sales"
+      },
+      {
+        "kpi": "% of new customers active after 90 days of onboarding (3 Month Quality of acquisition)",
+        "short_kpi": "% new cust acti afte 90 days o"
+      },
+      {
+        "kpi": "CM Revenue",
+        "short_kpi": "CM Revenue"
+      },
+      {
+        "kpi": "% growth in ARPU",
+        "short_kpi": "% growth in ARPU"
+      },
+      {
+        "kpi": "% of active subscribers (Peak VLR)",
+        "short_kpi": "% acti subs (Pea VLR)"
+      },
+      {
+        "kpi": "% of customers upgraded to 4G",
+        "short_kpi": "% of customers upgraded to 4G"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Circle",
+    "role": "Tariff Strategy & Rollout",
+    "short_role_name": "Tari Stra & Roll",
+    "role_description": "Responsible for revenue growth, customer inflow, monetization efficiency, and value generated from active subscriber plans.",
+    "kpis": [
+      {
+        "kpi": "Revenue from SIM sales & recharges",
+        "short_kpi": "Reve from SIM sale & rech"
+      },
+      {
+        "kpi": "% growth in ARPU",
+        "short_kpi": "% growth in ARPU"
+      },
+      {
+        "kpi": "% growth in MNP-in",
+        "short_kpi": "% growth in MNP-in"
+      },
+      {
+        "kpi": "Average yield from active plans",
+        "short_kpi": "Aver yiel from acti plan"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Circle",
+    "role": "Marketing Coordinator",
+    "short_role_name": "Mark Coor",
+    "role_description": "Responsible for revenue performance, marketing execution, budget utilization, and digital activity across markets and channels.",
+    "kpis": [
+      {
+        "kpi": "CM Revenue",
+        "short_kpi": "CM Revenue"
+      },
+      {
+        "kpi": "Latest Marketing collaterals (plan pamphlets, banners/posters)  delivered to all partners",
+        "short_kpi": "Late Mark coll (pla pamp bann"
+      },
+      {
+        "kpi": "# of marketing events conducted across circles (e.g., sim melas)",
+        "short_kpi": "# mark even cond acro circ (e."
+      },
+      {
+        "kpi": "% of marketing budget utilized vs. allocated",
+        "short_kpi": "% mark budg util vs. allo"
+      },
+      {
+        "kpi": "# new of social media posts",
+        "short_kpi": "# new of social media posts"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Circle",
+    "role": "Franchisee In-charge",
+    "short_role_name": "Franchisee In-charge",
+    "role_description": "Responsible for channel expansion, market coverage, sales reach, revenue growth, and quality of customer acquisition.",
+    "kpis": [
+      {
+        "kpi": "# of new franchisees onboarded",
+        "short_kpi": "# of new franchisees onboarded"
+      },
+      {
+        "kpi": "% of non-vacant territories in the circle",
+        "short_kpi": "% non- terr circ"
+      },
+      {
+        "kpi": "# of active POS for sim sales",
+        "short_kpi": "# of active POS for sim sales"
+      },
+      {
+        "kpi": "CM Revenue",
+        "short_kpi": "CM Revenue"
+      },
+      {
+        "kpi": "3 Month Quality of acquisition",
+        "short_kpi": "3 Month Quality of acquisition"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Circle",
+    "role": "Sim Inventory Manager",
+    "short_role_name": "Sim Inve Mana",
+    "role_description": "Responsible for delivery efficiency and inventory availability to ensure timely SIM distribution and customer satisfaction.",
+    "kpis": [
+      {
+        "kpi": "Average TAT for Sim delivery",
+        "short_kpi": "Average TAT for Sim delivery"
+      },
+      {
+        "kpi": "# on instances of sim stock-out at circle level",
+        "short_kpi": "# inst sim stoc at circ leve"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Circle",
+    "role": "CSC Nodal",
+    "short_role_name": "CSC Nodal",
+    "role_description": "Responsible for Aadhaar revenue, CSC performance, compliance with footfall norms, and adherence to new tender terms.",
+    "kpis": [
+      {
+        "kpi": "Aadhar Revenue",
+        "short_kpi": "Aadhar Revenue"
+      },
+      {
+        "kpi": "% of CSCs operational with min. threshold footfall",
+        "short_kpi": "% CSCs oper min. thre foot"
+      },
+      {
+        "kpi": "% of CSCs revamped as per new tender",
+        "short_kpi": "% CSCs reva as per new tend"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Circle",
+    "role": "Customer Service Nodal (PG)",
+    "short_role_name": "Cust Serv Noda (PG)",
+    "role_description": "Responsible for service responsiveness, complaint recurrence, and resolution efficiency to improve overall customer service quality.",
+    "kpis": [
+      {
+        "kpi": "% complaints/issues where no response to customer within 48hours",
+        "short_kpi": "% comp wher no resp cust with"
+      },
+      {
+        "kpi": "Repeat complaint rate (30 days)",
+        "short_kpi": "Repe comp rate (30 days"
+      },
+      {
+        "kpi": "MTTR for complaints",
+        "short_kpi": "MTTR for complaints"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Circle",
+    "role": "CM NW Planning – Circle",
+    "short_role_name": "CM NW Plan – Circ",
+    "role_description": "Responsible for planning efficiency, upgrade progress, site readiness, and alignment with overall network rollout scope.",
+    "kpis": [
+      {
+        "kpi": "% of New Sites Planned Vs Total Scope",
+        "short_kpi": "% New Site Plan Vs Tota Scop"
+      },
+      {
+        "kpi": "% of sites planned for upgrade",
+        "short_kpi": "% of sites planned for upgrade"
+      },
+      {
+        "kpi": "% of Sites Upgraded Vs Total Scope",
+        "short_kpi": "% Site Upgr Vs Tota Scop"
+      },
+      {
+        "kpi": "% of Sites RFI cleared Vs Total Scope",
+        "short_kpi": "% Site RFI clea Vs Tota Scop"
+      },
+      {
+        "kpi": "% of Core/RAN Nodes Planned Vs Total Scope",
+        "short_kpi": "% Core Node Plan Vs Tota Scop"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Circle",
+    "role": "CM NW Deployment – Circle",
+    "short_role_name": "CM NW Depl – Circ",
+    "role_description": "Responsible for rollout progress, integration efficiency, acceptance status, and vendor performance in network deployment activities.",
+    "kpis": [
+      {
+        "kpi": "% of Sites AT cleared Vs Total On-Air",
+        "short_kpi": "% Site AT clea Vs Tota -Air"
+      },
+      {
+        "kpi": "% of Sites On-Air Vs Total Integrated",
+        "short_kpi": "% Site -Air Vs Tota Inte"
+      },
+      {
+        "kpi": "% of Core/RAN Nodes AT Accepted Vs deployed by vendor",
+        "short_kpi": "% Core Node AT Acce Vs depl by"
+      },
+      {
+        "kpi": "% of Core/RAN Nodes deployed by vendor within SLA",
+        "short_kpi": "% Core Node depl by vend with"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Circle",
+    "role": "CM NW Operations – Circle",
+    "short_role_name": "CM NW Oper – Circ",
+    "role_description": "Responsible for network reliability, service quality, fault resolution, and growth in data usage and subscriber base.",
+    "kpis": [
+      {
+        "kpi": "% of Cells with NW uptime >98%.",
+        "short_kpi": "% Cells NW uptime >98%."
+      },
+      {
+        "kpi": "% of Faults resolved in <4Hr.",
+        "short_kpi": "% of Faults resolved in <4Hr."
+      },
+      {
+        "kpi": "% of Cells with call drop <2%.",
+        "short_kpi": "% of Cells with call drop <2%."
+      },
+      {
+        "kpi": "% of Cells with call setup success rate >99%",
+        "short_kpi": "% Cell call setu succ rate >99"
+      },
+      {
+        "kpi": "% of cells with DL User Throughput >3 Mbps",
+        "short_kpi": "% Cell DL User Thro >3 Mbps"
+      },
+      {
+        "kpi": "% of Cells with HO success rate >95%",
+        "short_kpi": "% Cells HO success rate >95%"
+      },
+      {
+        "kpi": "% growth in data usage over last quarter",
+        "short_kpi": "% grow data usag over last qua"
+      },
+      {
+        "kpi": "% growth in unique VLR over last quarter",
+        "short_kpi": "% grow uniq VLR over last quar"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "Circle",
+    "role": "Material/Inventory/AMC Management",
+    "short_role_name": "Mate Mana",
+    "role_description": "Responsible for AMC efficiency, service improvement, timely deliveries, and financial clearance for smooth network operations.",
+    "kpis": [
+      {
+        "kpi": "% of Equipment delivered within SLA from AMC Partner.",
+        "short_kpi": "% Equi deli with SLA from AMC"
+      },
+      {
+        "kpi": "% of Improvement in MTTR",
+        "short_kpi": "% of Improvement in MTTR"
+      },
+      {
+        "kpi": "% of Improvement in NW uptime.",
+        "short_kpi": "% of Improvement in NW uptime."
+      },
+      {
+        "kpi": "% of AMC Partner PO & Billing cleared within SLA.",
+        "short_kpi": "% AMC Part PO & Bill clea with"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "BA",
+    "role": "CM Sales Manager",
+    "short_role_name": "CM Sales Manager",
+    "role_description": "Responsible for customer growth, retention, revenue performance, data usage, and active subscriber base on network.",
+    "kpis": [
+      {
+        "kpi": "# of SIM sold",
+        "short_kpi": "# of SIM sold"
+      },
+      {
+        "kpi": "% of new customers active after 90 days of onboarding (3 Month Quality of acquisition)",
+        "short_kpi": "% new cust acti afte 90 days o"
+      },
+      {
+        "kpi": "CM Revenue",
+        "short_kpi": "CM Revenue"
+      },
+      {
+        "kpi": "Average daily 4G data traffic in TB",
+        "short_kpi": "Aver dail 4G data traf TB"
+      },
+      {
+        "kpi": "% of active subscribers (Peak VLR)",
+        "short_kpi": "% acti subs (Pea VLR)"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "BA",
+    "role": "Area Franchisee Manager",
+    "short_role_name": "Area Fran Mana",
+    "role_description": "Responsible for sales performance, retention, technology upgrade, territory coverage, and expansion of franchise network.",
+    "kpis": [
+      {
+        "kpi": "# of SIM sales (in respective BA)",
+        "short_kpi": "# SIM sales ( respective BA)"
+      },
+      {
+        "kpi": "% of new customers active after 90 days of onboarding (3 Month Quality of acquisition)",
+        "short_kpi": "% new cust acti afte 90 days o"
+      },
+      {
+        "kpi": "% of customers upgraded to 4G (in respective sales territories)",
+        "short_kpi": "% cust upgr 4G ( resp sale ter"
+      },
+      {
+        "kpi": "# of non-vacant sales territories (under purview)",
+        "short_kpi": "# non- sale terr (und purv"
+      },
+      {
+        "kpi": "# of new franchise added",
+        "short_kpi": "# of new franchise added"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "BA",
+    "role": "Area Retail Manager",
+    "short_role_name": "Area Retail Manager",
+    "role_description": "Responsible for retail expansion, sales performance, retention, 4G upgrades, and effectiveness of active sales outlets.",
+    "kpis": [
+      {
+        "kpi": "# of new retailers added (in respective sales territory)",
+        "short_kpi": "# new reta adde ( resp sale te"
+      },
+      {
+        "kpi": "# of SIM sales (in respective sales territory)",
+        "short_kpi": "# SIM sale ( resp sale terr"
+      },
+      {
+        "kpi": "% of new customers active after 90 days of onboarding (3 Month Quality of acquisition)",
+        "short_kpi": "% new cust acti afte 90 days o"
+      },
+      {
+        "kpi": "% of customers upgraded to 4G (in respective sales territories)",
+        "short_kpi": "% cust upgr 4G ( resp sale ter"
+      },
+      {
+        "kpi": "# of Active POS",
+        "short_kpi": "# of Active POS"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "BA",
+    "role": "CAF Manager",
+    "short_role_name": "CAF Manager",
+    "role_description": "Responsible for verification efficiency, fraud detection, compliance performance, and financial impact of fraudulent customer documentation.",
+    "kpis": [
+      {
+        "kpi": "Average D-KYC verification TAT",
+        "short_kpi": "Average D-KYC verification TAT"
+      },
+      {
+        "kpi": "Number of fraudulent CAFs found in term cell audit",
+        "short_kpi": "Numb frau CAFs foun term cell"
+      },
+      {
+        "kpi": "Average TAT for bulk SIM CAF verification",
+        "short_kpi": "Aver TAT bulk SIM CAF veri"
+      },
+      {
+        "kpi": "Penalty amount for fraudulent CAFs",
+        "short_kpi": "Penalty amount fraudulent CAFs"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "BA",
+    "role": "CSC Manager",
+    "short_role_name": "CSC Manager",
+    "role_description": "Responsible for customer migration, lead generation, service efficiency, satisfaction, churn, training, and app usage.",
+    "kpis": [
+      {
+        "kpi": "# of sims upgraded from 2G/3G to 4G",
+        "short_kpi": "# sims upgraded from 2G/3G 4G"
+      },
+      {
+        "kpi": "# of FTTH leads booked",
+        "short_kpi": "# of FTTH leads booked"
+      },
+      {
+        "kpi": "Rating of CSC by customers on Google",
+        "short_kpi": "Rating CSC by customers Google"
+      },
+      {
+        "kpi": "% of customer FTTH disconnections requests retained",
+        "short_kpi": "% cust FTTH disc requ reta"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "BA",
+    "role": "CSC Manager (cont'd)",
+    "short_role_name": "CSC Manager (cont'd)",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "# of agent trainings conducted",
+        "short_kpi": "# of agent trainings conducted"
+      },
+      {
+        "kpi": "# of app downloads by customers at CSC",
+        "short_kpi": "# app down by cust at CSC"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "BA",
+    "role": "PG & Customer Service Manager",
+    "short_role_name": "PG & Cust Serv Mana",
+    "role_description": "Responsible for customer responsiveness, repeat complaint rate, and FTTH complaint resolution time efficiency.",
+    "kpis": [
+      {
+        "kpi": "% complaints/issues where no response to customer within 48hours",
+        "short_kpi": "% comp wher no resp cust with"
+      },
+      {
+        "kpi": "Repeat complaint rate (30 days)",
+        "short_kpi": "Repe comp rate (30 days"
+      },
+      {
+        "kpi": "MTTR for FTTH complaints",
+        "short_kpi": "MTTR for FTTH complaints"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "BA",
+    "role": "CM NW Monitoring",
+    "short_role_name": "CM NW Monitoring",
+    "role_description": "Responsible for network reliability, service quality, quick fault resolution, and effective handling of customer complaints.",
+    "kpis": [
+      {
+        "kpi": "% of Normal & Important Cells uptime >98% (in respective territory)",
+        "short_kpi": "% Norm & Impo Cell upti >98% ("
+      },
+      {
+        "kpi": "% of SC & Critical Cells uptime >99% (in respective territory)",
+        "short_kpi": "% SC & Crit Cell upti >99% ( r"
+      },
+      {
+        "kpi": "% of alarms/faults resolved in < 4 hrs",
+        "short_kpi": "% alar reso < 4 hrs"
+      },
+      {
+        "kpi": "% Cells with call drop rate <2% (in respective territory)",
+        "short_kpi": "% Cell call drop rate <2% ( re"
+      },
+      {
+        "kpi": "% Cells with handover success rate >95% (in respective territory)",
+        "short_kpi": "% Cell hand succ rate >95% ( r"
+      },
+      {
+        "kpi": "% of Cells with call setup success rate >99%",
+        "short_kpi": "% Cell call setu succ rate >99"
+      },
+      {
+        "kpi": "% of Repeat Customer Complaint resolved within 15 days",
+        "short_kpi": "% Repe Cust Comp reso with 15"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "BA",
+    "role": "CM NW Rollout",
+    "short_role_name": "CM NW Rollout",
+    "role_description": "Responsible for site readiness, deployment success, quality compliance, and execution efficiency across network rollout activities.",
+    "kpis": [
+      {
+        "kpi": "% of sites RFI vs. planned (in respective territory)",
+        "short_kpi": "% site RFI vs. plan ( resp ter"
+      },
+      {
+        "kpi": "% of sites successfully on-air vs installed (in respective territory)",
+        "short_kpi": "% site succ -air vs inst ( res"
+      },
+      {
+        "kpi": "% of Sites passing SCFT criteria vs installed (in respective territory)",
+        "short_kpi": "% Site pass SCFT crit vs inst"
+      }
+    ]
+  },
+  {
+    "vertical": "CM",
+    "level": "BA",
+    "role": "Area Outdoor last-mile CM",
+    "short_role_name": "Area Outd last CM",
+    "role_description": "Responsible for uptime performance, complaint resolution effectiveness, and timely alarm handling for improved network reliability.",
+    "kpis": [
+      {
+        "kpi": "Average Normal & Important Cells uptime",
+        "short_kpi": "Aver Norm & Impo Cell upti"
+      },
+      {
+        "kpi": "Average Super Critical & Critical Cells uptime",
+        "short_kpi": "Aver Supe Crit & Crit Cell upt"
+      },
+      {
+        "kpi": "# of Repeat Customer Complaint resolved within 15 days",
+        "short_kpi": "# Repe Cust Comp reso with 15"
+      },
+      {
+        "kpi": "% of alarms/faults resolved in < 4 hrs",
+        "short_kpi": "% alar reso < 4 hrs"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "Corporate",
+    "role": "Bharat FIber Sales Head",
+    "short_role_name": "Bhar FIbe Sale Head",
+    "role_description": "Responsible for FTTH revenue growth, customer acquisition, and churn levels to assess broadband business performance.",
+    "kpis": [
+      {
+        "kpi": "BharatFiber Revenue",
+        "short_kpi": "BharatFiber Revenue"
+      },
+      {
+        "kpi": "# of new FTTH connections",
+        "short_kpi": "# of new FTTH connections"
+      },
+      {
+        "kpi": "# of BharatFiber disconnections (churn rate)",
+        "short_kpi": "# Bhar disc (chu rate"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "Corporate",
+    "role": "BharatNet Sales",
+    "short_role_name": "BharatNet Sales",
+    "role_description": "Responsible for broadband expansion and revenue generation from BharatNet services to assess overall business growth.",
+    "kpis": [
+      {
+        "kpi": "# of new BharatNet connections added",
+        "short_kpi": "# new Bhar conn adde"
+      },
+      {
+        "kpi": "Revenue from BharatNet",
+        "short_kpi": "Revenue from BharatNet"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "Corporate",
+    "role": "FTTH NW Operations Head",
+    "short_role_name": "FTTH NW Oper Head",
+    "role_description": "Responsible for network availability, fault resolution efficiency, and reliability of broadband infrastructure for consistent service delivery.",
+    "kpis": [
+      {
+        "kpi": "% of OLT with Availability >99%",
+        "short_kpi": "% OLT Availability >99%"
+      },
+      {
+        "kpi": "Average BNG availability",
+        "short_kpi": "Average BNG availability"
+      },
+      {
+        "kpi": "Average DSLAM availability",
+        "short_kpi": "Average DSLAM availability"
+      },
+      {
+        "kpi": "MTTR",
+        "short_kpi": "MTTR"
+      },
+      {
+        "kpi": "% of faults resolved in < 4 hrs",
+        "short_kpi": "% faults resolved < 4 hrs"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "Corporate",
+    "role": "FTTH NW Planning",
+    "short_role_name": "FTTH NW Planning",
+    "role_description": "Responsible for procurement efficiency, vendor performance, infrastructure growth, and service feasibility for FTTH expansion.",
+    "kpis": [
+      {
+        "kpi": "Avg. time taken from PR approval to PO generation (OLT and other nodes)",
+        "short_kpi": "Avg. time take from PR appr PO"
+      },
+      {
+        "kpi": "Avg. time taken from receipt of equipments to loading (OLT and other nodes)",
+        "short_kpi": "Avg. time take from rece equi"
+      },
+      {
+        "kpi": "Avg. time taken for equipment and AMC vendor payout",
+        "short_kpi": "Avg. time take equi AMC vend p"
+      },
+      {
+        "kpi": "% growth in number of OLT",
+        "short_kpi": "% growth in number of OLT"
+      },
+      {
+        "kpi": "% of pincodes feasible to provide FTTH connections",
+        "short_kpi": "% pinc feas prov FTTH conn"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "Corporate",
+    "role": "Copper/LL NW Operations Head",
+    "short_role_name": "Copp NW Oper Head",
+    "role_description": "Responsible for fault resolution efficiency and uptime reliability of core network elements for stable service delivery.",
+    "kpis": [
+      {
+        "kpi": "MTTR",
+        "short_kpi": "MTTR"
+      },
+      {
+        "kpi": "% LMG uptime",
+        "short_kpi": "% LMG uptime"
+      },
+      {
+        "kpi": "% IPTAX uptime",
+        "short_kpi": "% IPTAX uptime"
+      },
+      {
+        "kpi": "% NGN nodes uptime",
+        "short_kpi": "% NGN nodes uptime"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "Corporate",
+    "role": "CSC Head",
+    "short_role_name": "CSC Head",
+    "role_description": "Responsible for CSC performance, service efficiency, revenue generation, retention, and compliance with new tender norms.",
+    "kpis": [
+      {
+        "kpi": "# of CSCs for which new tender floated",
+        "short_kpi": "# CSCs whic new tend floa"
+      },
+      {
+        "kpi": "Revenue from Aadhar enrollment",
+        "short_kpi": "Revenue from Aadhar enrollment"
+      },
+      {
+        "kpi": "% of SIM change/replacement request processed",
+        "short_kpi": "% SIM chan requ proc"
+      },
+      {
+        "kpi": "% of customer FTTH disconnections requests retained",
+        "short_kpi": "% cust FTTH disc requ reta"
+      },
+      {
+        "kpi": "% of CSCs operational with min. threshold footfall",
+        "short_kpi": "% CSCs oper min. thre foot"
+      },
+      {
+        "kpi": "% of CSCs revamped as per new tender",
+        "short_kpi": "% CSCs reva as per new tend"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "Corporate",
+    "role": "PG & Customer Service Head",
+    "short_role_name": "PG & Cust Serv Head",
+    "role_description": "Responsible for grievance handling efficiency, resolution speed, and effectiveness in addressing customer issues within timelines.",
+    "kpis": [
+      {
+        "kpi": "Avg. resolution TAT for grievances",
+        "short_kpi": "Avg. resolution TAT grievances"
+      },
+      {
+        "kpi": "% of grievances resolved in <30 days",
+        "short_kpi": "% grievances resolved <30 days"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "Circle",
+    "role": "BharatFiber Sales",
+    "short_role_name": "BharatFiber Sales",
+    "role_description": "Responsible for revenue growth, customer acquisition, upgrades, churn, conversion efficiency, and value-added service adoption.",
+    "kpis": [
+      {
+        "kpi": "BharatFiber Revenue (in respective circle)",
+        "short_kpi": "Bhar Reve ( resp circ"
+      },
+      {
+        "kpi": "# of new BharatFiber connections",
+        "short_kpi": "# new BharatFiber connections"
+      },
+      {
+        "kpi": "% of customer upgraded to higher value plans",
+        "short_kpi": "% cust upgr high valu plan"
+      },
+      {
+        "kpi": "# of BharatFiber disconnections (churn rate)",
+        "short_kpi": "# Bhar disc (chu rate"
+      },
+      {
+        "kpi": "% of online BharatFiber leads converted",
+        "short_kpi": "% onli Bhar lead conv"
+      },
+      {
+        "kpi": "% of BharatFiber customers with active VAS Subscription (OTT, IFTV, Wifi-Roaming)",
+        "short_kpi": "% Bhar cust acti VAS Subs (OTT"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "Circle",
+    "role": "BharatNet Sales",
+    "short_role_name": "BharatNet Sales",
+    "role_description": "Responsible for broadband expansion and revenue generation from BharatNet services to assess overall business growth.",
+    "kpis": [
+      {
+        "kpi": "# of new BharatNet connections added",
+        "short_kpi": "# new Bhar conn adde"
+      },
+      {
+        "kpi": "Revenue from BharatNet connections",
+        "short_kpi": "Reve from Bhar conn"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "Circle",
+    "role": "CFA Partner Support Lead",
+    "short_role_name": "CFA Part Supp Lead",
+    "role_description": "Responsible for partner onboarding, digital adoption, lead conversion, network redundancy, and infrastructure mapping for efficient expansion.",
+    "kpis": [
+      {
+        "kpi": "# of new FTTH partners onboarded ( Airfiber, DSA, ..)",
+        "short_kpi": "# new FTTH part onbo ( Airf DS"
+      },
+      {
+        "kpi": "% of TIPs with digital contracts",
+        "short_kpi": "% TIPs digital contracts"
+      },
+      {
+        "kpi": "Conversion rate of leads from DSA",
+        "short_kpi": "Conversion rate leads from DSA"
+      },
+      {
+        "kpi": "% Red OLTs",
+        "short_kpi": "% Red OLTs"
+      },
+      {
+        "kpi": "% of OLTs with Geo mapping completed",
+        "short_kpi": "% OLTs Geo mapping completed"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "Circle",
+    "role": "FTTH NW Planning",
+    "short_role_name": "FTTH NW Planning",
+    "role_description": "Responsible for procurement efficiency, vendor performance, infrastructure growth, and service feasibility for FTTH expansion.",
+    "kpis": [
+      {
+        "kpi": "Avg. time taken from PR approval to PO generation (OLT and other nodes)",
+        "short_kpi": "Avg. time take from PR appr PO"
+      },
+      {
+        "kpi": "Avg. time taken from receipt of equipments to loading (OLT and other nodes)",
+        "short_kpi": "Avg. time take from rece equi"
+      },
+      {
+        "kpi": "Avg. time taken for equipment and AMC vendor payout",
+        "short_kpi": "Avg. time take equi AMC vend p"
+      },
+      {
+        "kpi": "% growth of OLT",
+        "short_kpi": "% growth of OLT"
+      },
+      {
+        "kpi": "% of pincodes feasible to provide FTTH connections",
+        "short_kpi": "% pinc feas prov FTTH conn"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "Circle",
+    "role": "FTTH NW Operations",
+    "short_role_name": "FTTH NW Operations",
+    "role_description": "Responsible for network reliability, infrastructure availability, and optimal utilization of OLT, BNG, and DSLAM resources across territories.",
+    "kpis": [
+      {
+        "kpi": "MTTR",
+        "short_kpi": "MTTR"
+      },
+      {
+        "kpi": "% of OLT with Availability >99%",
+        "short_kpi": "% OLT Availability >99%"
+      },
+      {
+        "kpi": "Average BNG availability",
+        "short_kpi": "Average BNG availability"
+      },
+      {
+        "kpi": "Average DSLAM availability",
+        "short_kpi": "Average DSLAM availability"
+      },
+      {
+        "kpi": "% of faults resolved in < 4 hrs",
+        "short_kpi": "% faults resolved < 4 hrs"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "Circle",
+    "role": "Copper/LL NW Operations",
+    "short_role_name": "Copp NW Oper",
+    "role_description": "Responsible for service reliability and network availability for copper connections, LMG, IPTAX, and NGN nodes.",
+    "kpis": [
+      {
+        "kpi": "MTTR (for copper connections)",
+        "short_kpi": "MTTR (for copper connections)"
+      },
+      {
+        "kpi": "% LMG uptime",
+        "short_kpi": "% LMG uptime"
+      },
+      {
+        "kpi": "% IPTAX uptime",
+        "short_kpi": "% IPTAX uptime"
+      },
+      {
+        "kpi": "% NGN nodes uptime",
+        "short_kpi": "% NGN nodes uptime"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "Circle",
+    "role": "Customer Service Nodal (PG)",
+    "short_role_name": "Cust Serv Noda (PG)",
+    "role_description": "Responsible for service responsiveness, complaint recurrence, and resolution efficiency to improve overall customer service quality.",
+    "kpis": [
+      {
+        "kpi": "% complaints/issues where no response to customer within 48hours",
+        "short_kpi": "% comp wher no resp cust with"
+      },
+      {
+        "kpi": "Repeat complaint rate (30 days)",
+        "short_kpi": "Repe comp rate (30 days"
+      },
+      {
+        "kpi": "MTTR for FTTH complaints",
+        "short_kpi": "MTTR for FTTH complaints"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "Circle",
+    "role": "CSC Nodal",
+    "short_role_name": "CSC Nodal*",
+    "role_description": "Responsible for Aadhaar revenue, CSC performance, compliance with footfall norms, and adherence to new tender terms.",
+    "kpis": [
+      {
+        "kpi": "Aadhar Revenue",
+        "short_kpi": "Aadhar Revenue"
+      },
+      {
+        "kpi": "% of CSCs operational with min. threshold footfall",
+        "short_kpi": "% CSCs oper min. thre foot"
+      },
+      {
+        "kpi": "% of CSCs revamped as per new tender",
+        "short_kpi": "% CSCs reva as per new tend"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "BA",
+    "role": "BharatFiber Sales",
+    "short_role_name": "BharatFiber Sales",
+    "role_description": "Responsible for revenue growth, customer acquisition, upgrades, churn, conversion efficiency, and value-added service adoption.",
+    "kpis": [
+      {
+        "kpi": "# of new FTTH connections added (in respective territory)",
+        "short_kpi": "# new FTTH conn adde ( resp te"
+      },
+      {
+        "kpi": "# of new OLTs added in respective territory",
+        "short_kpi": "# new OLTs adde resp terr"
+      },
+      {
+        "kpi": "# of new TIPs added (in respective territory)",
+        "short_kpi": "# new TIPs adde ( resp terr"
+      },
+      {
+        "kpi": "% of BharatFiber customers with active VAS Subscription (OTT, IFTV, Wifi-Roaming)",
+        "short_kpi": "% Bhar cust acti VAS Subs (OTT"
+      },
+      {
+        "kpi": "Mean time to provision (in respective territory)",
+        "short_kpi": "Mean time prov ( resp terr"
+      },
+      {
+        "kpi": "MTTR",
+        "short_kpi": "MTTR"
+      },
+      {
+        "kpi": "% of customer compliants resolved within 3 days",
+        "short_kpi": "% cust comp reso with 3 days"
+      },
+      {
+        "kpi": "% of online BharatFiber leads converted",
+        "short_kpi": "% onli Bhar lead conv"
+      },
+      {
+        "kpi": "# of BharatFiber disconnections (churn rate)",
+        "short_kpi": "# Bhar disc (chu rate"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "BA",
+    "role": "BharatNet Sales",
+    "short_role_name": "BharatNet Sales",
+    "role_description": "Responsible for broadband expansion and revenue generation from BharatNet services to assess overall business growth.",
+    "kpis": [
+      {
+        "kpi": "Revenue from BharatNet connections (in respective BA)",
+        "short_kpi": "Reve from Bhar conn ( resp BA)"
+      },
+      {
+        "kpi": "# of new BharatNet connections (in respective BA)",
+        "short_kpi": "# new Bhar conn ( resp BA)"
+      },
+      {
+        "kpi": "MTTR (rural)",
+        "short_kpi": "MTTR (rural)"
+      },
+      {
+        "kpi": "% of customer compliants resolved within 3 days",
+        "short_kpi": "% cust comp reso with 3 days"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "BA",
+    "role": "BharatFiber Business Manager",
+    "short_role_name": "Bhar Busi Mana",
+    "role_description": "Responsible for FTTH expansion, service quality, provisioning efficiency, customer upgrades, churn, and network optimization performance.",
+    "kpis": [
+      {
+        "kpi": "# of new FTTH connections added (in respective territory)",
+        "short_kpi": "# new FTTH conn adde ( resp te"
+      },
+      {
+        "kpi": "% of customer upgraded to higher value plans",
+        "short_kpi": "% cust upgr high valu plan"
+      },
+      {
+        "kpi": "# of new OLTs added in respective territory",
+        "short_kpi": "# new OLTs adde resp terr"
+      },
+      {
+        "kpi": "# of new TIPs added (in respective territory)",
+        "short_kpi": "# new TIPs adde ( resp terr"
+      },
+      {
+        "kpi": "% of BharatFiber customers with active VAS Subscription (OTT, IFTV, Wifi-Roaming)",
+        "short_kpi": "% Bhar cust acti VAS Subs (OTT"
+      },
+      {
+        "kpi": "Mean time to provision (in respective territory)",
+        "short_kpi": "Mean time prov ( resp terr"
+      },
+      {
+        "kpi": "MTTR (in respective territory)",
+        "short_kpi": "MTTR (in respective territory)"
+      },
+      {
+        "kpi": "% of red OLT",
+        "short_kpi": "% of red OLT"
+      },
+      {
+        "kpi": "# of FTTH disconnections (in respective territory)",
+        "short_kpi": "# FTTH disc ( resp terr"
+      },
+      {
+        "kpi": "# of new BharatNet connections (in respective territory)",
+        "short_kpi": "# new Bhar conn ( resp terr"
+      },
+      {
+        "kpi": "# of new OLTs added under BharatNet",
+        "short_kpi": "# new OLTs adde unde Bhar"
+      },
+      {
+        "kpi": "MTTP (in respective territory)",
+        "short_kpi": "MTTP (in respective territory)"
+      },
+      {
+        "kpi": "MTTR (rural)",
+        "short_kpi": "MTTR (rural)"
+      },
+      {
+        "kpi": "# of Bharatnet disconnections (in respective territory)",
+        "short_kpi": "# Bhar disc ( resp terr"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "BA",
+    "role": "Partner Support Group",
+    "short_role_name": "Part Supp Grou",
+    "role_description": "Responsible for channel expansion, network growth, system onboarding efficiency, and payout processing timeliness across FTTH operations.",
+    "kpis": [
+      {
+        "kpi": "# of new FTTH partners onboarded (Airfiber, DSA, ..)",
+        "short_kpi": "# new FTTH part onbo (Air DSA,"
+      },
+      {
+        "kpi": "# of new TIPs added (in respective territory)",
+        "short_kpi": "# new TIPs adde ( resp terr"
+      },
+      {
+        "kpi": "% of new TIP onboarded (contract & ID creation) within <7 days from FMS input",
+        "short_kpi": "% new TIP onbo (con & ID crea"
+      },
+      {
+        "kpi": "Average TAT for FTTH partner payout (in respective territory)",
+        "short_kpi": "Aver TAT FTTH part payo ( resp"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "BA",
+    "role": "FTTH NW Operations",
+    "short_role_name": "FTTH NW Operations",
+    "role_description": "Responsible for network reliability, infrastructure availability, and optimal utilization of OLT, BNG, and DSLAM resources across territories.",
+    "kpis": [
+      {
+        "kpi": "MTTR",
+        "short_kpi": "MTTR"
+      },
+      {
+        "kpi": "% of OLT with Availability >99%  (in respective territory)",
+        "short_kpi": "% OLT Avai >99% ( resp terr"
+      },
+      {
+        "kpi": "% of OLT Uplink utilization <80% (in respective territory)",
+        "short_kpi": "% OLT Upli util <80% ( resp te"
+      },
+      {
+        "kpi": "% of BNG with Availability >99%  (in respective territory)",
+        "short_kpi": "% BNG Avai >99% ( resp terr"
+      },
+      {
+        "kpi": "% of BNG with uplink utilisation <80% (in respective territory)",
+        "short_kpi": "% BNG upli util <80% ( resp te"
+      },
+      {
+        "kpi": "% of OLTs integrated with TR069 solution",
+        "short_kpi": "% OLTs inte TR06 solu"
+      },
+      {
+        "kpi": "Average DSLAM availability",
+        "short_kpi": "Average DSLAM Availability"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "BA",
+    "role": "Copper/LL NW Operations",
+    "short_role_name": "Copp NW Oper",
+    "role_description": "Responsible for service reliability and network availability for copper connections, LMG, IPTAX, and NGN nodes.",
+    "kpis": [
+      {
+        "kpi": "MTTR (for copper connections)",
+        "short_kpi": "MTTR (for copper connections)"
+      },
+      {
+        "kpi": "% LMG uptime",
+        "short_kpi": "% LMG uptime"
+      },
+      {
+        "kpi": "% IPTAX uptime",
+        "short_kpi": "% IPTAX uptime"
+      },
+      {
+        "kpi": "% NGN nodes uptime",
+        "short_kpi": "% NGN nodes uptime"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "BA",
+    "role": "Area Outdoor last-mile CFA",
+    "short_role_name": "Area Outd last CFA",
+    "role_description": "Responsible for fault restoration efficiency, complaint resolution speed, and service responsiveness within defined timelines.",
+    "kpis": [
+      {
+        "kpi": "MTTR (excl. outlier faults as per defined threshold)",
+        "short_kpi": "MTTR (exc outl faul as per def"
+      },
+      {
+        "kpi": "% of repeat complaints within 48 hours",
+        "short_kpi": "% repe comp with 48 hour"
+      },
+      {
+        "kpi": "% of faults resolved in < 4 hrs",
+        "short_kpi": "% faults resolved < 4 hrs"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "BA",
+    "role": "CSC Manager",
+    "short_role_name": "CSC Manager",
+    "role_description": "Responsible for customer migration, lead generation, service efficiency, satisfaction, churn, training, and app usage.",
+    "kpis": [
+      {
+        "kpi": "# of sims upgraded from 2G/3G to 4G",
+        "short_kpi": "# sims upgraded from 2G/3G 4G"
+      },
+      {
+        "kpi": "# of FTTH leads booked",
+        "short_kpi": "# of FTTH leads booked"
+      },
+      {
+        "kpi": "% of SIM change/replacement request processed",
+        "short_kpi": "% SIM chan requ proc"
+      },
+      {
+        "kpi": "Rating of CSC by customers on Google",
+        "short_kpi": "Rating CSC by customers Google"
+      },
+      {
+        "kpi": "% of customer FTTH disconnections requests retained",
+        "short_kpi": "% cust FTTH disc requ reta"
+      },
+      {
+        "kpi": "# of agent trainings conducted",
+        "short_kpi": "# of agent trainings conducted"
+      },
+      {
+        "kpi": "# of app downloads by customers at CSC",
+        "short_kpi": "# app down by cust at CSC"
+      }
+    ]
+  },
+  {
+    "vertical": "CFA",
+    "level": "BA",
+    "role": "PG & Customer Service Manager",
+    "short_role_name": "PG & Cust Serv Mana",
+    "role_description": "Responsible for customer responsiveness, repeat complaint rate, and FTTH complaint resolution time efficiency.",
+    "kpis": [
+      {
+        "kpi": "% complaints/issues where no response to customer within 48hours",
+        "short_kpi": "% comp wher no resp cust with"
+      },
+      {
+        "kpi": "Repeat complaint rate (30 days)",
+        "short_kpi": "Repe comp rate (30 days"
+      },
+      {
+        "kpi": "MTTR for FTTH compliants",
+        "short_kpi": "MTTR for FTTH compliants"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Corporate",
+    "role": "Lease Circuit Strategy",
+    "short_role_name": "Leas Circ Stra",
+    "role_description": "Responsible for provisioning speed, network reliability, revenue utilization, customer satisfaction, and copper-to-fiber migration efficiency.",
+    "kpis": [
+      {
+        "kpi": "Mean Time to Provision for LC",
+        "short_kpi": "Mean Time to Provision for LC"
+      },
+      {
+        "kpi": "Mean Time to Resolve (Network)",
+        "short_kpi": "Mean Time to Resolve (Network)"
+      },
+      {
+        "kpi": "Mean Time to fulfil LC upgradation request",
+        "short_kpi": "Mean Time fulf LC upgr requ"
+      },
+      {
+        "kpi": "On-time delivery rate (based on SLA)",
+        "short_kpi": "-tim deli rate (bas SLA)"
+      },
+      {
+        "kpi": "% of feasible orders turned  to TNF",
+        "short_kpi": "% feasible orders turned TNF"
+      },
+      {
+        "kpi": "Revenue from leasing out dark fiber",
+        "short_kpi": "Reve from leas out dark fibe"
+      },
+      {
+        "kpi": "% reduction in disconnection rate",
+        "short_kpi": "% reduction disconnection rate"
+      },
+      {
+        "kpi": "Repeat Complaint Rate (90 days)",
+        "short_kpi": "Repe Comp Rate (90 days"
+      },
+      {
+        "kpi": "% of circles for which monthly review completed",
+        "short_kpi": "% circ whic mont revi comp"
+      },
+      {
+        "kpi": "% queries from circles disposed within 3 working days",
+        "short_kpi": "% quer from circ disp with 3 w"
+      },
+      {
+        "kpi": "% of circuits on copper converted to OFC",
+        "short_kpi": "% circ copp conv OFC"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Corporate",
+    "role": "EB Platinum Strategy",
+    "short_role_name": "EB Platinum Strategy",
+    "role_description": "Responsible for enterprise business sales, revenue growth, customer acquisition, collection efficiency, and emerging platform performance.",
+    "kpis": [
+      {
+        "kpi": "EB Sales in the quarter",
+        "short_kpi": "EB Sales in the quarter"
+      },
+      {
+        "kpi": "EB Revenue in the quarter",
+        "short_kpi": "EB Revenue in the quarter"
+      },
+      {
+        "kpi": "% of private customers added",
+        "short_kpi": "% of private customers added"
+      },
+      {
+        "kpi": "% of ABF collected in the quarter",
+        "short_kpi": "% ABF collected quarter"
+      },
+      {
+        "kpi": "Sales from Emerging/New technology products (SD WAN, Data Center, IoT, IBS, Kaushalam, 5G FWA ILL etc) (in respective circle)",
+        "short_kpi": "Sale from Emer tech prod (SD W"
+      },
+      {
+        "kpi": "Sales from EB New Platinum accounts",
+        "short_kpi": "Sale from EB New Plat acco"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Corporate",
+    "role": "EB Platinum Strategy(cont’d)",
+    "short_role_name": "EB Plat Stra",
+    "role_description": "Responsible for responsiveness to RTI/PGRM/VIP cases, reporting efficiency, unit compliance reviews, and timely resolution of circle-level queries.",
+    "kpis": [
+      {
+        "kpi": "% of platinum units for which monthly review completed",
+        "short_kpi": "% plat unit whic mont revi com"
+      },
+      {
+        "kpi": "Disposal of PQ/Audit and various reports sought in < 7 days",
+        "short_kpi": "Disp PQ/A vari repo soug < 7 d"
+      },
+      {
+        "kpi": "% queries from circles disposed within 3 working days",
+        "short_kpi": "% quer from circ disp with 3 w"
+      },
+      {
+        "kpi": "% RTI, PGRMS and VIP cases responded to within 21 days",
+        "short_kpi": "% RTI, PGRM VIP case resp with"
+      },
+      {
+        "kpi": "Disposal of PQ/Audit and various reports sought in < 7 days",
+        "short_kpi": "Disp PQ/A vari repo soug < 7 d"
+      },
+      {
+        "kpi": "% of gold units for which monthly review completed",
+        "short_kpi": "% gold unit whic mont revi com"
+      },
+      {
+        "kpi": "% queries from circles disposed within 3 working days",
+        "short_kpi": "% quer from circ disp with 3 w"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Corporate",
+    "role": "EB Pricing",
+    "short_role_name": "EB Pricing",
+    "role_description": "Responsible for timely disposal of ECT cases, processing efficiency, and updates in EB tariff and disconnection policies.",
+    "kpis": [
+      {
+        "kpi": "% of ECT cases disposed within 3 working days",
+        "short_kpi": "% ECT case disp with 3 work da"
+      },
+      {
+        "kpi": "Processing of ECT cases (Beyond the power of ECT-EBU) for approval of the competent authority within 4 Working Days",
+        "short_kpi": "Proc ECT case (Bey powe ECT- a"
+      },
+      {
+        "kpi": "Timely conduct of ECT-EBU committee meeting",
+        "short_kpi": "Time cond ECT- comm meet"
+      },
+      {
+        "kpi": "Timely updation of EB tariff & discount policy",
+        "short_kpi": "Time upda EB tari & disc poli"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Corporate",
+    "role": "EB Gold Strategy",
+    "short_role_name": "EB Gold Strategy",
+    "role_description": "Responsible for enterprise business sales and revenue performance, customer mix, product-wise sales, collection efficiency, and query resolution effectiveness.",
+    "kpis": [
+      {
+        "kpi": "EB Sales in the quarter",
+        "short_kpi": "EB Sales in the quarter"
+      },
+      {
+        "kpi": "EB Revenue in the quarter",
+        "short_kpi": "EB Revenue in the quarter"
+      },
+      {
+        "kpi": "% private customers out of total customers",
+        "short_kpi": "% priv cust out tota cust"
+      },
+      {
+        "kpi": "Sales from non-core/New technology products (SD WAN, Data Center, IoT etc)",
+        "short_kpi": "Sale from non- tech prod (SD W"
+      },
+      {
+        "kpi": "Sales from EB New Gold accounts",
+        "short_kpi": "Sale from EB New Gold acco"
+      },
+      {
+        "kpi": "% of ABF collected in the quarter",
+        "short_kpi": "% ABF collected quarter"
+      },
+      {
+        "kpi": "Disposal of queries received from Circles pertaining to  CPNE Guidelines  & Channel Partner Policy /5G FWA policy/Kaushalam Policy/IBS Policy in < 7 days",
+        "short_kpi": "Disp quer rece from Circ pert"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Corporate",
+    "role": "MM Pre-Tender",
+    "short_role_name": "MM Pre-Tender",
+    "role_description": "Responsible for tender drafting and vetting timelines, tender activity compliance, and timely submission of weekly, monthly, and quarterly reports.",
+    "kpis": [
+      {
+        "kpi": "% of draft tenders vetted within 7 working days",
+        "short_kpi": "% draf tend vett with 7 work d"
+      },
+      {
+        "kpi": "Completion of tendering activity within 21 working days",
+        "short_kpi": "Comp tend acti with 21 work da"
+      },
+      {
+        "kpi": "Submission of quarterly report (GeM, MoU) in less than 15 days post month end",
+        "short_kpi": "Subm quar repo (GeM MoU) less"
+      },
+      {
+        "kpi": "Submission of weekly report (Tender and award status)  in less than 2 days post week end",
+        "short_kpi": "Subm week repo (Ten awar stat"
+      },
+      {
+        "kpi": "Submission of monthly report in less than 7 days post month end",
+        "short_kpi": "Subm mont repo less than 7 day"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Corporate",
+    "role": "MM Post-Tender",
+    "short_role_name": "MM Post-Tender",
+    "role_description": "Responsible for legal and administrative processing efficiency, including timely processing, vetting, and approval of court cases, files, proposals, and purchase orders.",
+    "kpis": [
+      {
+        "kpi": "% of Court Cases/Arbitrations processed within 5 working days",
+        "short_kpi": "% Cour Case proc with 5 work d"
+      },
+      {
+        "kpi": "% of files vetted within 4 working days",
+        "short_kpi": "% file vett with 4 work days"
+      },
+      {
+        "kpi": "Processing of BG release post completion of formalities within 4 working days",
+        "short_kpi": "Proc BG rele post comp form wi"
+      },
+      {
+        "kpi": "% DP Extension processed within 3 working days",
+        "short_kpi": "% DP Exte proc with 3 work day"
+      },
+      {
+        "kpi": "% POs processed within 5 working days",
+        "short_kpi": "% POs proc with 5 work days"
+      },
+      {
+        "kpi": "% APOs processed within 5 working days",
+        "short_kpi": "% APOs proc with 5 work days"
+      },
+      {
+        "kpi": "% of MC proposals vetted within 3 working days",
+        "short_kpi": "% MC prop vett with 3 work day"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Platinum Unit",
+    "role": "EB Platinum Unit Head",
+    "short_role_name": "EB Plat Unit Head",
+    "role_description": "Responsible for enterprise business sales and revenue growth, customer mix, pipeline strength, tender success rate, conversion efficiency, and collection performance.",
+    "kpis": [
+      {
+        "kpi": "EB Sales in the quarter",
+        "short_kpi": "EB Sales in the quarter"
+      },
+      {
+        "kpi": "EB Revenue in the quarter",
+        "short_kpi": "EB Revenue in the quarter"
+      },
+      {
+        "kpi": "% private customers out of total customers",
+        "short_kpi": "% priv cust out tota cust"
+      },
+      {
+        "kpi": "Sales from Emerging/New technology products (SD WAN, Data Center, IoT, IBS, Kaushalam, 5G FWA ILL etc) (in respective circle)",
+        "short_kpi": "Sale from Emer tech prod (SD W"
+      },
+      {
+        "kpi": "Sales from EB New Platinum accounts",
+        "short_kpi": "Sale from EB New Plat acco"
+      },
+      {
+        "kpi": "% of EBF collected in the quarter",
+        "short_kpi": "% EBF collected quarter"
+      },
+      {
+        "kpi": "Tender win rate (in respective circle)",
+        "short_kpi": "Tend win rate ( resp circ"
+      },
+      {
+        "kpi": "Value of sales pipeline (Stage 1, 2, 3)",
+        "short_kpi": "Valu sale pipe (Sta 1, 2, 3)"
+      },
+      {
+        "kpi": "% Conversion rate from leads to sales",
+        "short_kpi": "% Conv rate from lead sale"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Platinum Unit",
+    "role": "NAM",
+    "short_role_name": "NAM",
+    "role_description": "Responsible for enterprise business sales, revenue performance, customer composition, product sales, collections, tender success, pipeline value, and lead conversion efficiency.",
+    "kpis": [
+      {
+        "kpi": "EB Sales in the quarter",
+        "short_kpi": "EB Sales in the quarter"
+      },
+      {
+        "kpi": "EB Revenue in the quarter",
+        "short_kpi": "EB Revenue in the quarter"
+      },
+      {
+        "kpi": "% private customers out of total customers",
+        "short_kpi": "% priv cust out tota cust"
+      },
+      {
+        "kpi": "Sales from non-core/New technology products (SD WAN, Data Center, IoT etc)",
+        "short_kpi": "Sale from non- tech prod (SD W"
+      },
+      {
+        "kpi": "Sales from EB New Platinum accounts",
+        "short_kpi": "Sale from EB New Plat acco"
+      },
+      {
+        "kpi": "% of ABF collected in the quarter",
+        "short_kpi": "% ABF collected quarter"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Platinum Unit",
+    "role": "NAM(continued)",
+    "short_role_name": "NAM(continued)",
+    "role_description": "Responsible for enterprise business sales, revenue performance, customer composition, product sales, collections, tender success, pipeline value, and lead conversion efficiency.",
+    "kpis": [
+      {
+        "kpi": "Tender win rate (in respective circle)",
+        "short_kpi": "Tend win rate ( resp circ"
+      },
+      {
+        "kpi": "Value of sales pipeline (Stage 1, 2, 3)",
+        "short_kpi": "Valu sale pipe (Sta 1, 2, 3)"
+      },
+      {
+        "kpi": "% Conversion rate from leads to sales",
+        "short_kpi": "% Conv rate from lead sale"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Platinum Unit",
+    "role": "Marketing",
+    "short_role_name": "Marketing",
+    "role_description": "Responsible for enterprise business sales performance, platform account growth, sales pipeline value, and lead conversion efficiency across stages.",
+    "kpis": [
+      {
+        "kpi": "EB Sales in the quarter",
+        "short_kpi": "EB Sales in the quarter"
+      },
+      {
+        "kpi": "Sales from EB New Platinum accounts",
+        "short_kpi": "Sale from EB New Plat acco"
+      },
+      {
+        "kpi": "Value of sales pipeline (Stage 1, 2, 3)",
+        "short_kpi": "Valu sale pipe (Sta 1, 2, 3)"
+      },
+      {
+        "kpi": "Lead conversion rate (Stage 4/Stage 1)",
+        "short_kpi": "Lead conv rate (Sta 4/St 1)"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Platinum Unit",
+    "role": "Platinum Delivery Manager",
+    "short_role_name": "Plat Deli Mana",
+    "role_description": "Responsible for provisioning efficiency, upgrade fulfillment, SLA adherence, feasibility conversion, and request processing timeliness.",
+    "kpis": [
+      {
+        "kpi": "Mean Time to Provision (for respective accounts)",
+        "short_kpi": "Mean Time Prov ( resp acco"
+      },
+      {
+        "kpi": "Mean Time to fulfil upgradation request (for respective accounts)",
+        "short_kpi": "Mean Time fulf upgr requ ( res"
+      },
+      {
+        "kpi": "On-time delivery rate (based on SLA)",
+        "short_kpi": "-tim deli rate (bas SLA)"
+      },
+      {
+        "kpi": "% of feasible orders turned to TNF (for respective accounts)",
+        "short_kpi": "% feas orde turn TNF ( resp ac"
+      },
+      {
+        "kpi": "Mean Time between DOC and DOA (for respective accounts)",
+        "short_kpi": "Mean Time betw DOC DOA ( resp"
+      },
+      {
+        "kpi": "% queries/links for which feasibility assessment submitted in < 3 days",
+        "short_kpi": "% quer whic feas asse subm < 3"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Platinum Unit",
+    "role": "Platinum Service Assurance Manager",
+    "short_role_name": "Plat Serv Assu Mana",
+    "role_description": "Responsible for resolution efficiency, billing and network complaint handling, and repeat complaint reduction over time.",
+    "kpis": [
+      {
+        "kpi": "Mean Time to Resolve (Network related complaints)",
+        "short_kpi": "Mean Time Reso (Net rela comp"
+      },
+      {
+        "kpi": "Mean Time to Resolve (Billing Dispute) (for respective accounts)",
+        "short_kpi": "Mean Time Reso (Bil Disp ( res"
+      },
+      {
+        "kpi": "Repeat Complaint Rate (30 days) (for respective accounts)",
+        "short_kpi": "Repe Comp Rate (30 days ( resp"
+      },
+      {
+        "kpi": "Repeat Complaint Rate (90 days) (for respective accounts)",
+        "short_kpi": "Repe Comp Rate (90 days ( resp"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Gold Unit",
+    "role": "EB Gold Unit Head",
+    "short_role_name": "EB Gold Unit Head",
+    "role_description": "Responsible for enterprise sales, revenue, customer mix, collections, tenders, pipeline, and conversion efficiency.",
+    "kpis": [
+      {
+        "kpi": "EB Sales in the quarter",
+        "short_kpi": "EB Sales in the quarter"
+      },
+      {
+        "kpi": "EB Revenue in the quarter",
+        "short_kpi": "EB Revenue in the quarter"
+      },
+      {
+        "kpi": "% private customers out of total customers",
+        "short_kpi": "% priv cust out tota cust"
+      },
+      {
+        "kpi": "Sales from non-core/New technology products (SD WAN, Data Center, IoT etc)",
+        "short_kpi": "Sale from non- tech prod (SD W"
+      },
+      {
+        "kpi": "Sales from EB New Gold accounts",
+        "short_kpi": "Sale from EB New Gold acco"
+      },
+      {
+        "kpi": "% of EBF collected in the quarter",
+        "short_kpi": "% EBF collected quarter"
+      },
+      {
+        "kpi": "Tender win rate (in respective circle)",
+        "short_kpi": "Tend win rate ( resp circ"
+      },
+      {
+        "kpi": "Value of sales pipeline (Stage 1, 2, 3)",
+        "short_kpi": "Valu sale pipe (Sta 1, 2, 3)"
+      },
+      {
+        "kpi": "% Conversion rate from leads to sales",
+        "short_kpi": "% Conv rate from lead sale"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Gold Unit",
+    "role": "KAM",
+    "short_role_name": "KAM",
+    "role_description": "Responsible for enterprise sales performance, revenue, customer mix, product sales, collections, tenders, pipeline value, and lead conversion.",
+    "kpis": [
+      {
+        "kpi": "EB Sales in the quarter",
+        "short_kpi": "EB Sales in the quarter"
+      },
+      {
+        "kpi": "EB Revenue in the quarter",
+        "short_kpi": "EB Revenue in the quarter"
+      },
+      {
+        "kpi": "% private customers out of total customers",
+        "short_kpi": "% priv cust out tota cust"
+      },
+      {
+        "kpi": "Sales from non-core/New technology products (SD WAN, Data Center, IoT etc)",
+        "short_kpi": "Sale from non- tech prod (SD W"
+      },
+      {
+        "kpi": "Sales from EB New Gold accounts",
+        "short_kpi": "Sale from EB New Gold acco"
+      },
+      {
+        "kpi": "% of EBF collected in the quarter",
+        "short_kpi": "% EBF collected quarter"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Gold Unit",
+    "role": "KAM( Continued)",
+    "short_role_name": "KAM( Continued)",
+    "role_description": "Responsible for enterprise sales performance, revenue, customer mix, product sales, collections, tenders, pipeline value, and lead conversion.",
+    "kpis": [
+      {
+        "kpi": "Tender win rate (in respective circle)",
+        "short_kpi": "Tend win rate ( resp circ"
+      },
+      {
+        "kpi": "Value of sales pipeline (Stage 1, 2, 3)",
+        "short_kpi": "Valu sale pipe (Sta 1, 2, 3)"
+      },
+      {
+        "kpi": "% Conversion rate from leads to sales",
+        "short_kpi": "% Conv rate from lead sale"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Gold Unit",
+    "role": "Gold Delivery Manager",
+    "short_role_name": "Gold Deli Mana",
+    "role_description": "Responsible for complaint resolution efficiency, billing accuracy, and short- and long-term service quality performance.",
+    "kpis": [
+      {
+        "kpi": "Mean Time to Provision (for respective accounts)",
+        "short_kpi": "Mean Time Prov ( resp acco"
+      },
+      {
+        "kpi": "Mean Time to fulfil upgradation request (for respective accounts)",
+        "short_kpi": "Mean Time fulf upgr requ ( res"
+      },
+      {
+        "kpi": "On-time delivery rate (based on SLA)",
+        "short_kpi": "-tim deli rate (bas SLA)"
+      },
+      {
+        "kpi": "% of feasible orders turned to TNF (for respective accounts)",
+        "short_kpi": "% feas orde turn TNF ( resp ac"
+      },
+      {
+        "kpi": "Mean Time between DOC and DOA (for respective accounts)",
+        "short_kpi": "Mean Time betw DOC DOA ( resp"
+      },
+      {
+        "kpi": "% queries/links for which feasibility assessment submitted in < 3 days",
+        "short_kpi": "% quer whic feas asse subm < 3"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Gold Unit",
+    "role": "Gold Service Assurance Manager",
+    "short_role_name": "Gold Serv Assu Mana",
+    "role_description": "Responsible for network and billing complaint resolution efficiency and short- and long-term repeat complaint reduction.",
+    "kpis": [
+      {
+        "kpi": "Mean Time to Resolve (Network related complaints)",
+        "short_kpi": "Mean Time Reso (Net rela comp"
+      },
+      {
+        "kpi": "Mean Time to Resolve (Billing Dispute) (for respective accounts)",
+        "short_kpi": "Mean Time Reso (Bil Disp ( res"
+      },
+      {
+        "kpi": "Repeat Complaint Rate (30 days) (for respective accounts)",
+        "short_kpi": "Repe Comp Rate (30 days ( resp"
+      },
+      {
+        "kpi": "Repeat Complaint Rate (90 days) (for respective accounts)",
+        "short_kpi": "Repe Comp Rate (90 days ( resp"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Circle",
+    "role": "Provisioning Administrator",
+    "short_role_name": "Prov Admi",
+    "role_description": "Responsible for service resolution efficiency, billing and network complaint handling, and short- and long-term repeat complaint reduction.",
+    "kpis": [
+      {
+        "kpi": "Mean Time to Provision (for respective accounts)",
+        "short_kpi": "Mean Time Prov ( resp acco"
+      },
+      {
+        "kpi": "Mean Time to fulfil upgradation request (for respective accounts)",
+        "short_kpi": "Mean Time fulf upgr requ ( res"
+      },
+      {
+        "kpi": "On-time delivery rate (based on SLA)",
+        "short_kpi": "-tim deli rate (bas SLA)"
+      },
+      {
+        "kpi": "% of feasible orders turned to TNF (for respective accounts)",
+        "short_kpi": "% feas orde turn TNF ( resp ac"
+      },
+      {
+        "kpi": "Mean Time between DOC and DOA (for respective accounts)",
+        "short_kpi": "Mean Time betw DOC DOA ( resp"
+      },
+      {
+        "kpi": "% queries/links for which feasibility assessment submitted in < 3 days",
+        "short_kpi": "% quer whic feas asse subm < 3"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Circle",
+    "role": "Service Relationship Manager",
+    "short_role_name": "Serv Rela Mana",
+    "role_description": "Responsible for resolution efficiency for network and billing complaints and track short- and long-term repeat complaint rates to assess service quality.",
+    "kpis": [
+      {
+        "kpi": "Mean Time to Resolve (Network related complaints)",
+        "short_kpi": "Mean Time Reso (Net rela comp"
+      },
+      {
+        "kpi": "Mean Time to Resolve (Billing Dispute) (for respective accounts)",
+        "short_kpi": "Mean Time Reso (Bil Disp ( res"
+      },
+      {
+        "kpi": "Repeat Complaint Rate (30 days) (for respective accounts)",
+        "short_kpi": "Repe Comp Rate (30 days ( resp"
+      },
+      {
+        "kpi": "Repeat Complaint Rate (90 days) (for respective accounts)",
+        "short_kpi": "Repe Comp Rate (90 days ( resp"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "BA",
+    "role": "LC Delivery",
+    "short_role_name": "LC Delivery",
+    "role_description": "Responsible for provisioning speed, upgrade fulfillment, SLA delivery, feasibility conversion, cycle time, and responsiveness.",
+    "kpis": [
+      {
+        "kpi": "Mean Time to Provision (for respective accounts)",
+        "short_kpi": "Mean Time Prov ( resp acco"
+      },
+      {
+        "kpi": "Mean Time to fulfil upgradation request (for respective accounts)",
+        "short_kpi": "Mean Time fulf upgr requ ( res"
+      },
+      {
+        "kpi": "On-time delivery rate (based on SLA)",
+        "short_kpi": "-tim deli rate (bas SLA)"
+      },
+      {
+        "kpi": "% of feasible orders turned to TNF (for respective accounts)",
+        "short_kpi": "% feas orde turn TNF ( resp ac"
+      },
+      {
+        "kpi": "Mean Time between DOC and DOA (for respective accounts)",
+        "short_kpi": "Mean Time betw DOC DOA ( resp"
+      },
+      {
+        "kpi": "% queries/links for which feasibility assessment submitted in < 3 days",
+        "short_kpi": "% quer whic feas asse subm < 3"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "BA",
+    "role": "LC Service Assurance",
+    "short_role_name": "LC Service Assurance",
+    "role_description": "Responsible for complaint resolution, billing efficiency, service quality, and copper-to-fibre network conversion progress.",
+    "kpis": [
+      {
+        "kpi": "Mean Time to Resolve (Network related complaints)",
+        "short_kpi": "Mean Time Reso (Net rela comp"
+      },
+      {
+        "kpi": "Mean Time to Resolve (Billing Dispute) (for respective accounts)",
+        "short_kpi": "Mean Time Reso (Bil Disp ( res"
+      },
+      {
+        "kpi": "Repeat Complaint Rate (30 days) (for respective accounts)",
+        "short_kpi": "Repe Comp Rate (30 days ( resp"
+      },
+      {
+        "kpi": "Repeat Complaint Rate (90 days) (for respective accounts)",
+        "short_kpi": "Repe Comp Rate (90 days ( resp"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Corporate",
+    "role": "LC Service Assurance",
+    "short_role_name": "LC Service Assurance",
+    "role_description": "Responsible for complaint resolution, billing efficiency, service quality, and copper-to-fibre network conversion progress.",
+    "kpis": [
+      {
+        "kpi": "% of circuits on copper converted to OFC",
+        "short_kpi": "% circ copp conv OFC"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Circle",
+    "role": "Strategic Initiatives",
+    "short_role_name": "Stra Init",
+    "role_description": "Responsible for overall circle performance through MCSC score and other contractually defined office performance indicators.",
+    "kpis": [
+      {
+        "kpi": "MCSC Score for Circle",
+        "short_kpi": "MCSC Score for Circle"
+      },
+      {
+        "kpi": "Other KPIs as defined by controlling officer",
+        "short_kpi": "Othe KPIs as defi by cont offi"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "BA",
+    "role": "EB Network Operations",
+    "short_role_name": "EB Netw Oper",
+    "role_description": "Responsible for leased circuit availability, fault resolution speed, SLA-based complaint resolution, and overall leased circuit growth performance.",
+    "kpis": [
+      {
+        "kpi": "% of links with Utilization <70% (in respective territory)",
+        "short_kpi": "% link Util <70% ( resp terr"
+      },
+      {
+        "kpi": "% of links with Uptime >99% (in respective territory)",
+        "short_kpi": "% link Upti >99% ( resp terr"
+      },
+      {
+        "kpi": "% of links with Throughput as per target (in respective territory)",
+        "short_kpi": "% link Thro as per targ ( resp"
+      },
+      {
+        "kpi": "% of Customer Complaint resolved within (<4Hr)",
+        "short_kpi": "% Cust Comp reso with (<4H"
+      },
+      {
+        "kpi": "% of Links with CRC Error <1000 (in respective territory)",
+        "short_kpi": "% Link CRC Erro <100 ( resp te"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Circle",
+    "role": "EB Network Head",
+    "short_role_name": "EB Network Head",
+    "role_description": "Responsible for leased circuit availability, fault resolution speed, SLA compliance, growth, service delivery timeliness, and fibre conversion progress.",
+    "kpis": [
+      {
+        "kpi": "% of LC availability",
+        "short_kpi": "% of LC availability"
+      },
+      {
+        "kpi": "% of faults with MTTR <4Hr",
+        "short_kpi": "% of faults with MTTR <4Hr"
+      },
+      {
+        "kpi": "% of Customer Complaints Resolved within SLA",
+        "short_kpi": "% Cust Comp Reso with SLA"
+      },
+      {
+        "kpi": "%  of Growth in LC",
+        "short_kpi": "%  of Growth in LC"
+      },
+      {
+        "kpi": "% of Service delivery within customer need date (CND)",
+        "short_kpi": "% Serv deli with cust need dat"
+      },
+      {
+        "kpi": "% fiberization completed for copper circuits",
+        "short_kpi": "% fibe comp copp circ"
+      }
+    ]
+  },
+  {
+    "vertical": "EB",
+    "level": "Circle",
+    "role": "EB Network Operations",
+    "short_role_name": "EB Netw Oper",
+    "role_description": "Responsible for leased circuit availability, fault resolution speed, SLA-based complaint resolution, and overall leased circuit growth performance.",
+    "kpis": [
+      {
+        "kpi": "% of LC availability",
+        "short_kpi": "% of LC availability"
+      },
+      {
+        "kpi": "% of faults with MTTR <4Hr",
+        "short_kpi": "% of faults with MTTR <4Hr"
+      },
+      {
+        "kpi": "% of Customer Complaints Resolved within SLA",
+        "short_kpi": "% Cust Comp Reso with SLA"
+      },
+      {
+        "kpi": "%  of Growth in LC",
+        "short_kpi": "%  of Growth in LC"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "Corporate",
+    "role": "SATCOM Sales Head",
+    "short_role_name": "SATCOM Sales Head",
+    "role_description": "Responsible for satellite service revenue, government project delivery efficiency, SLA compliance, and timely invoice clearance performance.",
+    "kpis": [
+      {
+        "kpi": "VSAT revenue",
+        "short_kpi": "VSAT revenue"
+      },
+      {
+        "kpi": "INMARSAT revenue",
+        "short_kpi": "INMARSAT revenue"
+      },
+      {
+        "kpi": "% of Government projects delivered within SLA",
+        "short_kpi": "% Gove proj deli with SLA"
+      },
+      {
+        "kpi": "% of government projects invoices cleared",
+        "short_kpi": "% gove proj invo clea"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "Corporate",
+    "role": "Tx Network Planning Head",
+    "short_role_name": "Tx Netw Plan Head",
+    "role_description": "Responsible for procurement speed, vendor payments, OFC growth, node expansion, and utilization efficiency.",
+    "kpis": [
+      {
+        "kpi": "Avg. time taken from PR approval to PO generation (OLT and other nodes)",
+        "short_kpi": "Avg. time take from PR appr PO"
+      },
+      {
+        "kpi": "Avg. time taken from receipt of goods (equipment/OFC) to first loading",
+        "short_kpi": "Avg. time take from rece good"
+      },
+      {
+        "kpi": "Avg. TAT for vendor payment (AMC, OEMs, etc.)",
+        "short_kpi": "Avg. TAT vend paym (AMC OEMs e"
+      },
+      {
+        "kpi": "% growth in OFC (in kms) over last quarter",
+        "short_kpi": "% grow OFC ( kms) over last qu"
+      },
+      {
+        "kpi": "% growth in Tx Nodes (OTN, CPAN, MAAN, MPLS, etc.) over last quarter",
+        "short_kpi": "% grow Tx Node (OTN CPAN MAAN"
+      },
+      {
+        "kpi": "% of Tx nodes loaded vs total installed",
+        "short_kpi": "% Tx node load vs tota inst"
+      },
+      {
+        "kpi": "# of km OFC CWIP vs planned",
+        "short_kpi": "# of km OFC CWIP vs planned"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "Corporate",
+    "role": "OFC Operations Head",
+    "short_role_name": "OFC Operations Head",
+    "role_description": "Responsible for fibre rollout, fault repair speed, network optimization, revenue, payments, and reliability.",
+    "kpis": [
+      {
+        "kpi": "% of fiber expansion deployed vs planned",
+        "short_kpi": "% fibe expa depl vs plan"
+      },
+      {
+        "kpi": "% of fiber rehabilation planned vs done",
+        "short_kpi": "% fibe reha plan vs done"
+      },
+      {
+        "kpi": "% of MTTR for OFC Cut <4 hrs",
+        "short_kpi": "% of MTTR for OFC Cut <4 hrs"
+      },
+      {
+        "kpi": "% of reduction in span loss in OFC",
+        "short_kpi": "% reduction span loss OFC"
+      },
+      {
+        "kpi": "% of reduction in highly utililized OTN/MPLS links",
+        "short_kpi": "% redu high util OTN/ link"
+      },
+      {
+        "kpi": "% of reduction in highly utililized CPAN and MAAN rings",
+        "short_kpi": "% redu high util CPAN MAAN rin"
+      },
+      {
+        "kpi": "% of revenue due to fiber leased out",
+        "short_kpi": "% revenue due fiber leased out"
+      },
+      {
+        "kpi": "Avg. TAT for vendor payment",
+        "short_kpi": "Avg. TAT for vendor payment"
+      },
+      {
+        "kpi": "Repeat fault rate (over 30 days)",
+        "short_kpi": "Repe faul rate (ove 30 days"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "Corporate",
+    "role": "Tx Equipment Operations Head",
+    "short_role_name": "Tx Equi Oper Head",
+    "role_description": "Responsible for network availability, routing performance, transmission node uptime, equipment fault resolution speed, and vendor payment efficiency.",
+    "kpis": [
+      {
+        "kpi": "% of OTN Link with Availability <99%",
+        "short_kpi": "% OTN Link Availability <99%"
+      },
+      {
+        "kpi": "% of MPLS(Edge/IGW/Core) Router Availability <99%",
+        "short_kpi": "% MPLS Rout Avai <99%"
+      },
+      {
+        "kpi": "% of Tx Access Node with availability (CPAN/MAAN/Switches etc) >99%",
+        "short_kpi": "% Tx Acce Node avai (CPA etc)"
+      },
+      {
+        "kpi": "% of MTTR for Equipment failure <4Hrs",
+        "short_kpi": "% MTTR Equipment failure <4Hrs"
+      },
+      {
+        "kpi": "Avg. TAT for AMC vendor payment",
+        "short_kpi": "Avg. TAT AMC vendor payment"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "Corporate",
+    "role": "ILD & SP Operations Head",
+    "short_role_name": "ILD & SP Oper Head",
+    "role_description": "Responsible for fibre and bandwidth utilization, system capacity efficiency, and timely resolution of ISD customer complaints.",
+    "kpis": [
+      {
+        "kpi": "% of fiber utilization of EIG/BL etc cable",
+        "short_kpi": "% fibe util EIG/ etc cabl"
+      },
+      {
+        "kpi": "% of ISD customer complain resolved <48 Hr",
+        "short_kpi": "% ISD cust comp reso <48 Hr"
+      },
+      {
+        "kpi": "% of BW utilization IPLC/IPNB links <90%",
+        "short_kpi": "% BW util IPLC link <90%"
+      },
+      {
+        "kpi": "% of available Capacity utilization of BL cable system",
+        "short_kpi": "% avai Capa util BL cabl syst"
+      },
+      {
+        "kpi": "% of alloted capacity utilization of EIG cable system",
+        "short_kpi": "% allo capa util EIG cabl syst"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "Corporate",
+    "role": "Telecom Factory Nodal",
+    "short_role_name": "Tele Fact Noda",
+    "role_description": "Responsible for order fulfillment efficiency, revenue generation from sales channels and manufacturing goods, and payment turnaround for raw material suppliers.",
+    "kpis": [
+      {
+        "kpi": "Order fulfillment rate of PLB HDPE Duct",
+        "short_kpi": "Orde fulf rate PLB HDPE Duct"
+      },
+      {
+        "kpi": "Order fulfillment rate of Joint Closure/BJC",
+        "short_kpi": "Orde fulf rate Join Clos"
+      },
+      {
+        "kpi": "Order fulfillment rate of SIM",
+        "short_kpi": "Order fulfillment rate of SIM"
+      },
+      {
+        "kpi": "% of revenue generated from SCRAP disposal & spare infra qtrly",
+        "short_kpi": "% reve gene from SCRA disp & s"
+      },
+      {
+        "kpi": "Avg. TAT of payments to raw material suppliers",
+        "short_kpi": "Avg. TAT paym raw mate supp"
+      },
+      {
+        "kpi": "Revenue booked from manufactured goods",
+        "short_kpi": "Reve book from manu good"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "CNTX- Circle",
+    "role": "Core NW Planning",
+    "short_role_name": "Core NW Planning",
+    "role_description": "Responsible for procurement efficiency, fibre growth, node expansion, utilization, fault recovery, and planning accuracy.",
+    "kpis": [
+      {
+        "kpi": "Avg. time taken from receipt of goods (equipment/OFC) to first loading",
+        "short_kpi": "Avg. time take from rece good"
+      },
+      {
+        "kpi": "% of growth in OFC (over last quarter)",
+        "short_kpi": "% grow OFC (ove last quar"
+      },
+      {
+        "kpi": "% of growth in Tx nodes",
+        "short_kpi": "% of growth in Tx nodes"
+      },
+      {
+        "kpi": "% of Tx nodes loaded vs total comissioned",
+        "short_kpi": "% Tx node load vs tota comi"
+      },
+      {
+        "kpi": "Fiber retrieval rate >90%",
+        "short_kpi": "Fiber retrieval rate >90%"
+      },
+      {
+        "kpi": "# of km OFC CWIP vs planned",
+        "short_kpi": "# of km OFC CWIP vs planned"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "CNTX- Circle",
+    "role": "Core NW Operations",
+    "short_role_name": "Core NW Operations",
+    "role_description": "Responsible for fibre deployment, rehabilitation, fault repair speed, network optimization, revenue growth, vendor payment efficiency, and repeat fault reduction.",
+    "kpis": [
+      {
+        "kpi": "% of fiber expansion deployed vs planned",
+        "short_kpi": "% fibe expa depl vs plan"
+      },
+      {
+        "kpi": "% of fiber rehabilation planned vs done",
+        "short_kpi": "% fibe reha plan vs done"
+      },
+      {
+        "kpi": "% of MTTR for OFC Cut <4 hrs",
+        "short_kpi": "% of MTTR for OFC Cut <4 hrs"
+      },
+      {
+        "kpi": "% of reduction in span loss in OFC",
+        "short_kpi": "% reduction span loss OFC"
+      },
+      {
+        "kpi": "% of reduction in highly utililized OTN/MPLS links",
+        "short_kpi": "% redu high util OTN/ link"
+      },
+      {
+        "kpi": "% of reduction in highly utililized CPAN and MAAN rings",
+        "short_kpi": "% redu high util CPAN MAAN rin"
+      },
+      {
+        "kpi": "% increase in revenue due to fiber leased out",
+        "short_kpi": "% incr reve due fibe leas out"
+      },
+      {
+        "kpi": "Avg. TAT for vendor payment",
+        "short_kpi": "Avg. TAT for vendor payment"
+      },
+      {
+        "kpi": "Repeat fault rate (over 30 days)",
+        "short_kpi": "Repe faul rate (ove 30 days"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "CNTX- Circle",
+    "role": "Procurement Management",
+    "short_role_name": "Proc Mana",
+    "role_description": "Responsible for procurement efficiency, delivery performance, equipment reliability, and payment processing timelines.",
+    "kpis": [
+      {
+        "kpi": "Avg. time taken from PR raise to PO generation",
+        "short_kpi": "Avg. time take from PR rais PO"
+      },
+      {
+        "kpi": "Avg. time taken from PO generation to the receipt of goods/services",
+        "short_kpi": "Avg. time take from PO gene re"
+      },
+      {
+        "kpi": "% of orders delivered on time and in full",
+        "short_kpi": "% orders delivered time full"
+      },
+      {
+        "kpi": "Repeat fault rate new equipment (loaded in last two quarters)",
+        "short_kpi": "Repe faul rate new equi (loa l"
+      },
+      {
+        "kpi": "Avg. TAT for OEM payment",
+        "short_kpi": "Avg. TAT for OEM payment"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "CNTX- Circle",
+    "role": "Vendor Management",
+    "short_role_name": "Vendor Management",
+    "role_description": "Responsible for SLA-based work order delivery, vendor fault resolution speed, payment turnaround time, and repeat fault reduction.",
+    "kpis": [
+      {
+        "kpi": "% of work orders delivered within the defined SLA",
+        "short_kpi": "% work orde deli with defi SLA"
+      },
+      {
+        "kpi": "MTTR of fault rectification by vendor",
+        "short_kpi": "MTTR faul rect by vend"
+      },
+      {
+        "kpi": "Avg. TAT for vendor payment",
+        "short_kpi": "Avg. TAT for vendor payment"
+      },
+      {
+        "kpi": "Repeat fault rate (over 30 days)",
+        "short_kpi": "Repe faul rate (ove 30 days"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "Circle",
+    "role": "Access Tx Equipment Planning & Deployment",
+    "short_role_name": "Acce Tx Equi Plan &",
+    "role_description": "Responsible for transmission planning progress, network modernization, expansion execution, and optimization of link infrastructure.",
+    "kpis": [
+      {
+        "kpi": "% of Tx/CFA equipments planned Vs total scope.",
+        "short_kpi": "% Tx/C equi plan Vs tota scop"
+      },
+      {
+        "kpi": "% of Ring upgrade planned Vs total scope",
+        "short_kpi": "% Ring upgr plan Vs tota scop"
+      },
+      {
+        "kpi": "% of Tx NW expansion Vs scope",
+        "short_kpi": "% of Tx NW expansion Vs scope"
+      },
+      {
+        "kpi": "% of linear links reduced Vs total scope",
+        "short_kpi": "% line link redu Vs tota scop"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "Circle",
+    "role": "Access OFC Deployment & Testing",
+    "short_role_name": "Acce OFC Depl & Test",
+    "role_description": "Responsible for OFC expansion and rehabilitation progress, utilization efficiency, and acceptance testing against deployment.",
+    "kpis": [
+      {
+        "kpi": "% OFC expansion planned vs scope",
+        "short_kpi": "% OFC expa plan vs scop"
+      },
+      {
+        "kpi": "% OFC rehabilitation planned vs scope",
+        "short_kpi": "% OFC reha plan vs scop"
+      },
+      {
+        "kpi": "% of OFC Utilization below 80% threshold",
+        "short_kpi": "% OFC Util belo 80% thre"
+      },
+      {
+        "kpi": "% of OFC Acceptance Testing vs deployed",
+        "short_kpi": "% OFC Acce Test vs depl"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "Circle",
+    "role": "Access Transmission  O&M",
+    "short_role_name": "Acce Tran O&M",
+    "role_description": "Responsible for rapid fault resolution, OFC cut restoration, transmission node availability, and MAAN port utilization efficiency.",
+    "kpis": [
+      {
+        "kpi": "% of Tx System/ Node/Faults/Alarm resolved in <4Hr",
+        "short_kpi": "% Tx Syst Node reso <4Hr"
+      },
+      {
+        "kpi": "% of OFC cut with MTTR <4Hr",
+        "short_kpi": "% of OFC cut with MTTR <4Hr"
+      },
+      {
+        "kpi": "% of Tx Nodes with Availability >99%",
+        "short_kpi": "% Tx Nodes Availability >99%"
+      },
+      {
+        "kpi": "% of MAAN with Port Utilization <80%",
+        "short_kpi": "% MAAN Port Utilization <80%"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "CNTX- TR BA",
+    "role": "Area Core NW Lead",
+    "short_role_name": "Area Core NW Lead",
+    "role_description": "Responsible for SLA-based work order delivery, fault restoration speed, network availability, optical performance, and fibre retrieval efficiency.",
+    "kpis": [
+      {
+        "kpi": "% of work orders delivered within SLA",
+        "short_kpi": "% work orde deli with SLA"
+      },
+      {
+        "kpi": "MTTR for fault rectification",
+        "short_kpi": "MTTR for fault rectification"
+      },
+      {
+        "kpi": "% of Tx Nodes with Availability >99%",
+        "short_kpi": "% Tx nodes availability >99%"
+      },
+      {
+        "kpi": "% of OFC with availability >99%",
+        "short_kpi": "% OFC availability >99%"
+      },
+      {
+        "kpi": "% of OFC links with Span Loss <20 dbm",
+        "short_kpi": "% OFC links Span Loss <20 dbm"
+      },
+      {
+        "kpi": "Fiber retrieval rate >90%",
+        "short_kpi": "Fiber retrieval rate >90%"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "CNTX- TR BA",
+    "role": "Core NW Vendor Management",
+    "short_role_name": "Core NW Vend Mana",
+    "role_description": "Responsible for procurement efficiency, SLA-based delivery, fault resolution performance, and vendor billing processing timeliness.",
+    "kpis": [
+      {
+        "kpi": "Avg. time taken from receipt of goods (equipment/OFC) to first loading",
+        "short_kpi": "Avg. time take from rece good"
+      },
+      {
+        "kpi": "% of work orders delivered within SLA",
+        "short_kpi": "% work orde deli with SLA"
+      },
+      {
+        "kpi": "% of fault cleared within defined SLA",
+        "short_kpi": "% faul clea with defi SLA"
+      },
+      {
+        "kpi": "% of vendor bill processed on time as defined in the SLA",
+        "short_kpi": "% vend bill proc time as defi"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "CNTX- TR BA",
+    "role": "Core NW Indoor O&M",
+    "short_role_name": "Core NW Indoor O&M",
+    "role_description": "Responsible for fault resolution speed, transmission node availability, network quality, port utilization, optical performance, and equipment loading efficiency.",
+    "kpis": [
+      {
+        "kpi": "MTTR for fault rectification (in respective geographical area)",
+        "short_kpi": "MTTR faul rect ( resp geog are"
+      },
+      {
+        "kpi": "% of Tx Nodes with Availability >99% (in respective territory)",
+        "short_kpi": "% Tx Node Avai >99% ( resp ter"
+      },
+      {
+        "kpi": "% of Tx Nodes with Packet Loss Rate <0.5% (in respective territory)",
+        "short_kpi": "% Tx Node Pack Loss Rate <0.5"
+      },
+      {
+        "kpi": "% of Port with Degraded Optical I/O Power (in respective territory)",
+        "short_kpi": "% Port Degr Opti I/O Powe ( re"
+      },
+      {
+        "kpi": "% of MAAN with Port Utilization <80%",
+        "short_kpi": "% MAAN Port Utilization <80%"
+      },
+      {
+        "kpi": "Avg. TAT for loading of Tx equipment (CPAN/MAAN)",
+        "short_kpi": "Avg. TAT load Tx equi (CPA"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "CNTX- TR BA",
+    "role": "Core NW Outdoor O&M",
+    "short_role_name": "Core NW Outdoor O&M",
+    "role_description": "Responsible for OFC fault restoration speed, optical performance, network availability, fibre recovery, and expansion/rehabilitation of OFC routes.",
+    "kpis": [
+      {
+        "kpi": "% of MTTR for OFC Cut <4 hrs",
+        "short_kpi": "% of MTTR for OFC Cut <4 hrs"
+      },
+      {
+        "kpi": "% of OFC links with Span Loss <20 dbm",
+        "short_kpi": "% OFC links Span Loss <20 dbm"
+      },
+      {
+        "kpi": "% of OFC with availability >99%",
+        "short_kpi": "% OFC availability >99%"
+      },
+      {
+        "kpi": "Fiber retrieval rate >90%",
+        "short_kpi": "Fiber retrieval rate >90%"
+      },
+      {
+        "kpi": "# of new OFC route-km added",
+        "short_kpi": "# of new OFC route-km added"
+      },
+      {
+        "kpi": "# of kilometers of route rehabilitated  (in respective geographical area)",
+        "short_kpi": "# kilo rout reha ( resp geog a"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "BA",
+    "role": "Access Indoor O&M",
+    "short_role_name": "Access Indoor O&M",
+    "role_description": "Responsible for transmission node availability, packet loss performance, port quality, MAAN utilization, and expansion of CPAN/MAAN network infrastructure.",
+    "kpis": [
+      {
+        "kpi": "% of Tx Nodes with Availability >99% (in respective territory)",
+        "short_kpi": "% Tx Node Avai >99% ( resp ter"
+      },
+      {
+        "kpi": "% of Tx Nodes with Packet Loss Rate <0.5% (in respective territory)",
+        "short_kpi": "% Tx Node Pack Loss Rate <0.5"
+      },
+      {
+        "kpi": "% of Port with Degraded Optical I/O Power (in respective territory)",
+        "short_kpi": "% Port Degr Opti I/O Powe ( re"
+      },
+      {
+        "kpi": "% of MAAN with Port Utilization <80%",
+        "short_kpi": "% MAAN Port Utilization <80%"
+      },
+      {
+        "kpi": "Number of new CPAN/ MAAN (Tx Nodes) equipment installed",
+        "short_kpi": "Numb new CPAN MAAN (Tx Node eq"
+      }
+    ]
+  },
+  {
+    "vertical": "Transmission",
+    "level": "BA",
+    "role": "Access Outdoor O&M",
+    "short_role_name": "Access Outdoor O&M",
+    "role_description": "Responsible for OFC fault restoration speed, optical link quality, network availability, fibre recovery efficiency, and route expansion and rehabilitation.",
+    "kpis": [
+      {
+        "kpi": "% of MTTR for OFC Cut <4 hrs",
+        "short_kpi": "% of MTTR for OFC Cut <4 hrs"
+      },
+      {
+        "kpi": "% of OFC links with Span Loss <20 dbm",
+        "short_kpi": "% OFC links Span Loss <20 dbm"
+      },
+      {
+        "kpi": "% of OFC with availability >99%",
+        "short_kpi": "% OFC availability >99%"
+      },
+      {
+        "kpi": "Fiber retrieval rate >90%",
+        "short_kpi": "Fiber retrieval rate >90%"
+      },
+      {
+        "kpi": "# of new OFC route-km added",
+        "short_kpi": "# of new OFC route-km added"
+      },
+      {
+        "kpi": "# of kilometers of route rehabilitated  (in respective geographical area)",
+        "short_kpi": "# kilo rout reha ( resp geog a"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Corporate",
+    "role": "Corporate Accounting (CA) and CSC",
+    "short_role_name": "Corp Acco (CA) CSC",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "% Other income vs target",
+        "short_kpi": "% Other income vs target"
+      },
+      {
+        "kpi": "Timely preparation and submission of financial reports and statements",
+        "short_kpi": "Time prep subm fina repo stat"
+      },
+      {
+        "kpi": "Timely submission for audits (Statutory/ Post &Telecom/CAG)",
+        "short_kpi": "Time subm audi (Sta Post &Tel"
+      },
+      {
+        "kpi": "Total audit qualifications vs target",
+        "short_kpi": "Tota audi qual vs targ"
+      },
+      {
+        "kpi": "% payments failed vs target",
+        "short_kpi": "% payments failed vs target"
+      },
+      {
+        "kpi": "Timely filing of GST returns for Delhi",
+        "short_kpi": "Time fili GST retu Delh"
+      },
+      {
+        "kpi": "% resolution of ERP requests",
+        "short_kpi": "% resolution of ERP requests"
+      },
+      {
+        "kpi": "Timely execution of payable process",
+        "short_kpi": "Time exec paya proc"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Corporate",
+    "role": "Corporate Fund Management (CFM)",
+    "short_role_name": "Corp Fund Mana (CFM",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Ensure Compliances for SG Bonds, Credit Ratings, Bank Borrowings, Interest Payments",
+        "short_kpi": "Ensu Comp SG Bond Cred Rati Ba"
+      },
+      {
+        "kpi": "Cost of debt",
+        "short_kpi": "Cost of debt"
+      },
+      {
+        "kpi": "Timely reconciliation of Forex Payments",
+        "short_kpi": "Time reco Fore Paym"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Corporate",
+    "role": "Taxation",
+    "short_role_name": "Taxation",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Timely Fllings for TDS, GST, Customs, Excise, etc.",
+        "short_kpi": "Time Flli TDS, GST, Cust Exci"
+      },
+      {
+        "kpi": "Total Penalties paid on late fillings/non-compliance",
+        "short_kpi": "Tota Pena paid late fill"
+      },
+      {
+        "kpi": "% reduction in withheld GST due to GSTR mismatches",
+        "short_kpi": "% redu with GST due GSTR mism"
+      },
+      {
+        "kpi": "Tax deduction Account No. Default % as per TRACES Site",
+        "short_kpi": "Tax dedu Acco No. Defa % as pe"
+      },
+      {
+        "kpi": "Timely submissions for tax audits",
+        "short_kpi": "Timely submissions tax audits"
+      },
+      {
+        "kpi": "Timely Corrective Actions for tax litigations",
+        "short_kpi": "Time Corr Acti tax liti"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Corporate",
+    "role": "Corporate Budgeting & Banking (CB&B)",
+    "short_role_name": "Corp Budg & Bank (CB",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Overall EBITDA margin",
+        "short_kpi": "Overall EBITDA margin"
+      },
+      {
+        "kpi": "% utilization of budget",
+        "short_kpi": "% utilization of budget"
+      },
+      {
+        "kpi": "Cost of debt",
+        "short_kpi": "Cost of Debt"
+      },
+      {
+        "kpi": "Timely disbursal of funds",
+        "short_kpi": "Timely disbursal of funds"
+      },
+      {
+        "kpi": "% collections vs target",
+        "short_kpi": "% collections vs target"
+      },
+      {
+        "kpi": "Timely submission of reports for audits, DoT, DPE, and other statuatory bodies",
+        "short_kpi": "Time subm repo audi DoT, DPE,"
+      },
+      {
+        "kpi": "Timely preparation and submission of budget, funding and cash flow analysis",
+        "short_kpi": "Time prep subm budg fund cash"
+      },
+      {
+        "kpi": "Timely submission of bank and customer interest agreement",
+        "short_kpi": "Time subm bank cust inte agre"
+      },
+      {
+        "kpi": "Timely reconciliation of unlinked items in BRS",
+        "short_kpi": "Time reco unli item BRS"
+      },
+      {
+        "kpi": "Timely reconciliation of funds for governent projects",
+        "short_kpi": "Time reco fund gove proj"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Corporate",
+    "role": "EB – Finance",
+    "short_role_name": "EB – Finance",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "% of EB Revenue achieved vs target",
+        "short_kpi": "% EB Reve achi vs targ"
+      },
+      {
+        "kpi": "EB-vertical EBITDA margin",
+        "short_kpi": "EB-vertical EBITDA margin"
+      },
+      {
+        "kpi": "% collections vs target",
+        "short_kpi": "% collections vs target"
+      },
+      {
+        "kpi": "% Reduction of Outstanding vs target",
+        "short_kpi": "% Redu Outs vs targ"
+      },
+      {
+        "kpi": "Timely issue of LC Bills",
+        "short_kpi": "Timely issue of LC Bills"
+      },
+      {
+        "kpi": "Timely closure of PQ, RTI, Audit reports, Audit Paras, and PG cases",
+        "short_kpi": "Time clos PQ, RTI, Audi repo A"
+      },
+      {
+        "kpi": "Timely concurrence on EB Finance proposals and Tariff proposals",
+        "short_kpi": "Time conc EB Fina prop Tari pr"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Corporate",
+    "role": "Procurement Finance (PF)",
+    "short_role_name": "Proc Fina (PF)",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Timely assessment of procurement plan/proposals",
+        "short_kpi": "Time asse proc plan"
+      },
+      {
+        "kpi": "Timely checking and vetting of bid documents",
+        "short_kpi": "Time chec vett bid docu"
+      },
+      {
+        "kpi": "Timely checking of APO, PO and price finalization",
+        "short_kpi": "Time chec APO, PO pric fina"
+      },
+      {
+        "kpi": "Timely finalization of technical and financial evaluation committee reports",
+        "short_kpi": "Time fina tech fina eval comm"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Corporate",
+    "role": "Govt. Projects (GP)",
+    "short_role_name": "Govt. Projects (GP)",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "% PMC/AE&EC/Centage booking for GP vs Target",
+        "short_kpi": "% PMC/ book GP vs Targ"
+      },
+      {
+        "kpi": "Timely release of payment to vendors",
+        "short_kpi": "Timely release payment vendors"
+      },
+      {
+        "kpi": "Timely preparation and reporting of govt project accounts",
+        "short_kpi": "Time prep repo govt proj acco"
+      },
+      {
+        "kpi": "Timely closure of Audit reports and Audit paras",
+        "short_kpi": "Time clos Audi repo Audi para"
+      },
+      {
+        "kpi": "% Claim submission to CCA vs Expenditure",
+        "short_kpi": "% Clai subm CCA vs Expe"
+      },
+      {
+        "kpi": "Timely billing of Infra Space, Fiber lease and other charges",
+        "short_kpi": "Time bill Infr Spac Fibe leas"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Corporate",
+    "role": "CM – Finance",
+    "short_role_name": "CM – Finance",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "% of CM Revenue achieved vs target",
+        "short_kpi": "% CM Reve achi vs targ"
+      },
+      {
+        "kpi": "CM-vertical EBITDA margin",
+        "short_kpi": "CM-vertical EBITDA margin"
+      },
+      {
+        "kpi": "% collections in first month",
+        "short_kpi": "% collections in first month"
+      },
+      {
+        "kpi": "% Reduction of Outstanding",
+        "short_kpi": "% Reduction of Outstanding"
+      },
+      {
+        "kpi": "Timely closure of PQ, RTI, Audits, Audit Paras",
+        "short_kpi": "Time clos PQ, RTI, Audi Audi P"
+      },
+      {
+        "kpi": "Timely concurrence on CM Finance proposals and Tariff proposals",
+        "short_kpi": "Time conc CM Fina prop Tari pr"
+      },
+      {
+        "kpi": "Timely clearance of DOT Service Category claims",
+        "short_kpi": "Time clea DOT Serv Cate clai"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Corporate",
+    "role": "Staff Establishment & Accounts (SEA)",
+    "short_role_name": "Staf Esta & Acco (SE",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Timely closure of staff-related matters -Retirement order, etc.",
+        "short_kpi": "Time clos staf matt -Ret orde"
+      },
+      {
+        "kpi": "Timely closure of RTI Cases",
+        "short_kpi": "Timely closure of RTI Cases"
+      },
+      {
+        "kpi": "Timely Vetting of appeal and counter reply in Court cases",
+        "short_kpi": "Time Vett appe coun repl Cour"
+      },
+      {
+        "kpi": "Timely disposal of PGRMS, CPGRAMS etc.",
+        "short_kpi": "Time disp PGRM CPGR etc."
+      },
+      {
+        "kpi": "Timely closure of staff-related matters -Transfers, postings, promotion, Gradation list etc.",
+        "short_kpi": "Time clos staf matt -Tra post"
+      },
+      {
+        "kpi": "Timely closure of vigilance, disciplinary cases etc",
+        "short_kpi": "Time clos vigi disc case etc"
+      },
+      {
+        "kpi": "Timely disposal of permission for deputation, direct appointment cases",
+        "short_kpi": "Time disp perm depu dire appo"
+      },
+      {
+        "kpi": "Timely disposal of approval/Acknowledgement for passport, Property acquistion, foreign visit.",
+        "short_kpi": "Time disp appr pass Prop acqu"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Corporate",
+    "role": "Establishment Finance (EF)",
+    "short_role_name": "Esta Fina (EF)",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Timely clarification for delegation of Financial Powers",
+        "short_kpi": "Time clar dele Fina Powe"
+      },
+      {
+        "kpi": "% rental income realized vs target",
+        "short_kpi": "% rent inco real vs targ"
+      },
+      {
+        "kpi": "Timely Financial Concurrence to Dir. HR/Dir. Finance",
+        "short_kpi": "Time Fina Conc Dir. HR/D Fina"
+      },
+      {
+        "kpi": "Timely Approval of Medical Bills",
+        "short_kpi": "Timely Approval Medical Bills"
+      },
+      {
+        "kpi": "Timely Financial Concurrence to PGM (Admin.)",
+        "short_kpi": "Time Fina Conc PGM (Adm"
+      },
+      {
+        "kpi": "Timely Financial Concurrence to PGM (CIT.)",
+        "short_kpi": "Time Fina Conc PGM (CIT"
+      },
+      {
+        "kpi": "Timely Clarification for TA related matters",
+        "short_kpi": "Time Clar TA rela matt"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Corporate",
+    "role": "Finance Coordinator (FC)",
+    "short_role_name": "Fina Coor (FC)",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Timely preparation of Bulletin",
+        "short_kpi": "Timely preparation of Bulletin"
+      },
+      {
+        "kpi": "Timely preparation of Quarterly IPMS and IPMS analysis",
+        "short_kpi": "Time prep Quar IPMS IPMS anal"
+      },
+      {
+        "kpi": "Timely preparation of Minutes of Meetings and PPT for meeting",
+        "short_kpi": "Time prep Minu Meet PPT meet"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Corporate",
+    "role": "CFA – Finance",
+    "short_role_name": "CFA – Finance",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "% of CFA Revenue achieved vs target",
+        "short_kpi": "% CFA Reve achi vs targ"
+      },
+      {
+        "kpi": "CFA-vertical EBITDA margin",
+        "short_kpi": "CFA-vertical EBITDA margin"
+      },
+      {
+        "kpi": "% collections in first month",
+        "short_kpi": "% collections in first month"
+      },
+      {
+        "kpi": "% Reduction of Outstanding",
+        "short_kpi": "% Reduction of Outstanding"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Corporate",
+    "role": "CFA – Finance (cont'd)",
+    "short_role_name": "CFA – Fina (con",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Timely issue of bills",
+        "short_kpi": "Timely issue of bills"
+      },
+      {
+        "kpi": "Timely closure of PQ, RTI, Audit reports, Audit Paras, and PG cases",
+        "short_kpi": "Time clos PQ, RTI, Audi repo A"
+      },
+      {
+        "kpi": "Timely concurrence on CFA Finance proposals and Tariff proposals",
+        "short_kpi": "Time conc CFA Fina prop Tari p"
+      },
+      {
+        "kpi": "% Recovery of IUC, Port, and Infra amount",
+        "short_kpi": "% Reco IUC, Port Infr amou"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Corporate",
+    "role": "Internal Audit (IA)",
+    "short_role_name": "Internal Audit (IA)",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Timely completion of unit-specific and trial balance audits",
+        "short_kpi": "Time comp unit tria bala audi"
+      },
+      {
+        "kpi": "% compliance of internal critical finance controls",
+        "short_kpi": "% comp inte crit fina cont"
+      },
+      {
+        "kpi": "% reduction in audit admittances vs target",
+        "short_kpi": "% redu audi admi vs targ"
+      },
+      {
+        "kpi": "Timely resolution of audit queries and CAG and COPU paras",
+        "short_kpi": "Time reso audi quer CAG COPU p"
+      },
+      {
+        "kpi": "% closure of Revenue Assurance exceptions",
+        "short_kpi": "% clos Reve Assu exce"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Corporate",
+    "role": "Corporate Planning and Monitoring (CPM)",
+    "short_role_name": "Corp Plan Moni (CPM",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Timely compilation of updates on CAPEX Projects and Annual Plan",
+        "short_kpi": "Time comp upda CAPE Proj Annu"
+      },
+      {
+        "kpi": "Timely compilation of monthly updates of 150Cr+ projects to MoSPI",
+        "short_kpi": "Time comp mont upda 150C proj"
+      },
+      {
+        "kpi": "% MoU Targets achieved in previous FY",
+        "short_kpi": "% MoU Targ achi prev FY"
+      },
+      {
+        "kpi": "Timely submission of MoU Target assignment and Quarterly MoU Performance Evaluation of current FY",
+        "short_kpi": "Time subm MoU Targ assi Quar M"
+      },
+      {
+        "kpi": "Timely submission of inputs for MoU Target assignment for next FY",
+        "short_kpi": "Time subm inpu MoU Targ assi n"
+      },
+      {
+        "kpi": "Timely examination of Demands for Grants",
+        "short_kpi": "Time exam Dema Gran"
+      },
+      {
+        "kpi": "Timely submission of ATNs of Standing Committee report on Demands for Grants",
+        "short_kpi": "Time subm ATNs Stan Comm repo"
+      },
+      {
+        "kpi": "Timely resolution/submission of Parliament/DOT/MoPSI related matters/reports",
+        "short_kpi": "Time reso Parl rela matt"
+      },
+      {
+        "kpi": "Timely preparation and submission of Market Share reports (Revenue, subscriber based)",
+        "short_kpi": "Time prep subm Mark Shar repo"
+      },
+      {
+        "kpi": "Timely preparation of Brief/Background Notes/Exec. Summary (for CMD, Directors, etc.)",
+        "short_kpi": "Time prep Brie Note Summ ( CMD"
+      },
+      {
+        "kpi": "Exceptional work/Special requests from DOT/DPE/MoSPI",
+        "short_kpi": "Exce work requ from DOT/"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Circle",
+    "role": "Telecom Revenue Lead",
+    "short_role_name": "Telecom Revenue Lead",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "% of Revenue achieved vs target",
+        "short_kpi": "% Revenue achieved vs target"
+      },
+      {
+        "kpi": "Timely issue of bills",
+        "short_kpi": "Timely issue of bills"
+      },
+      {
+        "kpi": "% collections in first month (%) (in respective circle)",
+        "short_kpi": "% coll firs mont (%) ( resp ci"
+      },
+      {
+        "kpi": "% Reduction of Outstanding",
+        "short_kpi": "% Reduction of Outstanding"
+      },
+      {
+        "kpi": "Timely resolution of billing related complaints",
+        "short_kpi": "Time reso bill rela comp"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Circle",
+    "role": "IFA",
+    "short_role_name": "IFA",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Timely submission of all financial proposals",
+        "short_kpi": "Time subm all fina prop"
+      },
+      {
+        "kpi": "% of Revenue achieved vs target",
+        "short_kpi": "% Revenue achieved vs target"
+      },
+      {
+        "kpi": "% collections in first month (%) (in respective circle)",
+        "short_kpi": "% coll firs mont (%) ( resp ci"
+      },
+      {
+        "kpi": "% of vendor invoice processed on time",
+        "short_kpi": "% vend invo proc time"
+      },
+      {
+        "kpi": "% compliance of internal critical finance controls",
+        "short_kpi": "% comp inte crit fina cont"
+      },
+      {
+        "kpi": "Utilization of budget",
+        "short_kpi": "Utilization of budget"
+      },
+      {
+        "kpi": "EBITDA",
+        "short_kpi": "EBITDA"
+      },
+      {
+        "kpi": "% reduction in Opex costs",
+        "short_kpi": "% reduction in Opex costs"
+      },
+      {
+        "kpi": "Timely submission for all audit paras, audit qualifications and branch audits",
+        "short_kpi": "Time subm all audi para audi q"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Circle",
+    "role": "Accounting lead",
+    "short_role_name": "Accounting lead",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Timely resolution of outstanding reconciliation items (GL, Vendor Accounts,  Customer Accounts)",
+        "short_kpi": "Time reso outs reco item (GL,"
+      },
+      {
+        "kpi": "# of instances of sub-ledger mismatch",
+        "short_kpi": "# inst sub- mism"
+      },
+      {
+        "kpi": "Timely preparation of financial statements",
+        "short_kpi": "Time prep fina stat"
+      },
+      {
+        "kpi": "Timely resolution of audit paras and audit qualifications",
+        "short_kpi": "Time reso audi para audi qual"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Circle",
+    "role": "Banking lead",
+    "short_role_name": "Banking lead",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "% of vendor invoice processed on time",
+        "short_kpi": "% vend invo proc time"
+      },
+      {
+        "kpi": "Timely vendor payouts",
+        "short_kpi": "Timely vendor payouts"
+      },
+      {
+        "kpi": "% payments failed vs target",
+        "short_kpi": "% payments failed vs target"
+      },
+      {
+        "kpi": "Timely resolution of vendor billing disputes",
+        "short_kpi": "Time reso vend bill disp"
+      },
+      {
+        "kpi": "Timely reconciliation of BRS",
+        "short_kpi": "Timely reconciliation of BRS"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Circle",
+    "role": "Employee payroll and claim management lead",
+    "short_role_name": "Empl payr clai mana",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Timely employee claims settlement",
+        "short_kpi": "Time empl clai sett"
+      },
+      {
+        "kpi": "% of monthly payroll processed on time",
+        "short_kpi": "% mont payr proc time"
+      },
+      {
+        "kpi": "% of statutory payments (GST, TDS, EPF, etc.) processed within deadlines",
+        "short_kpi": "% stat paym (GST TDS, EPF, etc"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Circle",
+    "role": "Audit and Taxation lead",
+    "short_role_name": "Audit Taxation lead",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Timely completion of audit cycle from planning to reporting",
+        "short_kpi": "Time comp audi cycl from plan"
+      },
+      {
+        "kpi": "Timely Fllings for statutory compliances  (GST, TDS, GSTR-1, GSTR-3B, etc.)",
+        "short_kpi": "Time Flli stat comp (GST TDS,"
+      },
+      {
+        "kpi": "% of GST tax credit reconciled",
+        "short_kpi": "% of GST tax credit reconciled"
+      },
+      {
+        "kpi": "% compliance of internal critical finance controls",
+        "short_kpi": "% comp inte crit fina cont"
+      },
+      {
+        "kpi": "Timely resolution of audit paras and audit qualifications",
+        "short_kpi": "Time reso audi para audi qual"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Circle",
+    "role": "Staff Establishment & Accounts (SEA)",
+    "short_role_name": "Staf Esta & Acco (SE",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Timely closure of staff-related matters -Transfers, postings, promotion, Gradation list etc.",
+        "short_kpi": "Time clos staf matt -tra post"
+      },
+      {
+        "kpi": "Timely closure of vigilance, disciplinary cases, RTI etc.",
+        "short_kpi": "Time clos vigi disc case RTI e"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "Circle",
+    "role": "Govt. Projects (GP)- Finance Lead",
+    "short_role_name": "Govt Proj (GP) Fina",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "% PMC/AE&EC/Centage booking for GP vs Target",
+        "short_kpi": "% PMC/ book GP vs Targ"
+      },
+      {
+        "kpi": "Timely release of payment to vendors",
+        "short_kpi": "Timely release payment vendors"
+      },
+      {
+        "kpi": "Timely preparation and reporting of govt project accounts",
+        "short_kpi": "Time prep repo govt proj acco"
+      },
+      {
+        "kpi": "Timely closure of Audit reports and Audit paras",
+        "short_kpi": "Time clos Audi repo Audi PARA"
+      },
+      {
+        "kpi": "% Claim submission to CCA vs Expenditure",
+        "short_kpi": "% Clai subm CCA vs Expe"
+      },
+      {
+        "kpi": "Timely billing of Infra Space, Fiber lease and other charges",
+        "short_kpi": "Time bill Infr Spac Fibe leas"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "BA",
+    "role": "Telecom Revenue In-Charge",
+    "short_role_name": "Tele Reve -Cha",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "% of Revenue achieved vs target",
+        "short_kpi": "% Revenue achieved vs target"
+      },
+      {
+        "kpi": "Timely issue of bills",
+        "short_kpi": "Timely issue of bills"
+      },
+      {
+        "kpi": "% collections in first month",
+        "short_kpi": "% collections in first month"
+      },
+      {
+        "kpi": "% Reduction of Outstanding",
+        "short_kpi": "% Reduction of Outstanding"
+      },
+      {
+        "kpi": "% customer accounts disconnected due to non-payment of dues (in respective BA)",
+        "short_kpi": "% cust acco disc due non- dues"
+      },
+      {
+        "kpi": "Timely resolution of billing related complaints",
+        "short_kpi": "Time reso bill rela comp"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "BA",
+    "role": "IFA",
+    "short_role_name": "IFA",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Timely submission of all financial proposals",
+        "short_kpi": "Time subm all fina prop"
+      },
+      {
+        "kpi": "% of Revenue achieved vs target",
+        "short_kpi": "% Revenue achieved vs target"
+      },
+      {
+        "kpi": "% collections in first month (%) (in respective BA)",
+        "short_kpi": "% coll firs mont (%) ( resp BA"
+      },
+      {
+        "kpi": "% of vendor invoice processed on time",
+        "short_kpi": "% vend invo proc time"
+      },
+      {
+        "kpi": "% compliance of internal critical finance controls",
+        "short_kpi": "% comp inte crit fina cont"
+      },
+      {
+        "kpi": "Utilization of budget",
+        "short_kpi": "Utilization of budget"
+      },
+      {
+        "kpi": "EBITDA",
+        "short_kpi": "EBITDA"
+      },
+      {
+        "kpi": "Timely submission for all audit paras, audit qualifications and branch audits",
+        "short_kpi": "Time subm all audi para audi q"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "BA",
+    "role": "Accounting in-charge",
+    "short_role_name": "Accounting in-charge",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Timely resolution of outstanding reconciliation items (GL, Vendor Accounts,  Customer Accounts)",
+        "short_kpi": "Time reso outs reco item (GL,"
+      },
+      {
+        "kpi": "# of instances of sub-ledger mismatch",
+        "short_kpi": "# inst sub- mism"
+      },
+      {
+        "kpi": "Timely preparation of financial statements",
+        "short_kpi": "Time prep fina stat"
+      },
+      {
+        "kpi": "Timely resolution of audit paras and audit qualifications",
+        "short_kpi": "Time reso audi para audi qual"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "BA",
+    "role": "Banking In-charge",
+    "short_role_name": "Banking In-charge",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "% of vendor invoice processed on time",
+        "short_kpi": "% vend invo proc time"
+      },
+      {
+        "kpi": "Timely vendor payouts",
+        "short_kpi": "Timely vendor payouts"
+      },
+      {
+        "kpi": "% payments failed vs target",
+        "short_kpi": "% payments failed vs target"
+      },
+      {
+        "kpi": "Timely resolution of vendor billing disputes",
+        "short_kpi": "Time reso vend bill disp"
+      },
+      {
+        "kpi": "Timely reconciliation of BRS",
+        "short_kpi": "Timely reconciliation of BRS"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "BA",
+    "role": "Employee payroll and claim management lead",
+    "short_role_name": "Empl payr clai mana",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Timely employee claims settlement",
+        "short_kpi": "Time empl clai sett"
+      },
+      {
+        "kpi": "% of monthly payroll processed on time",
+        "short_kpi": "% mont payr proc time"
+      },
+      {
+        "kpi": "% of statutory payments (GST, TDS, EPF, etc.) processed within deadlines",
+        "short_kpi": "% stat paym (GST TDS, EPF, etc"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "BA",
+    "role": "Audit and Taxation in-charge",
+    "short_role_name": "Audi Taxa -cha",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "Timely completion of internal audit",
+        "short_kpi": "Time comp inte audi"
+      },
+      {
+        "kpi": "% compliance of internal critical finance controls",
+        "short_kpi": "% comp inte crit fina cont"
+      },
+      {
+        "kpi": "% of GST tax credit reconciled",
+        "short_kpi": "% of GST tax credit reconciled"
+      },
+      {
+        "kpi": "Timely resolution of internal/external/compliance related audit queries",
+        "short_kpi": "Time reso inte rela audi quer"
+      },
+      {
+        "kpi": "Timely resolution of compliance issues (e.g., GST mismatches, TDS corrections)",
+        "short_kpi": "Time reso comp issu (e.g GST m"
+      }
+    ]
+  },
+  {
+    "vertical": "Finance",
+    "level": "BA",
+    "role": "Cash Management in-charge",
+    "short_role_name": "Cash Mana -cha",
+    "role_description": "0",
+    "kpis": [
+      {
+        "kpi": "% of cash collected deposited in the bank on time",
+        "short_kpi": "% cash coll depo bank time"
+      },
+      {
+        "kpi": "% of cash reconciliations done without discrepancies",
+        "short_kpi": "% cash reco done with disc"
+      },
+      {
+        "kpi": "Timely resolution of cash reconciliation discrepancies",
+        "short_kpi": "Time reso cash reco disc"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "Admin employee affairs",
+    "short_role_name": "Admi empl affa",
+    "role_description": "Responsible for employee claims processing, welfare administration, asset allocation, facility management, security, and administrative operational efficiency.",
+    "kpis": [
+      {
+        "kpi": "Timely verification & processing of employee medical claims",
+        "short_kpi": "Time veri & proc empl medi cla"
+      },
+      {
+        "kpi": "Vehicle allotment as per entitlement",
+        "short_kpi": "Vehi allo as per enti"
+      },
+      {
+        "kpi": "Timely processing of employee claims (fuel, electricity, phone charges) as per entitlement",
+        "short_kpi": "Time proc empl clai (fue elec"
+      },
+      {
+        "kpi": "# of new hospitals empaneled for claim verification",
+        "short_kpi": "# new hosp empa clai veri"
+      },
+      {
+        "kpi": "# of welfare events conducted (sports tournaments, Yoga/health camps)",
+        "short_kpi": "# welf even cond (spo tour Yog"
+      },
+      {
+        "kpi": "Timely provisioning of BSNL connections to employees as per entitlement",
+        "short_kpi": "Time prov BSNL conn empl as pe"
+      },
+      {
+        "kpi": "Timely issuance of ID cards (BSNL ID, Medical ID, CGHS ID)",
+        "short_kpi": "Time issu ID card (BSN ID, Med"
+      },
+      {
+        "kpi": "Timely allocation of cubicle/cabin space & Office furniture",
+        "short_kpi": "Time allo cubi spac & Offi fur"
+      },
+      {
+        "kpi": "Efficient management of Dak operations",
+        "short_kpi": "Effi mana Dak oper"
+      },
+      {
+        "kpi": "Timely organization of meetings in conference room",
+        "short_kpi": "Time orga meet conf room"
+      },
+      {
+        "kpi": "Efficient management of housekeeping and security activities",
+        "short_kpi": "Effi mana hous secu acti"
+      },
+      {
+        "kpi": "Efficient coordination for maintenance of civil/electrical/horticulture works",
+        "short_kpi": "Effi coor main civi work"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "Staff quarters’ allotment coordinator",
+    "short_role_name": "Staf quar allo coor",
+    "role_description": "Responsible for maintenance planning, staff allocation, civil coordination, inspections, and rental revenue performance.",
+    "kpis": [
+      {
+        "kpi": "Proper maintenance of inventory of staff quarters",
+        "short_kpi": "Prop main inve staf quar"
+      },
+      {
+        "kpi": "Proper maintenance of waitlist for staff quarter allocation",
+        "short_kpi": "Prop main wait staf quar allo"
+      },
+      {
+        "kpi": "Coordination with civil wing for timely issuance of quarters",
+        "short_kpi": "Coor civi wing time issu quar"
+      },
+      {
+        "kpi": "Regular operations/maintenance of Inspection quarters (IQ)",
+        "short_kpi": "Regu oper Insp quar (IQ)"
+      },
+      {
+        "kpi": "Revenue earned from renting out quarters (under CROP policy)",
+        "short_kpi": "Reve earn from rent out quar ("
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "SCT cell - corporate office",
+    "short_role_name": "SCT cell - corp offi",
+    "role_description": "Responsible for grievance disposal time, regulatory compliance efficiency, staffing alignment, and awareness program effectiveness.",
+    "kpis": [
+      {
+        "kpi": "Timely disposal of SCT cell grievance cases",
+        "short_kpi": "Time disp SCT cell grie case"
+      },
+      {
+        "kpi": "Timely circulation of relevant orders from DoT/ DoPT/ DPE",
+        "short_kpi": "Time circ rele orde from DoT/"
+      },
+      {
+        "kpi": "SCT compliance monitoring in staff related matters",
+        "short_kpi": "SCT comp moni staf rela matt"
+      },
+      {
+        "kpi": "Conduct SCT policy/ compliance awareness programs",
+        "short_kpi": "Cond SCT poli comp awar prog"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "Employee pay & allowances",
+    "short_role_name": "Empl pay & allo",
+    "role_description": "Responsible for payroll processing, allowance verification, court payments, and grievance and RTI resolution efficiency.",
+    "kpis": [
+      {
+        "kpi": "Revision in pay & allowance components (as per direction from DPE/ Gov/ BSNL)",
+        "short_kpi": "Revi pay & allo comp (as per d"
+      },
+      {
+        "kpi": "Timely clarification of pay & allowance components to employees",
+        "short_kpi": "Time clar pay & allo comp empl"
+      },
+      {
+        "kpi": "Timely handling of pay & allowance related court cases",
+        "short_kpi": "Time hand pay & allo rela cour"
+      },
+      {
+        "kpi": "Timely handling of CPGRAM/ PGRMS/ PQ/ RTI queries on pay & allowances",
+        "short_kpi": "Time hand CPGR PGRM PQ/ RTI qu"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "Retirements & pension management",
+    "short_role_name": "Reti & pens mana",
+    "role_description": "Responsible for processing efficiency, clearance timelines, and case handling speed for pension and VRS-related matters.",
+    "kpis": [
+      {
+        "kpi": "Timely processing of pension claims",
+        "short_kpi": "Time proc pens clai"
+      },
+      {
+        "kpi": "Timely processing of voluntary retirement/retirement/resignation cases",
+        "short_kpi": "Time proc volu reti case"
+      },
+      {
+        "kpi": "Processing vigilence clearance for VRS employees",
+        "short_kpi": "Proc vigi clea VRS empl"
+      },
+      {
+        "kpi": "Timely handling of VRS related court cases",
+        "short_kpi": "Time hand VRS rela cour case"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "Casual labour staff matters",
+    "short_role_name": "Casu labo staf matt",
+    "role_description": "Responsible for timely handling of labour and CGIT court cases, legal response vetting, and effective management of wage and allowance policies.",
+    "kpis": [
+      {
+        "kpi": "Timely handling of labour regularization cases (TSM to RM)",
+        "short_kpi": "Time hand labo regu case (TSM"
+      },
+      {
+        "kpi": "Timely handling of CGIT/Labour court cases",
+        "short_kpi": "Time hand CGIT cour case"
+      },
+      {
+        "kpi": "Timely vetting of court replies & sending to circles",
+        "short_kpi": "Time vett cour repl & send cir"
+      },
+      {
+        "kpi": "Management of labour wages, DA, and special allowances",
+        "short_kpi": "Mana labo wage DA, spec allo"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "NE staff matters",
+    "short_role_name": "NE staff matters",
+    "role_description": "Responsible for timely disposal of disciplinary and retirement cases, legal response vetting, regulatory case processing, and preparation of workforce condition reports.",
+    "kpis": [
+      {
+        "kpi": "Timely dealing of disciplinary cases (working & retired NE)",
+        "short_kpi": "Time deal disc case (wor & ret"
+      },
+      {
+        "kpi": "Timely vetting of court replies & sending to circles",
+        "short_kpi": "Time vett cour repl & send cir"
+      },
+      {
+        "kpi": "Timely processing of rule 9 transfer cases",
+        "short_kpi": "Time proc rule 9 tran case"
+      },
+      {
+        "kpi": "Preparation work for conduction of LICE",
+        "short_kpi": "Prep work cond LICE"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "JTO staff matters",
+    "short_role_name": "JTO staff matters",
+    "role_description": "Responsible for disciplinary cases, legal vetting, transfer processing, workforce conditions, and service book accuracy.",
+    "kpis": [
+      {
+        "kpi": "Timely dealing of disciplinary cases (JTOs)",
+        "short_kpi": "Time deal disc case (JTO"
+      },
+      {
+        "kpi": "Timely vetting of court replies & sending to circles",
+        "short_kpi": "Time vett cour repl & send cir"
+      },
+      {
+        "kpi": "Timely processing of rule 8 & rule 9 transfer cases",
+        "short_kpi": "Time proc rule 8 & rule 9 tran"
+      },
+      {
+        "kpi": "Preparation work for conduction of LICE",
+        "short_kpi": "Prep work cond LICE"
+      },
+      {
+        "kpi": "Accurate maintenance of service book of JTOs",
+        "short_kpi": "Accu main serv book JTOs"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "Manpower planning & transformation nodal",
+    "short_role_name": "Manp plan & tran nod",
+    "role_description": "Responsible for quarterly target sharing, late operation maintenance, manpower planning coordination, and project transformation management efficiency.",
+    "kpis": [
+      {
+        "kpi": "Timely sharing of consolidated quarterly targets with the circles",
+        "short_kpi": "Time shar cons quar targ circ"
+      },
+      {
+        "kpi": "Maintainance & communication of latest operational & positional norms",
+        "short_kpi": "Main & comm late oper & posi n"
+      },
+      {
+        "kpi": "Timely manpower planning by coordinating across verticals",
+        "short_kpi": "Time manp plan by coor acro ve"
+      },
+      {
+        "kpi": "Management of Project Uday transformation",
+        "short_kpi": "Mana Proj Uday tran"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "IPMS nodal",
+    "short_role_name": "IPMS nodal",
+    "role_description": "Responsible for IPMS target assignment, achievement reporting, performance feedback systems, and bonus calculation and allocation accuracy.",
+    "kpis": [
+      {
+        "kpi": "Timely assignment of KPIs and targets in IPMS",
+        "short_kpi": "Time assi KPIs targ IPMS"
+      },
+      {
+        "kpi": "Timely reporting of achievement against KPIs and targets in IPMS",
+        "short_kpi": "Time repo achi agai KPIs targ"
+      },
+      {
+        "kpi": "Timely feeding of performance scores in sparrow system for ITS employees",
+        "short_kpi": "Time feed perf scor spar syst"
+      },
+      {
+        "kpi": "Calculation & allocation of bonus marks in IPMS",
+        "short_kpi": "Calc & allo bonu mark IPMS"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "HR vertical communica-tions & coordination",
+    "short_role_name": "HR vert comm & coor",
+    "role_description": "Responsible for timely preparation of board meetings, smooth high-level coordination, agenda management, presentation readiness, and effective stakeholder coordination.",
+    "kpis": [
+      {
+        "kpi": "Timely preparation of MC & Board meeting ATR (Action taken report)",
+        "short_kpi": "Time prep MC & Boar meet ATR ("
+      },
+      {
+        "kpi": "Smooth facilitation of HOCC conference (as applicable for the quarter)",
+        "short_kpi": "Smoo faci HOCC conf (as appl q"
+      },
+      {
+        "kpi": "Timely agenda preparation & compilation of presentation/minutes of meeting",
+        "short_kpi": "Time agen prep & comp pres mee"
+      },
+      {
+        "kpi": "Effective coordination with stakeholders as HR nodal",
+        "short_kpi": "Effe coor stak as HR noda"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "Association & union relations",
+    "short_role_name": "Asso & unio rela",
+    "role_description": "Responsible for industrial relations responsiveness, engagement effectiveness, strike impact, and proactive conflict management efficiency.",
+    "kpis": [
+      {
+        "kpi": "Timely response to issues raised by unions/associations",
+        "short_kpi": "Time resp issu rais by unio"
+      },
+      {
+        "kpi": "Facilitation of formal meetings with unions & associations for resolving issues",
+        "short_kpi": "Faci form meet unio & asso res"
+      },
+      {
+        "kpi": "% of man-days lost due to strike",
+        "short_kpi": "% man-days lost due strike"
+      },
+      {
+        "kpi": "Coordination for proactive strike management & timely reporting",
+        "short_kpi": "Coor proa stri mana & time rep"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Circle & BA",
+    "role": "HR - Legal matters - Contract labour & Absorption cases",
+    "short_role_name": "HR - Lega matt - Con",
+    "role_description": "Responsible for timely handling of legal cases such as absconding and labour court matters, appeal filing efficiency, and stakeholder coordination for case resolution.",
+    "kpis": [
+      {
+        "kpi": "Timely handling of absorption cases",
+        "short_kpi": "Time hand abso case"
+      },
+      {
+        "kpi": "Timely handling of Labour court/ CGIT cases",
+        "short_kpi": "Time hand Labo cour CGIT case"
+      },
+      {
+        "kpi": "Timely filing of appeal in higher courts",
+        "short_kpi": "Time fili appe high cour"
+      },
+      {
+        "kpi": "Efficient coordination with stakeholders for case resolution",
+        "short_kpi": "Effi coor stak case reso"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "HR audit & compliance nodal officer",
+    "short_role_name": "HR audi & comp noda",
+    "role_description": "Responsible for effective coordination with external stakeholders, timely audit execution, resolution of audit observations, and prompt submission of responses to audit authorities.",
+    "kpis": [
+      {
+        "kpi": "Effective coordination with external stakeholders for audit execution",
+        "short_kpi": "Effe coor exte stak audi exec"
+      },
+      {
+        "kpi": "Timely dissemination of audit memos to concerned HR verticals",
+        "short_kpi": "Time diss audi memo conc HR ve"
+      },
+      {
+        "kpi": "Timely coordination for resolution of audit irregularities",
+        "short_kpi": "Time coor reso audi irre"
+      },
+      {
+        "kpi": "Timely coordination for submitting responses to audit authorities",
+        "short_kpi": "Time coor subm resp audi auth"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "Training nodal",
+    "short_role_name": "Training nodal",
+    "role_description": "Responsible for training effectiveness, employee skill development, role-based capability building, and competency alignment across workforce.",
+    "kpis": [
+      {
+        "kpi": "Average training satisfaction score",
+        "short_kpi": "Aver trai sati scor"
+      },
+      {
+        "kpi": "% of employees completing specific trainings for the quarter (e.g., Mission Karamyogi)",
+        "short_kpi": "% empl comp spec trai quar (e."
+      },
+      {
+        "kpi": "% of employees who have completed trainings associated for their role competencies",
+        "short_kpi": "% empl who have comp trai asso"
+      },
+      {
+        "kpi": "% of roles for which competencies and skill requirements are captured",
+        "short_kpi": "% role whic comp skil requ are"
+      },
+      {
+        "kpi": "% of competencies for which training programs are made available in BSNL",
+        "short_kpi": "% comp whic trai prog are made"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "Recruitment coordinator",
+    "short_role_name": "Recr coor",
+    "role_description": "Responsible for recruitment coordination, exam verification, vacancy approval, and recruitment invoice processing efficiency.",
+    "kpis": [
+      {
+        "kpi": "Effective coordination with agency for execution of recruitment examination",
+        "short_kpi": "Effe coor agen exec recr exam"
+      },
+      {
+        "kpi": "Coordination with verticals & examination agency for creation of question paper",
+        "short_kpi": "Coor vert & exam agen crea que"
+      },
+      {
+        "kpi": "Timely fulfilment of approved vacancies (via direct recruitment) for the quarter",
+        "short_kpi": "Time fulf appr vaca (via dire"
+      },
+      {
+        "kpi": "Timely processing of recruitment agency invoice",
+        "short_kpi": "Time proc recr agen invo"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "Group A/B employee staff matters",
+    "short_role_name": "Grou A/B empl staf m",
+    "role_description": "Responsible for transfers, grievances, disciplinary cases, deputation approvals, NOC issuance, and retirement processing efficiency.",
+    "kpis": [
+      {
+        "kpi": "Timely processing of transfer requests",
+        "short_kpi": "Time proc tran requ"
+      },
+      {
+        "kpi": "Timely resolution of disciplinary matters",
+        "short_kpi": "Time reso disc matt"
+      },
+      {
+        "kpi": "Effective handling of individual grievances",
+        "short_kpi": "Effe hand indi grie"
+      },
+      {
+        "kpi": "Timely processing of Probity & efficacy cases",
+        "short_kpi": "Time proc Prob & effi case"
+      },
+      {
+        "kpi": "Timely approval and forwarding of applications for Deputation/ PESB",
+        "short_kpi": "Time appr forw appl Depu PESB"
+      },
+      {
+        "kpi": "Issuance of NOC for going abroad/ higher studies/ passport renewal",
+        "short_kpi": "Issu NOC goin abro high stud p"
+      },
+      {
+        "kpi": "Timely processing of retirement activities (retirement order, leave encashment etc.)",
+        "short_kpi": "Time proc reti acti (ret orde"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "Promotions management",
+    "short_role_name": "Prom mana",
+    "role_description": "Responsible for accuracy of HR records, promotion timeliness, roster management, and vacancy-based career progression execution.",
+    "kpis": [
+      {
+        "kpi": "Accurate maintenance of seniority list (SDE and above)",
+        "short_kpi": "Accu main seni list (SDE abov"
+      },
+      {
+        "kpi": "Accurate maintenance of e-roster",
+        "short_kpi": "Accurate maintenance e-roster"
+      },
+      {
+        "kpi": "Timely execution of TBP (time bound promotions)",
+        "short_kpi": "Time exec TBP (tim boun prom"
+      },
+      {
+        "kpi": "Execution of post based promotions as per vacancies",
+        "short_kpi": "Exec post base prom as per vac"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "HR policy management",
+    "short_role_name": "HR policy management",
+    "role_description": "Responsible for periodic review of recruitment, transfer, and promotion policies and effective communication for query clarification.",
+    "kpis": [
+      {
+        "kpi": "Periodic review & updation of recruitment rules",
+        "short_kpi": "Peri revi & upda recr rule"
+      },
+      {
+        "kpi": "Periodic review & updation of transfer policy",
+        "short_kpi": "Peri revi & upda tran poli"
+      },
+      {
+        "kpi": "Periodic review & updation of promotion policy",
+        "short_kpi": "Peri revi & upda prom poli"
+      },
+      {
+        "kpi": "Effective communication of policies and clarification of queries",
+        "short_kpi": "Effe comm poli clar quer"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "HR - Legal matters Group A/B cader",
+    "short_role_name": "HR - Lega matt Grou",
+    "role_description": "Responsible for monitoring and reporting of court cases, timely filing of appeals, coordination with advocates, and efficient preparation and circulation of legal replies.",
+    "kpis": [
+      {
+        "kpi": "Monitoring & reporting instances of contempt to court",
+        "short_kpi": "Moni & repo inst cont cour"
+      },
+      {
+        "kpi": "Timely filing of appeal in higher courts",
+        "short_kpi": "Time fili appe high cour"
+      },
+      {
+        "kpi": "Efficient coordination with circles and advocates",
+        "short_kpi": "Effi coor circ advo"
+      },
+      {
+        "kpi": "Timely vetting of court replies & sending to circles",
+        "short_kpi": "Time vett cour repl & send cir"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate",
+    "role": "HR tech nodal",
+    "short_role_name": "HR tech nodal",
+    "role_description": "Responsible for ERP, employee app, IPMS, OTP portal enhancements, and operational process improvements implementation.",
+    "kpis": [
+      {
+        "kpi": "Coordination for timely implementation of enhancements to ERP core system",
+        "short_kpi": "Coor time impl enha ERP core s"
+      },
+      {
+        "kpi": "Coordination for timely implementation of enhancements to Employee app",
+        "short_kpi": "Coor time impl enha Empl app"
+      },
+      {
+        "kpi": "Coordination for timely implementation of enhancements to IPMS system",
+        "short_kpi": "Coor time impl enha IPMS syst"
+      },
+      {
+        "kpi": "Coordination for timely implementation of enhancements to OTP portal",
+        "short_kpi": "Coor time impl enha OTP port"
+      },
+      {
+        "kpi": "Enhancement of existing operational processes",
+        "short_kpi": "Enha exis oper proc"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Circle & BA",
+    "role": "HR Lead",
+    "short_role_name": "HR Lead",
+    "role_description": "Responsible for IPMS, training, land monetization, property regularization, transactions, grievances, pensions, court cases, compliance.",
+    "kpis": [
+      {
+        "kpi": "Timely assignment of KPIs/targets & population of achievement in IPMS",
+        "short_kpi": "Time assi KPIs & popu achi IPM"
+      },
+      {
+        "kpi": "% completion rate of circle/BA for assigned trainings",
+        "short_kpi": "% comp rate circ assi trai"
+      },
+      {
+        "kpi": "Revenue earned from land monetization (Lakhs)",
+        "short_kpi": "Reve earn from land mone (Lak"
+      },
+      {
+        "kpi": "% of land parcels with 100% mutation completed out of total mutable sites",
+        "short_kpi": "% land parc 100% muta comp out"
+      },
+      {
+        "kpi": "Average TAT for processing of incoming & outgoing transfer cases",
+        "short_kpi": "Aver TAT proc inco & outg tran"
+      },
+      {
+        "kpi": "Efficient management of housekeeping and security activities",
+        "short_kpi": "Effi mana hous secu acti"
+      },
+      {
+        "kpi": "Timely response to PGRMS/CPGRAM/PQ/RTI queries",
+        "short_kpi": "Time resp PGRM quer"
+      },
+      {
+        "kpi": "Timely closure of Pension claims within 2 weeks",
+        "short_kpi": "Time clos Pens clai with 2 wee"
+      },
+      {
+        "kpi": "Timely dealing of court cases",
+        "short_kpi": "Timely dealing of court cases"
+      },
+      {
+        "kpi": "Adherence to operational and positional norms defined by corporate office",
+        "short_kpi": "Adhe oper posi norm defi by co"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Circle & BA",
+    "role": "HR Eletrical Wing",
+    "short_role_name": "HR Eletrical Wing",
+    "role_description": "Responsible fors cost savings achieved through electricity optimization and scrap monetization efficiency.",
+    "kpis": [
+      {
+        "kpi": "Cost saving in electricity & crap monetisation",
+        "short_kpi": "Cost savi elec & crap mone"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Circle & BA",
+    "role": "Admin office & quarters' affairs",
+    "short_role_name": "Admi offi & quar aff",
+    "role_description": "Responsible for space allocation, file management, meetings, housing security, maintenance, staffing, and rental revenue.",
+    "kpis": [
+      {
+        "kpi": "Timely allocation of cubicle/cabin space & Office furniture",
+        "short_kpi": "Time allo cubi spac & Offi fur"
+      },
+      {
+        "kpi": "Efficient management of Dak operations",
+        "short_kpi": "Effi mana Dak oper"
+      },
+      {
+        "kpi": "Timely organization of meetings in conference room",
+        "short_kpi": "Time orga meet conf room"
+      },
+      {
+        "kpi": "Efficient management of housekeeping and security activities",
+        "short_kpi": "Effi mana hous secu acti"
+      },
+      {
+        "kpi": "Efficient coordination for maintenance of civil/electrical/horticulture works",
+        "short_kpi": "Effi coor main civi work"
+      },
+      {
+        "kpi": "Proper maintenance of inventory/waitlist & efficient  allotment for staff quarters",
+        "short_kpi": "Prop main inve & effi allo sta"
+      },
+      {
+        "kpi": "Revenue earned from renting out quarters (under CROP policy)",
+        "short_kpi": "Reve earn from rent out quar ("
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Circle & BA",
+    "role": "Staff HR affairs",
+    "short_role_name": "Staff HR affairs",
+    "role_description": "Responsible for disciplinary cases, transfers, grievances, compliance, union issues, strikes, training, and IPMS management.",
+    "kpis": [
+      {
+        "kpi": "Timely dealing of disciplinary cases",
+        "short_kpi": "Time deal disc case"
+      },
+      {
+        "kpi": "Timely processing of transfer requests",
+        "short_kpi": "Time proc tran requ"
+      },
+      {
+        "kpi": "Effective handling of individual staff grievances",
+        "short_kpi": "Effe hand indi staf grie"
+      },
+      {
+        "kpi": "Adherence to operational and positional norms defined by corporate office",
+        "short_kpi": "Adhe oper posi norm defi by co"
+      },
+      {
+        "kpi": "Timely response to issues raised by unions/associations",
+        "short_kpi": "Time resp issu rais by unio"
+      },
+      {
+        "kpi": "% of man-days lost due to strike",
+        "short_kpi": "% man-days lost due strike"
+      },
+      {
+        "kpi": "% completion rate of circle/ BA for assigned trainings",
+        "short_kpi": "% comp rate circ BA assi trai"
+      },
+      {
+        "kpi": "Timely assignment of KPIs and targets in IPMS in first 10 days of current quarter",
+        "short_kpi": "Time assi KPIs targ IPMS firs"
+      },
+      {
+        "kpi": "Timely filling of achievement in IPMS within first 20 days of next quarter",
+        "short_kpi": "Time fill achi IPMS with firs"
+      },
+      {
+        "kpi": "Maintenance of seniority list of circle cader employees",
+        "short_kpi": "Main seni list circ cade empl"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Circle & BA",
+    "role": "Staff Legal affairs",
+    "short_role_name": "Staff Legal affairs",
+    "role_description": "Responsible for monitoring and reporting of court cases, timely filing of appeals, coordination with corporate HR and advocates, and efficient preparation and circulation of legal replies.",
+    "kpis": [
+      {
+        "kpi": "Monitoring & reporting instances of contempt to court",
+        "short_kpi": "Moni & repo inst cont cour"
+      },
+      {
+        "kpi": "Timely filing of appeal in higher courts",
+        "short_kpi": "Time fili appe high cour"
+      },
+      {
+        "kpi": "Efficient coordination with corporate HR and advocates",
+        "short_kpi": "Effi coor corp HR advo"
+      },
+      {
+        "kpi": "Timely vetting of court replies & sending to circles",
+        "short_kpi": "Time vett cour repl & send cir"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "Corporate office, Circle & BA",
+    "role": "Public information & grievance redressal",
+    "short_role_name": "Publ info & grie red",
+    "role_description": "Responsible for timely closure of PGRM and CPGR grievances, RTI response within 30 days, and efficient disposal of VIP cases.",
+    "kpis": [
+      {
+        "kpi": "Timely closure of PGRMS/CPGRAM/RTI/PQ/VIP cases and queries",
+        "short_kpi": "Time clos PGRM case quer"
+      },
+      {
+        "kpi": "Timely response to RTI within 30 days",
+        "short_kpi": "Time resp RTI with 30 days"
+      },
+      {
+        "kpi": "Timely closure of PGRMS/ CPGRAM cases within 15 days",
+        "short_kpi": "Time clos PGRM CPGR case with"
+      },
+      {
+        "kpi": "Timely disposal of VIP cases",
+        "short_kpi": "Timely disposal of VIP cases"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "2G & 3G Optimization Lead (CM)",
+    "short_role_name": "2G & 3G Opti Lead (C",
+    "role_description": "Responsible for 2G/3G network availability, call success and drop rates, and service fault resolution time performance.",
+    "kpis": [
+      {
+        "kpi": "1.1 % of 2G Cells with Network Availability >98%",
+        "short_kpi": "1.1 % 2G Cell Netw Avai >98%"
+      },
+      {
+        "kpi": "1.2 % of 2G cells with TCH Drop <1.5%",
+        "short_kpi": "1.2 % 2G cells TCH Drop <1.5%"
+      },
+      {
+        "kpi": "1.3 % of 3G Cells with network availability >98%",
+        "short_kpi": "1.3 % 3G Cell netw avai >98%"
+      },
+      {
+        "kpi": "1.4 % of 3G cells with CS Call Setup Success Rate > 99%",
+        "short_kpi": "1.4 % 3G cell CS Call Setu Suc"
+      },
+      {
+        "kpi": "1.5 Servicing Affecting Faults MTTR",
+        "short_kpi": "1.5 Serv Affe Faul MTTR"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "4G Optimization Lead (CM)",
+    "short_role_name": "4G Opti Lead (CM)",
+    "role_description": "Responsible for 4G network availability, call/session setup success rates (RRC and ERAB), VoLTE performance, and service fault MTTR.",
+    "kpis": [
+      {
+        "kpi": "2.1 % of 4G Cells with network availability >98%",
+        "short_kpi": "2.1 % 4G Cell netw avai >98%"
+      },
+      {
+        "kpi": "2.2 % of 4G Cells with RRC Setup Success Rate>98%",
+        "short_kpi": "2.2 % 4G Cell RRC Setu Succ Ra"
+      },
+      {
+        "kpi": "2.3 % of 4G cells with ERAB Setup Success Rate >98%",
+        "short_kpi": "2.3 % 4G cell ERAB Setu Succ R"
+      },
+      {
+        "kpi": "2.4 % of 4G cells with VoLTE ERAB SS Rate >99.5%",
+        "short_kpi": "2.4 % 4G cell VoLT ERAB SS Rat"
+      },
+      {
+        "kpi": "2.5 Servicing Affecting Faults MTTR",
+        "short_kpi": "2.5 Serv Affe Faul MTTR"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "Mobility Core Lead (CM)",
+    "short_role_name": "Mobi Core Lead (CM)",
+    "role_description": "Responsible for core network call setup success, paging success, inter-MSC handover, bearer modification success, processor load, and fault MTTR performance.",
+    "kpis": [
+      {
+        "kpi": "3.1 Call Setup Success Rate (Across Network)",
+        "short_kpi": "3.1 Call Setu Succ Rate (Acr N"
+      },
+      {
+        "kpi": "3.2 Paging Success Rate (Across Network)",
+        "short_kpi": "3.2 Pagi Succ Rate (Acr Netw"
+      },
+      {
+        "kpi": "3.3 Inter MSC Handover Success Rate",
+        "short_kpi": "3.3 Inte MSC Hand Succ Rate"
+      },
+      {
+        "kpi": "3.4 Bearer Modification Success Rate",
+        "short_kpi": "3.4 Bear Modi Succ Rate"
+      },
+      {
+        "kpi": "3.5 Peak Processor Load",
+        "short_kpi": "3.5 Peak Processor Load"
+      },
+      {
+        "kpi": "3.6 Fault MTTR",
+        "short_kpi": "3.6 Fault MTTR"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "2G & 3G OEM Specialist (CM)",
+    "short_role_name": "2G & 3G OEM Spec (CM",
+    "role_description": "Responsible for 2G/3G network availability, call success and drop rates, and service fault resolution time performance.",
+    "kpis": [
+      {
+        "kpi": "4.1 % of 2G Cells with Network Availability >98%",
+        "short_kpi": "4.1 % 2G Cell Netw Avai >98%"
+      },
+      {
+        "kpi": "4.2 % of 2G cells with TCH Drop <1.5%",
+        "short_kpi": "4.2 % 2G cells TCH Drop <1.5%"
+      },
+      {
+        "kpi": "4.3 % of 3G Cells with network availability >98%",
+        "short_kpi": "4.3 % 3G Cell netw avai >98%"
+      },
+      {
+        "kpi": "4.4 % of 3G cells with CS Call Setup Success Rate > 99%",
+        "short_kpi": "4.4 % 3G cell CS Call Setu Suc"
+      },
+      {
+        "kpi": "4.5 Servicing Affecting Faults MTTR",
+        "short_kpi": "4.5 Serv Affe Faul MTTR"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "4G OEM Specialist (CM)",
+    "short_role_name": "4G OEM Spec (CM)",
+    "role_description": "Responsible for 4G network availability, RRC and ERAB session success rates, VoLTE performance, and service fault MTTR.",
+    "kpis": [
+      {
+        "kpi": "5.1 % of 4G Cells with network availability >98%",
+        "short_kpi": "5.1 % 4G Cell netw avai >98%"
+      },
+      {
+        "kpi": "5.2 % of 4G Cells with RRC Setup Success Rate>98%",
+        "short_kpi": "5.2 % 4G Cell RRC Setu Succ Ra"
+      },
+      {
+        "kpi": "5.3 % of 4G cells with ERAB Setup Success Rate >98%",
+        "short_kpi": "5.3 % 4G cell ERAB Setu Succ R"
+      },
+      {
+        "kpi": "5.4 % of 4G cells with VoLTE ERAB SS Rate >99.5%",
+        "short_kpi": "5.4 % 4G cell VoLT ERAB SS Rat"
+      },
+      {
+        "kpi": "5.5 Servicing Affecting Faults MTTR",
+        "short_kpi": "5.5 Serv Affe Faul MTTR"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "2G/3G Daily Performance Management Surveillance MIS (CM)",
+    "short_role_name": "2G/3 Dail Perf Mana",
+    "role_description": "Responsible for 2G/3G network availability, call setup success, call drop rates, and handover performance.",
+    "kpis": [
+      {
+        "kpi": "6.1 % of 2G Cells with Network Availability >98%",
+        "short_kpi": "6.1 % 2G Cell Netw Avai >98%"
+      },
+      {
+        "kpi": "6.2 % of 2G Cells with SD drop <1%",
+        "short_kpi": "6.2 % 2G Cells SD drop <1%"
+      },
+      {
+        "kpi": "6.3 % of 2G cells with TCH Drop <1.5%",
+        "short_kpi": "6.3 % 2G cells TCH Drop <1.5%"
+      },
+      {
+        "kpi": "6.4 % of 2G cells with Outgoing HOSR > 95%",
+        "short_kpi": "6.4 % 2G cell Outg HOSR > 95%"
+      },
+      {
+        "kpi": "6.5 % of 3G Cells with network availability >98%",
+        "short_kpi": "6.5 % 3G Cell netw avai >98%"
+      },
+      {
+        "kpi": "6.6 % of 3G cells with CS Call Setup Success Rate > 99%",
+        "short_kpi": "6.6 % 3G cell CS Call Setu Suc"
+      },
+      {
+        "kpi": "6.7 % of 3G Cells with IRAT HO Success Rate >98%",
+        "short_kpi": "6.7 % 3G Cell IRAT HO Succ Rat"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "4G Daily Performance Management Surveillance MIS (CM)",
+    "short_role_name": "4G Dail Perf Mana Su",
+    "role_description": "Responsible for 4G network availability, RRC and ERAB setup success, VoLTE performance, and user data throughput.",
+    "kpis": [
+      {
+        "kpi": "7.1 % of 4G Cells with network availability >98%",
+        "short_kpi": "7.1 % 4G Cell netw avai >98%"
+      },
+      {
+        "kpi": "7.2 % of 4G Cells with RRC Setup Success Rate>98%",
+        "short_kpi": "7.2 % 4G Cell RRC Setu Succ Ra"
+      },
+      {
+        "kpi": "7.3 % of 4G cells with ERAB Setup Success Rate >98%",
+        "short_kpi": "7.3 % 4G cell ERAB Setu Succ R"
+      },
+      {
+        "kpi": "7.4 % of 4G cells with VoLTE ERAB SS Rate >99.5%",
+        "short_kpi": "7.4 % 4G cell VoLT ERAB SS Rat"
+      },
+      {
+        "kpi": "7.5 % of 4G cells with User DL Throughput <3 Mbps",
+        "short_kpi": "7.5 % 4G cell User DL Thro <3"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "Daily BSS fault management and ticketing 4G",
+    "short_role_name": "Dail BSS faul mana t",
+    "role_description": "Responsible for service impact levels, fault resolution speed (MTTR), network reliability (MTBF), and efficiency in resolving and closing L3 support tickets.",
+    "kpis": [
+      {
+        "kpi": "8.1 Monthly Average of Number of Service Affecting Faults",
+        "short_kpi": "8.1 Mont Aver Numb Serv Affe F"
+      },
+      {
+        "kpi": "8.2 Servicing Affecting Faults MTTR",
+        "short_kpi": "8.2 Serv Affe Faul MTTR"
+      },
+      {
+        "kpi": "8.3 Average Mean Time Between Faults (MTBF)",
+        "short_kpi": "8.3 Aver Mean Time Betw Faul ("
+      },
+      {
+        "kpi": "8.4 Coordination & closure of L3 tickets towards OEM",
+        "short_kpi": "8.4 Coor & clos L3 tick towa O"
+      },
+      {
+        "kpi": "9.2 Servicing Affecting Faults MTTR",
+        "short_kpi": "9.2 Serv Affe Faul MTTR"
+      },
+      {
+        "kpi": "9.3 Mean Time Between Faults",
+        "short_kpi": "9.3 Mean Time Between Faults"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "Core PM and FM",
+    "short_role_name": "Core PM and FM",
+    "role_description": "Responsible for core network performance including call setup, location update, paging, inter-MSC handover, bearer modification success, port utilization, processor load, and fault MTTR.",
+    "kpis": [
+      {
+        "kpi": "10.1 Call Setup Success Rate (Across Network)",
+        "short_kpi": "10.1 Call Setu Succ Rate (Acr"
+      },
+      {
+        "kpi": "10.2 Location Update Success Ratio (Across Network)",
+        "short_kpi": "10.2 Loca Upda Succ Rati (Acr"
+      },
+      {
+        "kpi": "10.3 Paging Success Rate (Across Network)",
+        "short_kpi": "10.3 Pagi Succ Rate (Acr Netw"
+      },
+      {
+        "kpi": "10.4 Inter MSC Handover Success Rate",
+        "short_kpi": "10.4 Inte MSC Hand Succ Rate"
+      },
+      {
+        "kpi": "10.5 Bearer Modification Success Rate",
+        "short_kpi": "10.5 Bear Modi Succ Rate"
+      },
+      {
+        "kpi": "10.6 All Port Utilization",
+        "short_kpi": "10.6 All Port Utilization"
+      },
+      {
+        "kpi": "10.7 Peak Processor Load",
+        "short_kpi": "10.7 Peak Processor Load"
+      },
+      {
+        "kpi": "10.8 Fault MTTR",
+        "short_kpi": "10.8 Fault MTTR"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "FTTH Lead (CFA)",
+    "short_role_name": "FTTH Lead (CFA)",
+    "role_description": "Responsible for OLT/BNG network availability, uplink utilization efficiency, and fault resolution time (MTTR) performance.",
+    "kpis": [
+      {
+        "kpi": "11.1 OLT Uplink Utilization",
+        "short_kpi": "11.1 OLT Uplink Utilization"
+      },
+      {
+        "kpi": "11.2 OLT Availability",
+        "short_kpi": "11.2 OLT Availability"
+      },
+      {
+        "kpi": "11.3 BNG Availability",
+        "short_kpi": "11.3 BNG Availability"
+      },
+      {
+        "kpi": "11.4 BNG Uplink Utilization",
+        "short_kpi": "11.4 BNG Uplink Utilization"
+      },
+      {
+        "kpi": "11.5 Faults MTTR",
+        "short_kpi": "11.5 Faults MTTR"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "Performance Monitoring Team (CFA)",
+    "short_role_name": "Perf Moni Team (CFA",
+    "role_description": "Responsible for OLT/ONT/BNG performance including uplink and PON utilization, availability, optical power quality, and CRC error rates.",
+    "kpis": [
+      {
+        "kpi": "12.1 OLT Uplink Utilization",
+        "short_kpi": "12.1 OLT Uplink Utilization"
+      },
+      {
+        "kpi": "12.2 OLT Availability",
+        "short_kpi": "12.2 OLT Availability"
+      },
+      {
+        "kpi": "12.3 ONT I/O Optical Power",
+        "short_kpi": "12.3 ONT I/O Optical Power"
+      },
+      {
+        "kpi": "12.4 OLT PON Utlization",
+        "short_kpi": "12.4 OLT PON Utlization"
+      },
+      {
+        "kpi": "12.5 BNG Availability",
+        "short_kpi": "12.5 BNG Availability"
+      },
+      {
+        "kpi": "12.6 BNG Uplink Utilization",
+        "short_kpi": "12.6 BNG Uplink Utilization"
+      },
+      {
+        "kpi": "12.7 CRC Error (Uplink/Downlink)",
+        "short_kpi": "12.7 CRC Erro (Upl"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "Fault Resolution Team (CFA)",
+    "short_role_name": "Faul Reso Team (CFA",
+    "role_description": "Responsible for network reliability through average fault count, MTTR, mean time between failures, and overall network availability performance.",
+    "kpis": [
+      {
+        "kpi": "13.1 Monthly Average of Number of Faults",
+        "short_kpi": "13.1 Mont Aver Numb Faul"
+      },
+      {
+        "kpi": "13.2 Faults MTTR",
+        "short_kpi": "13.2 Faults MTTR"
+      },
+      {
+        "kpi": "13.3 Average Mean Time Between Faults (MTBF)",
+        "short_kpi": "13.3 Aver Mean Time Betw Faul"
+      },
+      {
+        "kpi": "13.4 Network availability >99%",
+        "short_kpi": "13.4 Network availability >99%"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "EB Lead (EB)",
+    "short_role_name": "EB Lead (EB)",
+    "role_description": "Responsible for transmission bandwidth utilization, link/circuit uptime, port-level integration quality, and fault resolution time (MTTR).",
+    "kpis": [
+      {
+        "kpi": "14.1 Transmit/Receive Bandwidth Utilization",
+        "short_kpi": "14.1 Tran Band Util"
+      },
+      {
+        "kpi": "14.2 % of LC uptime >99%",
+        "short_kpi": "14.2 % of LC uptime >99%"
+      },
+      {
+        "kpi": "14.3 % Port level stitching",
+        "short_kpi": "14.3 % Port level stitching"
+      },
+      {
+        "kpi": "14.4 Fault MTTR",
+        "short_kpi": "14.4 Fault MTTR"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "Performance Monitoring Team (EB)",
+    "short_role_name": "Perf Moni Team (EB)",
+    "role_description": "Responsible for transmission bandwidth utilization, throughput performance against SLA, LC uptime, CRC errors, port stitching quality, and ISP peering utilization.",
+    "kpis": [
+      {
+        "kpi": "15.1 Transmit/Receive Bandwidth Utilization",
+        "short_kpi": "15.1 Tran Band Util"
+      },
+      {
+        "kpi": "15.2 Average Throughput vs SLA",
+        "short_kpi": "15.2 Average Throughput vs SLA"
+      },
+      {
+        "kpi": "15.3 % of LC uptime >99%",
+        "short_kpi": "15.3 % of LC uptime >99%"
+      },
+      {
+        "kpi": "15.4 CRC Error (Uplink/Downlink) Port level",
+        "short_kpi": "15.4 CRC Erro (Upl Port leve"
+      },
+      {
+        "kpi": "15.5 % Port level stitching",
+        "short_kpi": "15.5 % Port level stitching"
+      },
+      {
+        "kpi": "15.6 ISP Peering Utilization",
+        "short_kpi": "15.6 ISP Peering Utilization"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "Fault Resolution Team (EB)",
+    "short_role_name": "Faul Reso Team (EB)",
+    "role_description": "Responsible for zero-compliant LC IDs, fault resolution time (MTTR), average fault occurrences, and mean time between failures for network reliability.",
+    "kpis": [
+      {
+        "kpi": "16.1 %ages LC IDs with zero complaints",
+        "short_kpi": "16.1 %age LC IDs zero comp"
+      },
+      {
+        "kpi": "16.2 Fault MTTR",
+        "short_kpi": "16.2 Fault MTTR"
+      },
+      {
+        "kpi": "16.3 Monthly Average of Number of Faults",
+        "short_kpi": "16.3 Mont Aver Numb Faul"
+      },
+      {
+        "kpi": "16.4 Average Mean Time Between Faults (MTBF)",
+        "short_kpi": "16.4 Aver Mean Time Betw Faul"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "Transmission Lead (Tx)",
+    "short_role_name": "Tran Lead (Tx)",
+    "role_description": "Responsible for CPAN/MAAN utilization, port stitching, network availability, OTN bandwidth, and alarm resolution efficiency.",
+    "kpis": [
+      {
+        "kpi": "17.1 CPAN/MAAN Port Level Utilization",
+        "short_kpi": "17.1 CPAN Port Leve Util"
+      },
+      {
+        "kpi": "17.2 % Port level stitching at Tx Nodes",
+        "short_kpi": "17.2 % Port leve stit at Tx No"
+      },
+      {
+        "kpi": "17.3 CPAN/MAAN NE Availability",
+        "short_kpi": "17.3 CPAN/MAAN NE Availability"
+      },
+      {
+        "kpi": "17.4 OTN Bandwidth Utilization",
+        "short_kpi": "17.4 OTN Bandwidth Utilization"
+      },
+      {
+        "kpi": "17.5 Service Affecting Alarm Fault Resolution MTTR",
+        "short_kpi": "17.5 Serv Affe Alar Faul Reso"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "Performance Monitoring Team (Tx)",
+    "short_role_name": "Perf Moni Team (Tx)",
+    "role_description": "Responsible for CPAN/MAAN utilization, port stitching, CRC and bit error rates, optical power optimization, and OTN bandwidth and network availability performance.",
+    "kpis": [
+      {
+        "kpi": "18.1 CPAN Port Level Utilization",
+        "short_kpi": "18.1 CPAN Port Leve Util"
+      },
+      {
+        "kpi": "18.2 % Port level stitching at Tx Nodes",
+        "short_kpi": "18.2 % Port leve stit at Tx No"
+      },
+      {
+        "kpi": "18.3 CRC Error (Uplink/Downlink) Port level",
+        "short_kpi": "18.3 CRC Erro (Upl Port leve"
+      },
+      {
+        "kpi": "18.4 CPAN/MAAN NE Optical I/O Power at port",
+        "short_kpi": "18.4 CPAN NE Opti I/O Powe at"
+      },
+      {
+        "kpi": "18.5 CPAN/MAAN NE Availability",
+        "short_kpi": "18.5 CPAN/MAAN NE Availability"
+      },
+      {
+        "kpi": "18.6 OTN Bandwidth Utilization",
+        "short_kpi": "18.6 OTN Bandwidth Utilization"
+      },
+      {
+        "kpi": "18.7 OTN Nodes: Optical Input/Output Power",
+        "short_kpi": "18.7 OTN Node Opti Inpu Powe"
+      },
+      {
+        "kpi": "18.8 OTN Bit Error Rate",
+        "short_kpi": "18.8 OTN Bit Error Rate"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "Fault Resolution Team (Tx)",
+    "short_role_name": "Faul Reso Team (Tx)",
+    "role_description": "Responsible for fault frequency, mean time between failures, network availability, and resolution of service-affecting alarms for overall network reliability.",
+    "kpis": [
+      {
+        "kpi": "19.1 Monthly Average of Number of Faults",
+        "short_kpi": "19.1 Mont Aver Numb Faul"
+      },
+      {
+        "kpi": "19.2 Average Mean Time Between Faults (MTBF)",
+        "short_kpi": "19.2 Aver Mean Time Betw Faul"
+      },
+      {
+        "kpi": "19.3 Network availability >99%",
+        "short_kpi": "19.3 Network availability >99%"
+      },
+      {
+        "kpi": "19.4 Service Affecting Alarm Fault Resolution MTTR",
+        "short_kpi": "19.4 Serv Affe Alar Faul Reso"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "CC Lead (Customer Complaint)",
+    "short_role_name": "CC Lead (Cus Comp",
+    "role_description": "Responsible for customer complaint resolution time, monthly complaint reduction, fault rectification data accuracy, and same-day repeat call rate performance.",
+    "kpis": [
+      {
+        "kpi": "20.1 Customer Complaint resolution MTTR",
+        "short_kpi": "20.1 Cust Comp reso MTTR"
+      },
+      {
+        "kpi": "20.2 No. of complaints reduced per month vs previous",
+        "short_kpi": "20.2 No. comp redu per mont vs"
+      },
+      {
+        "kpi": "20.3 %age of Faults recorded and  database maintained with RCA",
+        "short_kpi": "20.3 %age Faul reco data main"
+      },
+      {
+        "kpi": "20.3 Same day repeat call rate",
+        "short_kpi": "20.3 Same day repeat call rate"
+      }
+    ]
+  },
+  {
+    "vertical": "NOC",
+    "level": "Circle",
+    "role": "CC Handling Team (Customer Complaint)",
+    "short_role_name": "CC Hand Team (Cus Co",
+    "role_description": "Responsible for customer complaint resolution time, monthly complaint reduction, fault data accuracy, and same-day repeat call rate performance.",
+    "kpis": [
+      {
+        "kpi": "21.1 Customer Complaint resolution MTTR",
+        "short_kpi": "21.1 Cust Comp reso MTTR"
+      },
+      {
+        "kpi": "21.2 No. of complaints reduced per month vs previous",
+        "short_kpi": "21.2 No. comp redu per mont vs"
+      },
+      {
+        "kpi": "21.3 %age of Faults recorded and  database maintained with RCA",
+        "short_kpi": "21.3 %age Faul reco data main"
+      },
+      {
+        "kpi": "21.4 Same day repeat call rate",
+        "short_kpi": "21.4 Same day repeat call rate"
+      }
+    ]
+  },
+  {
+    "vertical": "Leadership",
+    "level": "BA",
+    "role": "OA Head",
+    "short_role_name": "OA Head",
+    "role_description": "Responsible for customer growth, upgrades, connections, bandwidth, uptime, and MTTR across networks.",
+    "kpis": [
+      {
+        "kpi": "​# of active mobile customers added",
+        "short_kpi": "​# acti mobi cust adde"
+      },
+      {
+        "kpi": "% of active customers shifted to higher plan values (CM)",
+        "short_kpi": "% acti cust shif high plan val"
+      },
+      {
+        "kpi": "# of active FTTH Connections",
+        "short_kpi": "# of active FTTH Connections"
+      },
+      {
+        "kpi": "% of customer upgraded to higher plan values (FTTH)",
+        "short_kpi": "% cust upgr high plan valu (FT"
+      },
+      {
+        "kpi": "# of net LC additions",
+        "short_kpi": "# of net LC additions"
+      },
+      {
+        "kpi": "% of bandwidth upgrades",
+        "short_kpi": "% of bandwidth upgrades"
+      },
+      {
+        "kpi": "Composite Uptime (BTS, OLT & Media)",
+        "short_kpi": "Comp Upti (BTS OLT & Medi"
+      },
+      {
+        "kpi": "Composite MTTR (BTS, OLT & Media)",
+        "short_kpi": "Comp MTTR (BTS OLT & Medi"
+      }
+    ]
+  },
+  {
+    "vertical": "Leadership",
+    "level": "BA",
+    "role": "BA Head",
+    "short_role_name": "BA Head",
+    "role_description": "Responsible for BA revenues, active customer additions, FTTH growth, network uptime, MTTR, and ABF collection performance.",
+    "kpis": [
+      {
+        "kpi": "CM BA Revenue (in Lakhs)",
+        "short_kpi": "CM BA Revenue (in Lakhs)"
+      },
+      {
+        "kpi": "# of active customers added1 (units)",
+        "short_kpi": "# acti cust adde (uni"
+      },
+      {
+        "kpi": "CFA BA Revenue (in Lakhs)",
+        "short_kpi": "CFA BA Revenue (in Lakhs)"
+      },
+      {
+        "kpi": "# of active FTTH connections added",
+        "short_kpi": "# acti FTTH conn adde"
+      },
+      {
+        "kpi": "EB BA Revenue (in Lakhs)",
+        "short_kpi": "EB BA Revenue (in Lakhs)"
+      },
+      {
+        "kpi": "Composite uptime % (BTS, OLT & Media)",
+        "short_kpi": "Comp upti % (BTS OLT & Medi"
+      },
+      {
+        "kpi": "Composite MTTR (BTS, OLT & Media)",
+        "short_kpi": "Comp MTTR (BTS OLT & Medi"
+      },
+      {
+        "kpi": "% of ABF collected in Quarter",
+        "short_kpi": "% of ABF collected in Quarter"
+      }
+    ]
+  },
+  {
+    "vertical": "Leadership",
+    "level": "Circle",
+    "role": "Circle Head",
+    "short_role_name": "Circle Head",
+    "role_description": "Responsible for circle revenues, customer and FTTH additions, network uptime, MTTR, non-business revenue, ABF collection, EBITDA margin, and asset productivity improvement.",
+    "kpis": [
+      {
+        "kpi": "Circle CM Revenue (in Lakhs)",
+        "short_kpi": "Circle CM Revenue (in Lakhs)"
+      },
+      {
+        "kpi": "# of active customers added1 (units)",
+        "short_kpi": "# acti cust adde (uni"
+      },
+      {
+        "kpi": "Circle CFA Revenue (in Lakhs)",
+        "short_kpi": "Circle CFA Revenue (in Lakhs)"
+      },
+      {
+        "kpi": "# of active FTTH connections added (unit)",
+        "short_kpi": "# acti FTTH conn adde (uni"
+      },
+      {
+        "kpi": "Circle EB Revenue (in Lakhs)",
+        "short_kpi": "Circle EB Revenue (in Lakhs)"
+      },
+      {
+        "kpi": "Composite uptime % (BTS, OLT & Media)",
+        "short_kpi": "Comp upti % (BTS OLT & Medi"
+      },
+      {
+        "kpi": "Composite MTTR (BTS, OLT & Media)",
+        "short_kpi": "Comp MTTR (BTS OLT & Medi"
+      },
+      {
+        "kpi": "Revenue from non-core business activities (Land Monetization, Govt. Projects, Construction Contracts, etc.) (in Lakhs)",
+        "short_kpi": "Reve from non- busi acti (Lan"
+      },
+      {
+        "kpi": "% of ABF collected in Quarter",
+        "short_kpi": "% of ABF collected in Quarter"
+      },
+      {
+        "kpi": "EBITDA Margin",
+        "short_kpi": "EBITDA Margin"
+      },
+      {
+        "kpi": "% improvement in asset productivity (Revenue/Fixed Assets)",
+        "short_kpi": "% impr asse prod (Rev Asse"
+      }
+    ]
+  }
+]

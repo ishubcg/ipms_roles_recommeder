@@ -1,0 +1,43 @@
+{
+  "dataset_name": "master_data.xlsx",
+  "sheet_name": "Sheet1",
+  "description": "Master KPI mapping used by the KPI Selector app.",
+  "required_columns": [
+    {
+      "name": "Vertical",
+      "type": "string",
+      "description": "Business vertical associated with the role."
+    },
+    {
+      "name": "Role Name",
+      "type": "string",
+      "description": "Role title shown to the user."
+    },
+    {
+      "name": "Level",
+      "type": "string",
+      "description": "Office level or organization level."
+    },
+    {
+      "name": "KPI",
+      "type": "string",
+      "description": "KPI statement for the role."
+    },
+    {
+      "name": "Short KPIs",
+      "type": "string",
+      "description": "Short KPI label or category tag."
+    }
+  ],
+  "output_json_shape": {
+    "vertical": "string",
+    "role": "string",
+    "level": "string",
+    "kpis": [
+      {
+        "kpi": "string",
+        "short_kpi": "string"
+      }
+    ]
+  }
+}
