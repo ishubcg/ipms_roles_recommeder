@@ -17,7 +17,7 @@ if ENV_PATH.exists():
 @dataclass(frozen=True)
 class Settings:
     app_env: str = os.getenv("APP_ENV", "development")
-    frontend_origin: str = os.getenv("FRONTEND_ORIGIN", "http://localhost:5173")
+    frontend_origin: str = os.getenv("FRONTEND_ORIGIN", "https://ipms-roles-recommeder-1.onrender.com/")
 
     llm_provider: str = os.getenv("LLM_PROVIDER", "").strip().lower()
     openai_api_key: str = os.getenv("OPENAI_API_KEY", "")
