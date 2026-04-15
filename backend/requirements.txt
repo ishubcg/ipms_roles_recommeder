@@ -7,7 +7,6 @@ openpyxl==3.1.5
 requests==2.32.3
 rapidfuzz==3.9.6
 openai==1.51.2
-sentence-transformers
 numpy
 scikit-learn
 joblib
