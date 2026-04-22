@@ -579,6 +579,7 @@ export default function App() {
   }
 
   const remainingSecondarySlots = maxSecondaryRoles - secondaryRoles.length
+  const secondarySelectionComplete = remainingSecondarySlots <= 0
 
   return (
     <div className="app-page">
@@ -704,8 +705,14 @@ export default function App() {
                 Add up to {maxSecondaryRoles} secondary roles. For BA levels, you can select a different vertical and refresh recommendations for each additional role.
               </div>
 
-              <div className="selection-limit-note">
+              {/* <div className="selection-limit-note">
                 You can still select up to {remainingSecondarySlots} more secondary role(s).
+              </div> */}
+
+              <div className="selection-limit-note">
+                {secondarySelectionComplete
+                  ? `You have selected the maximum of ${maxSecondaryRoles} secondary roles. Please continue to the summary.`
+                  : `You can still select up to ${remainingSecondarySlots} more secondary role(s).`}
               </div>
 
               {isBaLevel(level) ? (
@@ -737,11 +744,29 @@ export default function App() {
               )}
             </div>
 
-            <div className="action-row">
+            {/* <div className="action-row">
               <button className="primary-action success-action" onClick={handleAddSecondaryRole}>
                 Confirm Secondary Role(s)
               </button>
               <button className="secondary-action success-outline-action" onClick={handleFinishSelection}>
+                Done — Show Summary
+              </button>
+            </div> */}
+
+            <div className="action-row">
+              <button
+                className={`primary-action success-action ${secondarySelectionComplete ? 'button-disabled-blur' : ''}`}
+                onClick={handleAddSecondaryRole}
+                disabled={secondarySelectionComplete}
+                title={secondarySelectionComplete ? 'Maximum secondary roles selected' : ''}
+              >
+                Confirm Secondary Role(s)
+              </button>
+
+              <button
+                className={`secondary-action success-outline-action ${secondarySelectionComplete ? 'summary-highlight' : ''}`}
+                onClick={handleFinishSelection}
+              >
                 Done — Show Summary
               </button>
             </div>
@@ -790,10 +815,21 @@ export default function App() {
               </div>
             ))}
 
-            <div className="summary-toolbar">
+            {/* <div className="summary-toolbar">
               <h3>Eligible KPI Summary Table</h3>
-              <h3>Please Select 5-6 KPIs to submit in IPMS Portal</h3>
+              <h2>Please Select 6-8 KPIs to submit in IPMS Portal</h2>
               <button className="secondary-action" onClick={() => downloadCsv(summaryRows)}>
+                Download CSV
+              </button>
+            </div> */}
+
+            <div className="summary-toolbar">
+              <div className="summary-title-block">
+                <h3>Eligible KPI Summary Table</h3>
+                <h2 className="summary-subtitle">Please Select 6-8 KPIs to submit in IPMS Portal</h2>
+              </div>
+
+              <button className="secondary-action summary-download-btn" onClick={() => downloadCsv(summaryRows)}>
                 Download CSV
               </button>
             </div>
