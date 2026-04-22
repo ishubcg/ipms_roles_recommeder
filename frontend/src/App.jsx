@@ -20,6 +20,21 @@ function roleToken(role) {
   return `${role.level}|||${role.vertical}|||${role.role}`
 }
 
+function uniqueRoleKey(role) {
+  return `${String(role.level || '').trim().toLowerCase()}|||${String(role.vertical || '').trim().toLowerCase()}|||${String(role.role || '').trim().toLowerCase()}`
+}
+
+function dedupeRolesByIdentity(roles) {
+  const seen = new Set()
+
+  return roles.filter((role) => {
+    const key = uniqueRoleKey(role)
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+}
+
 function toSummaryRows(primaryRole, secondaryRoles) {
   const rows = []
   const allRoles = [
@@ -321,6 +336,16 @@ export default function App() {
     [secondaryRecommendations, selectedSecondaryTokens],
   )
 
+  const visibleSecondaryRecommendations = useMemo(() => {
+    const confirmedRoleKeys = new Set(
+      secondaryRoles.map((role) => `${role.role}|||${role.vertical}`)
+    )
+  
+    return dedupeRolesByIdentity(secondaryRecommendations).filter(
+      (role) => !confirmedRoleKeys.has(`${role.role}|||${role.vertical}`)
+    )
+  }, [secondaryRecommendations, secondaryRoles])
+
   async function loadVerticals(nextLevel) {
     const response = await fetchVerticals(nextLevel)
     setVerticals(response.verticals || [])
@@ -377,7 +402,8 @@ export default function App() {
 
     try {
       const response = await generateRecommendations(vertical, [])
-      setPrimaryRecommendations(response.recommendations || [])
+      // setPrimaryRecommendations(response.recommendations || [])
+      setPrimaryRecommendations(dedupeRolesByIdentity(response.recommendations || []))
       setUsedLlmForPrimary(Boolean(response.used_llm))
       setSelectedPrimaryToken('')
       setPrimaryFilter('')
@@ -409,7 +435,8 @@ export default function App() {
 
       try {
         const response = await generateRecommendations(nextVertical, [selectedPrimaryRole.role])
-        setSecondaryRecommendations(response.recommendations || [])
+        // setSecondaryRecommendations(response.recommendations || [])
+        setSecondaryRecommendations(dedupeRolesByIdentity(response.recommendations || []))
         setUsedLlmForSecondary(Boolean(response.used_llm))
       } catch (err) {
         setError(err.message || 'Unable to prepare secondary recommendations.')
@@ -418,8 +445,13 @@ export default function App() {
       }
     } else {
       setSecondaryVertical(vertical)
+      // setSecondaryRecommendations(
+      //   primaryRecommendations.filter((role) => role.role !== selectedPrimaryRole.role)
+      // )
       setSecondaryRecommendations(
-        primaryRecommendations.filter((role) => role.role !== selectedPrimaryRole.role)
+        dedupeRolesByIdentity(
+          primaryRecommendations.filter((role) => role.role !== selectedPrimaryRole.role)
+        )
       )
       setUsedLlmForSecondary(usedLlmForPrimary)
     }
@@ -438,7 +470,8 @@ export default function App() {
 
     try {
       const response = await generateRecommendations(nextVertical, excludeRoles)
-      setSecondaryRecommendations(response.recommendations || [])
+      // setSecondaryRecommendations(response.recommendations || [])
+      setSecondaryRecommendations(dedupeRolesByIdentity(response.recommendations || []))
       setUsedLlmForSecondary(Boolean(response.used_llm))
       setSelectedSecondaryTokens([])
     } catch (err) {
@@ -467,10 +500,12 @@ export default function App() {
     const existingRoleKeys = new Set(
       secondaryRoles.map((role) => `${role.role}|||${role.vertical}`)
     )
-
-    return selectedSecondaryRolesFromCurrentView.filter(
+  
+    const filtered = selectedSecondaryRolesFromCurrentView.filter(
       (role) => !existingRoleKeys.has(`${role.role}|||${role.vertical}`)
     )
+  
+    return dedupeRolesByIdentity(filtered)
   }
 
   async function handleAddSecondaryRole() {
@@ -694,7 +729,7 @@ export default function App() {
                     className="secondary-action"
                     onClick={() => refreshSecondaryRecommendations(secondaryVertical || vertical)}
                   >
-                    Refresh recommendations
+                    Change Vertical
                   </button>
                 </div>
               ) : (
@@ -712,21 +747,21 @@ export default function App() {
             </div>
 
             <RoleRecommendationTable
-              roles={secondaryRecommendations}
-              selectedToken=""
-              selectedTokens={selectedSecondaryTokens}
-              multiSelect={true}
-              maxSelections={remainingSecondarySlots}
-              onSelect={toggleSecondaryRoleSelection}
-              filterText={secondaryFilter}
-              onFilterChange={setSecondaryFilter}
-              title="Secondary role recommendations"
-              helperText={
-                usedLlmForSecondary
-                  ? `Choose up to ${remainingSecondarySlots} secondary role(s) from the recommended list below.`
-                  : `Choose up to ${remainingSecondarySlots} secondary role(s) from the similarity-based recommendation list below.`
-              }
-            />
+            roles={visibleSecondaryRecommendations}
+            selectedToken=""
+            selectedTokens={selectedSecondaryTokens}
+            multiSelect={true}
+            maxSelections={remainingSecondarySlots}
+            onSelect={toggleSecondaryRoleSelection}
+            filterText={secondaryFilter}
+            onFilterChange={setSecondaryFilter}
+            title="Secondary role recommendations"
+            helperText={
+              usedLlmForSecondary
+                ? `Choose up to ${remainingSecondarySlots} secondary role(s) from the recommended list below.`
+                : `Choose up to ${remainingSecondarySlots} secondary role(s) from the similarity-based recommendation list below.`
+            }
+          />
           </>
         )}
 

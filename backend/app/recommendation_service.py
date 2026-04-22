@@ -20,6 +20,52 @@ def _candidate_payload(role: dict) -> dict:
     }
 
 
+# def _llm_recommend(work_text: str, candidates: list[dict], top_k: int) -> list[dict]:
+#     system_prompt = (
+#         "You are an expert role recommendation engine. "
+#         "Map a user's daily work description to the most relevant roles. "
+#         "Use Role Name, Short Role Name, and Role Description as the primary signal. "
+#         "Use KPI information only as supporting context. "
+#         "Return strict JSON only."
+#     )
+
+#     candidate_payload = [_candidate_payload(role) for role in candidates]
+
+#     user_prompt = (
+#         "User daily work description:\n"
+#         f"{work_text}\n\n"
+#         "Candidate roles:\n"
+#         f"{candidate_payload}\n\n"
+#         f"Return a JSON object with a key 'recommendations' containing up to {top_k} items. "
+#         "Each item must have: role, relevance_score (0-100), reason. "
+#         "Only recommend roles from the provided candidate list. "
+#         "Base the ranking mainly on role title and role description."
+#     )
+
+#     response = call_json(system_prompt, user_prompt)
+#     recommendations = response.get("recommendations", []) if isinstance(response, dict) else []
+
+#     role_lookup = {role["role"]: role for role in candidates}
+#     merged = []
+
+#     for item in recommendations:
+#         role_name = item.get("role")
+#         if role_name not in role_lookup:
+#             continue
+
+#         base = role_lookup[role_name]
+#         merged.append(
+#             {
+#                 **base,
+#                 "relevance_score": float(item.get("relevance_score", 0.0)),
+#                 "reason": str(item.get("reason", "")).strip(),
+#                 "matched_kpis": [],
+#             }
+#         )
+
+#     merged.sort(key=lambda x: x.get("relevance_score", 0.0), reverse=True)
+#     return merged[:top_k]
+
 def _llm_recommend(work_text: str, candidates: list[dict], top_k: int) -> list[dict]:
     system_prompt = (
         "You are an expert role recommendation engine. "
@@ -39,7 +85,8 @@ def _llm_recommend(work_text: str, candidates: list[dict], top_k: int) -> list[d
         f"Return a JSON object with a key 'recommendations' containing up to {top_k} items. "
         "Each item must have: role, relevance_score (0-100), reason. "
         "Only recommend roles from the provided candidate list. "
-        "Base the ranking mainly on role title and role description."
+        "Base the ranking mainly on role title and role description. "
+        "Do not repeat the same role more than once."
     )
 
     response = call_json(system_prompt, user_prompt)
@@ -47,13 +94,18 @@ def _llm_recommend(work_text: str, candidates: list[dict], top_k: int) -> list[d
 
     role_lookup = {role["role"]: role for role in candidates}
     merged = []
+    seen_roles = set()
 
     for item in recommendations:
-        role_name = item.get("role")
+        role_name = str(item.get("role", "")).strip()
         if role_name not in role_lookup:
             continue
+        if role_name in seen_roles:
+            continue
 
+        seen_roles.add(role_name)
         base = role_lookup[role_name]
+
         merged.append(
             {
                 **base,
