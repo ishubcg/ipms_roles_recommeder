@@ -4158,7 +4158,7 @@
   },
   {
     "vertical": "HR",
-    "level": "Circle & BA",
+    "level": "Circle",
     "role": "HR - Legal matters - Contract labour & Absorption cases",
     "short_role_name": "HR - Lega matt - Con",
     "role_description": "Responsible for timely handling of legal cases such as absconding and labour court matters, appeal filing efficiency, and stakeholder coordination for case resolution.",
@@ -4403,7 +4403,7 @@
   },
   {
     "vertical": "HR",
-    "level": "Circle & BA",
+    "level": "Circle",
     "role": "HR Lead",
     "short_role_name": "HR Lead",
     "role_description": "Responsible for IPMS, training, land monetization, property regularization, transactions, grievances, pensions, court cases, compliance.",
@@ -4452,7 +4452,7 @@
   },
   {
     "vertical": "HR",
-    "level": "Circle & BA",
+    "level": "Circle",
     "role": "HR Eletrical Wing",
     "short_role_name": "HR Eletrical Wing",
     "role_description": "Responsible fors cost savings achieved through electricity optimization and scrap monetization efficiency.",
@@ -4465,7 +4465,7 @@
   },
   {
     "vertical": "HR",
-    "level": "Circle & BA",
+    "level": "Circle",
     "role": "Admin office & quarters' affairs",
     "short_role_name": "Admi offi & quar aff",
     "role_description": "Responsible for space allocation, file management, meetings, housing security, maintenance, staffing, and rental revenue.",
@@ -4502,7 +4502,7 @@
   },
   {
     "vertical": "HR",
-    "level": "Circle & BA",
+    "level": "Circle",
     "role": "Staff HR affairs",
     "short_role_name": "Staff HR affairs",
     "role_description": "Responsible for disciplinary cases, transfers, grievances, compliance, union issues, strikes, training, and IPMS management.",
@@ -4551,7 +4551,7 @@
   },
   {
     "vertical": "HR",
-    "level": "Circle & BA",
+    "level": "Circle",
     "role": "Staff Legal affairs",
     "short_role_name": "Staff Legal affairs",
     "role_description": "Responsible for monitoring and reporting of court cases, timely filing of appeals, coordination with corporate HR and advocates, and efficient preparation and circulation of legal replies.",
@@ -5339,6 +5339,204 @@
       {
         "kpi": "% improvement in asset productivity (Revenue/Fixed Assets)",
         "short_kpi": "% impr asse prod (Rev Asse"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "BA",
+    "role": "HR - Legal matters - Contract labour & Absorption cases",
+    "short_role_name": "HR - Lega matt - Con",
+    "role_description": "Responsible for timely handling of legal cases such as absconding and labour court matters, appeal filing efficiency, and stakeholder coordination for case resolution.",
+    "kpis": [
+      {
+        "kpi": "Timely handling of absorption cases",
+        "short_kpi": "Time hand abso case"
+      },
+      {
+        "kpi": "Timely handling of Labour court/ CGIT cases",
+        "short_kpi": "Time hand Labo cour CGIT case"
+      },
+      {
+        "kpi": "Timely filing of appeal in higher courts",
+        "short_kpi": "Time fili appe high cour"
+      },
+      {
+        "kpi": "Efficient coordination with stakeholders for case resolution",
+        "short_kpi": "Effi coor stak case reso"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "BA",
+    "role": "HR Lead",
+    "short_role_name": "HR Lead",
+    "role_description": "Responsible for IPMS, training, land monetization, property regularization, transactions, grievances, pensions, court cases, compliance.",
+    "kpis": [
+      {
+        "kpi": "Timely assignment of KPIs/targets & population of achievement in IPMS",
+        "short_kpi": "Time assi KPIs & popu achi IPM"
+      },
+      {
+        "kpi": "% completion rate of circle/BA for assigned trainings",
+        "short_kpi": "% comp rate circ assi trai"
+      },
+      {
+        "kpi": "Revenue earned from land monetization (Lakhs)",
+        "short_kpi": "Reve earn from land mone (Lak"
+      },
+      {
+        "kpi": "% of land parcels with 100% mutation completed out of total mutable sites",
+        "short_kpi": "% land parc 100% muta comp out"
+      },
+      {
+        "kpi": "Average TAT for processing of incoming & outgoing transfer cases",
+        "short_kpi": "Aver TAT proc inco & outg tran"
+      },
+      {
+        "kpi": "Efficient management of housekeeping and security activities",
+        "short_kpi": "Effi mana hous secu acti"
+      },
+      {
+        "kpi": "Timely response to PGRMS/CPGRAM/PQ/RTI queries",
+        "short_kpi": "Time resp PGRM quer"
+      },
+      {
+        "kpi": "Timely closure of Pension claims within 2 weeks",
+        "short_kpi": "Time clos Pens clai with 2 wee"
+      },
+      {
+        "kpi": "Timely dealing of court cases",
+        "short_kpi": "Timely dealing of court cases"
+      },
+      {
+        "kpi": "Adherence to operational and positional norms defined by corporate office",
+        "short_kpi": "Adhe oper posi norm defi by co"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "BA",
+    "role": "HR Eletrical Wing",
+    "short_role_name": "HR Eletrical Wing",
+    "role_description": "Responsible fors cost savings achieved through electricity optimization and scrap monetization efficiency.",
+    "kpis": [
+      {
+        "kpi": "Cost saving in electricity & crap monetisation",
+        "short_kpi": "Cost savi elec & crap mone"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "BA",
+    "role": "Admin office & quarters' affairs",
+    "short_role_name": "Admi offi & quar aff",
+    "role_description": "Responsible for space allocation, file management, meetings, housing security, maintenance, staffing, and rental revenue.",
+    "kpis": [
+      {
+        "kpi": "Timely allocation of cubicle/cabin space & Office furniture",
+        "short_kpi": "Time allo cubi spac & Offi fur"
+      },
+      {
+        "kpi": "Efficient management of Dak operations",
+        "short_kpi": "Effi mana Dak oper"
+      },
+      {
+        "kpi": "Timely organization of meetings in conference room",
+        "short_kpi": "Time orga meet conf room"
+      },
+      {
+        "kpi": "Efficient management of housekeeping and security activities",
+        "short_kpi": "Effi mana hous secu acti"
+      },
+      {
+        "kpi": "Efficient coordination for maintenance of civil/electrical/horticulture works",
+        "short_kpi": "Effi coor main civi work"
+      },
+      {
+        "kpi": "Proper maintenance of inventory/waitlist & efficient  allotment for staff quarters",
+        "short_kpi": "Prop main inve & effi allo sta"
+      },
+      {
+        "kpi": "Revenue earned from renting out quarters (under CROP policy)",
+        "short_kpi": "Reve earn from rent out quar ("
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "BA",
+    "role": "Staff HR affairs",
+    "short_role_name": "Staff HR affairs",
+    "role_description": "Responsible for disciplinary cases, transfers, grievances, compliance, union issues, strikes, training, and IPMS management.",
+    "kpis": [
+      {
+        "kpi": "Timely dealing of disciplinary cases",
+        "short_kpi": "Time deal disc case"
+      },
+      {
+        "kpi": "Timely processing of transfer requests",
+        "short_kpi": "Time proc tran requ"
+      },
+      {
+        "kpi": "Effective handling of individual staff grievances",
+        "short_kpi": "Effe hand indi staf grie"
+      },
+      {
+        "kpi": "Adherence to operational and positional norms defined by corporate office",
+        "short_kpi": "Adhe oper posi norm defi by co"
+      },
+      {
+        "kpi": "Timely response to issues raised by unions/associations",
+        "short_kpi": "Time resp issu rais by unio"
+      },
+      {
+        "kpi": "% of man-days lost due to strike",
+        "short_kpi": "% man-days lost due strike"
+      },
+      {
+        "kpi": "% completion rate of circle/ BA for assigned trainings",
+        "short_kpi": "% comp rate circ BA assi trai"
+      },
+      {
+        "kpi": "Timely assignment of KPIs and targets in IPMS in first 10 days of current quarter",
+        "short_kpi": "Time assi KPIs targ IPMS firs"
+      },
+      {
+        "kpi": "Timely filling of achievement in IPMS within first 20 days of next quarter",
+        "short_kpi": "Time fill achi IPMS with firs"
+      },
+      {
+        "kpi": "Maintenance of seniority list of circle cader employees",
+        "short_kpi": "Main seni list circ cade empl"
+      }
+    ]
+  },
+  {
+    "vertical": "HR",
+    "level": "BA",
+    "role": "Staff Legal affairs",
+    "short_role_name": "Staff Legal affairs",
+    "role_description": "Responsible for monitoring and reporting of court cases, timely filing of appeals, coordination with corporate HR and advocates, and efficient preparation and circulation of legal replies.",
+    "kpis": [
+      {
+        "kpi": "Monitoring & reporting instances of contempt to court",
+        "short_kpi": "Moni & repo inst cont cour"
+      },
+      {
+        "kpi": "Timely filing of appeal in higher courts",
+        "short_kpi": "Time fili appe high cour"
+      },
+      {
+        "kpi": "Efficient coordination with corporate HR and advocates",
+        "short_kpi": "Effi coor corp HR advo"
+      },
+      {
+        "kpi": "Timely vetting of court replies & sending to circles",
+        "short_kpi": "Time vett cour repl & send cir"
       }
     ]
   }
