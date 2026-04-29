@@ -33,6 +33,11 @@ class Settings:
     kpi_data_path: Path = Path(os.getenv("KPI_DATA_PATH", DATA_DIR / "kpi_data.json"))
     master_data_path: Path = Path(os.getenv("MASTER_DATA_PATH", DATA_DIR / "master_data.xlsx"))
 
+    tracking_data_dir: str = os.getenv("TRACKING_DATA_DIR", "./tracking_data").strip()
+    tracking_file_name: str = os.getenv("TRACKING_FILE_NAME", "session_tracking.csv").strip()
+    tracking_ip_salt: str = os.getenv("TRACKING_IP_SALT", "change-me").strip()
+    store_raw_ip: bool = os.getenv("STORE_RAW_IP", "false").strip().lower() == "true"
+
 
 LEVELS_ORDERED = [
     "Corporate",

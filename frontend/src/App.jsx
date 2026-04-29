@@ -1,5 +1,12 @@
-import { useEffect, useMemo, useState } from 'react'
-import { fetchBootstrap, fetchRecommendations, fetchVerticals } from './api'
+import { useEffect, useMemo, useRef, useState } from 'react'
+
+import {
+  fetchBootstrap,
+  fetchRecommendations,
+  fetchVerticals,
+  trackUsageSnapshot,
+  trackUsageSnapshotBeacon,
+} from './api'
 
 const STEP_ORDER = ['level', 'vertical', 'daily_work', 'primary_role', 'secondary_roles', 'output']
 const STEP_LABELS = {
@@ -305,8 +312,11 @@ export default function App() {
   const [secondaryRoles, setSecondaryRoles] = useState([])
   const [usedLlmForSecondary, setUsedLlmForSecondary] = useState(false)
 
+  const [downloadedCsv, setDownloadedCsv] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+
+  const latestTrackingPayloadRef = useRef(null)
 
   const summaryRows = useMemo(() => toSummaryRows(primaryRole, secondaryRoles), [primaryRole, secondaryRoles])
 
@@ -340,11 +350,62 @@ export default function App() {
     const confirmedRoleKeys = new Set(
       secondaryRoles.map((role) => `${role.role}|||${role.vertical}`)
     )
-  
+
     return dedupeRolesByIdentity(secondaryRecommendations).filter(
       (role) => !confirmedRoleKeys.has(`${role.role}|||${role.vertical}`)
     )
   }, [secondaryRecommendations, secondaryRoles])
+
+  const trackingPayload = useMemo(() => {
+    const hasDailyWork = Boolean(String(dailyWork || '').trim())
+
+    return {
+      office_level: level || '',
+      vertical: vertical || '',
+      primary_role: primaryRole?.role || '',
+      secondary_roles: secondaryRoles.map((role) => role.role),
+      reached_level: level ? 1 : 0,
+      reached_vertical: vertical ? 1 : 0,
+      reached_daily_work: hasDailyWork ? 1 : 0,
+      reached_primary_role: primaryRole ? 1 : 0,
+      reached_secondary_roles: step === 'secondary_roles' || secondaryRoles.length > 0 || step === 'output' ? 1 : 0,
+      reached_output: step === 'output' ? 1 : 0,
+      downloaded_csv: downloadedCsv ? 1 : 0,
+    }
+  }, [level, vertical, dailyWork, primaryRole, secondaryRoles, step, downloadedCsv])
+
+  useEffect(() => {
+    latestTrackingPayloadRef.current = trackingPayload
+    trackUsageSnapshot(trackingPayload).catch(() => {})
+  }, [trackingPayload])
+
+  useEffect(() => {
+    latestTrackingPayloadRef.current = trackingPayload
+
+    const sendHeartbeat = () => {
+      if (document.visibilityState === 'visible' && latestTrackingPayloadRef.current) {
+        trackUsageSnapshot(latestTrackingPayloadRef.current).catch(() => {})
+      }
+    }
+
+    const intervalId = window.setInterval(sendHeartbeat, 15000)
+
+    const handleBeforeUnload = () => {
+      if (latestTrackingPayloadRef.current) {
+        trackUsageSnapshotBeacon(latestTrackingPayloadRef.current)
+      }
+    }
+
+    window.addEventListener('beforeunload', handleBeforeUnload)
+
+    return () => {
+      window.clearInterval(intervalId)
+      window.removeEventListener('beforeunload', handleBeforeUnload)
+      if (latestTrackingPayloadRef.current) {
+        trackUsageSnapshotBeacon(latestTrackingPayloadRef.current)
+      }
+    }
+  }, [])
 
   async function loadVerticals(nextLevel) {
     const response = await fetchVerticals(nextLevel)
@@ -402,7 +463,6 @@ export default function App() {
 
     try {
       const response = await generateRecommendations(vertical, [])
-      // setPrimaryRecommendations(response.recommendations || [])
       setPrimaryRecommendations(dedupeRolesByIdentity(response.recommendations || []))
       setUsedLlmForPrimary(Boolean(response.used_llm))
       setSelectedPrimaryToken('')
@@ -435,7 +495,6 @@ export default function App() {
 
       try {
         const response = await generateRecommendations(nextVertical, [selectedPrimaryRole.role])
-        // setSecondaryRecommendations(response.recommendations || [])
         setSecondaryRecommendations(dedupeRolesByIdentity(response.recommendations || []))
         setUsedLlmForSecondary(Boolean(response.used_llm))
       } catch (err) {
@@ -445,9 +504,6 @@ export default function App() {
       }
     } else {
       setSecondaryVertical(vertical)
-      // setSecondaryRecommendations(
-      //   primaryRecommendations.filter((role) => role.role !== selectedPrimaryRole.role)
-      // )
       setSecondaryRecommendations(
         dedupeRolesByIdentity(
           primaryRecommendations.filter((role) => role.role !== selectedPrimaryRole.role)
@@ -470,7 +526,6 @@ export default function App() {
 
     try {
       const response = await generateRecommendations(nextVertical, excludeRoles)
-      // setSecondaryRecommendations(response.recommendations || [])
       setSecondaryRecommendations(dedupeRolesByIdentity(response.recommendations || []))
       setUsedLlmForSecondary(Boolean(response.used_llm))
       setSelectedSecondaryTokens([])
@@ -500,11 +555,11 @@ export default function App() {
     const existingRoleKeys = new Set(
       secondaryRoles.map((role) => `${role.role}|||${role.vertical}`)
     )
-  
+
     const filtered = selectedSecondaryRolesFromCurrentView.filter(
       (role) => !existingRoleKeys.has(`${role.role}|||${role.vertical}`)
     )
-  
+
     return dedupeRolesByIdentity(filtered)
   }
 
@@ -575,6 +630,7 @@ export default function App() {
     setSelectedSecondaryTokens([])
     setSecondaryRoles([])
     setUsedLlmForSecondary(false)
+    setDownloadedCsv(false)
     setError('')
   }
 
@@ -705,10 +761,6 @@ export default function App() {
                 Add up to {maxSecondaryRoles} secondary roles. For BA levels, you can select a different vertical and refresh recommendations for each additional role.
               </div>
 
-              {/* <div className="selection-limit-note">
-                You can still select up to {remainingSecondarySlots} more secondary role(s).
-              </div> */}
-
               <div className="selection-limit-note">
                 {secondarySelectionComplete
                   ? `You have selected the maximum of ${maxSecondaryRoles} secondary roles. Please continue to the summary.`
@@ -744,15 +796,6 @@ export default function App() {
               )}
             </div>
 
-            {/* <div className="action-row">
-              <button className="primary-action success-action" onClick={handleAddSecondaryRole}>
-                Confirm Secondary Role(s)
-              </button>
-              <button className="secondary-action success-outline-action" onClick={handleFinishSelection}>
-                Done — Show Summary
-              </button>
-            </div> */}
-
             <div className="action-row">
               <button
                 className={`primary-action success-action ${secondarySelectionComplete ? 'button-disabled-blur' : ''}`}
@@ -772,21 +815,21 @@ export default function App() {
             </div>
 
             <RoleRecommendationTable
-            roles={visibleSecondaryRecommendations}
-            selectedToken=""
-            selectedTokens={selectedSecondaryTokens}
-            multiSelect={true}
-            maxSelections={remainingSecondarySlots}
-            onSelect={toggleSecondaryRoleSelection}
-            filterText={secondaryFilter}
-            onFilterChange={setSecondaryFilter}
-            title="Secondary role recommendations"
-            helperText={
-              usedLlmForSecondary
-                ? `Choose up to ${remainingSecondarySlots} secondary role(s) from the recommended list below.`
-                : `Choose up to ${remainingSecondarySlots} secondary role(s) from the similarity-based recommendation list below.`
-            }
-          />
+              roles={visibleSecondaryRecommendations}
+              selectedToken=""
+              selectedTokens={selectedSecondaryTokens}
+              multiSelect={true}
+              maxSelections={remainingSecondarySlots}
+              onSelect={toggleSecondaryRoleSelection}
+              filterText={secondaryFilter}
+              onFilterChange={setSecondaryFilter}
+              title="Secondary role recommendations"
+              helperText={
+                usedLlmForSecondary
+                  ? `Choose up to ${remainingSecondarySlots} secondary role(s) from the recommended list below.`
+                  : `Choose up to ${remainingSecondarySlots} secondary role(s) from the similarity-based recommendation list below.`
+              }
+            />
           </>
         )}
 
@@ -815,21 +858,19 @@ export default function App() {
               </div>
             ))}
 
-            {/* <div className="summary-toolbar">
-              <h3>Eligible KPI Summary Table</h3>
-              <h2>Please Select 6-8 KPIs to submit in IPMS Portal</h2>
-              <button className="secondary-action" onClick={() => downloadCsv(summaryRows)}>
-                Download CSV
-              </button>
-            </div> */}
-
             <div className="summary-toolbar">
               <div className="summary-title-block">
                 <h3>Eligible KPI Summary Table</h3>
                 <h2 className="summary-subtitle">Please Select 6-8 KPIs to submit in IPMS Portal</h2>
               </div>
 
-              <button className="secondary-action summary-download-btn" onClick={() => downloadCsv(summaryRows)}>
+              <button
+                className="secondary-action summary-download-btn"
+                onClick={() => {
+                  downloadCsv(summaryRows)
+                  setDownloadedCsv(true)
+                }}
+              >
                 Download CSV
               </button>
             </div>

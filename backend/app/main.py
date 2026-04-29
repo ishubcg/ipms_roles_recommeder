@@ -5,8 +5,17 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import LEVEL_LABELS, MAX_SECONDARY_ROLES, settings
 from app.data_loader import get_levels, get_verticals
-from app.models import BootstrapResponse, LevelOption, RecommendationRequest, RecommendationResponse, RoleItem, VerticalResponse
+from app.models import (
+    BootstrapResponse,
+    LevelOption,
+    RecommendationRequest,
+    RecommendationResponse,
+    RoleItem,
+    VerticalResponse,
+)
 from app.recommendation_service import recommend_roles_for_vertical
+from app.tracking_routes import router as tracking_router
+
 
 app = FastAPI(title="KPI Selector API", version="1.0.0")
 
@@ -23,6 +32,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Tracking routes
+app.include_router(tracking_router, prefix="/api/tracking", tags=["tracking"])
 
 
 @app.get("/api/health")
