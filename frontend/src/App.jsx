@@ -316,6 +316,18 @@ export default function App() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
+  const hasMeaningfulTrackingData = useMemo(() => {
+    return Boolean(
+      level ||
+      vertical ||
+      String(dailyWork || '').trim() ||
+      primaryRole ||
+      secondaryRoles.length > 0 ||
+      step === 'output' ||
+      downloadedCsv
+    )
+  }, [level, vertical, dailyWork, primaryRole, secondaryRoles, step, downloadedCsv])
+
   const latestTrackingPayloadRef = useRef(null)
 
   const summaryRows = useMemo(() => toSummaryRows(primaryRole, secondaryRoles), [primaryRole, secondaryRoles])
@@ -376,36 +388,45 @@ export default function App() {
 
   useEffect(() => {
     latestTrackingPayloadRef.current = trackingPayload
+  
+    if (!hasMeaningfulTrackingData) {
+      return
+    }
+  
     trackUsageSnapshot(trackingPayload).catch(() => {})
-  }, [trackingPayload])
+  }, [trackingPayload, hasMeaningfulTrackingData])
 
   useEffect(() => {
     latestTrackingPayloadRef.current = trackingPayload
-
+  
     const sendHeartbeat = () => {
-      if (document.visibilityState === 'visible' && latestTrackingPayloadRef.current) {
+      if (
+        document.visibilityState === 'visible' &&
+        latestTrackingPayloadRef.current &&
+        hasMeaningfulTrackingData
+      ) {
         trackUsageSnapshot(latestTrackingPayloadRef.current).catch(() => {})
       }
     }
-
+  
     const intervalId = window.setInterval(sendHeartbeat, 15000)
-
+  
     const handleBeforeUnload = () => {
-      if (latestTrackingPayloadRef.current) {
+      if (latestTrackingPayloadRef.current && hasMeaningfulTrackingData) {
         trackUsageSnapshotBeacon(latestTrackingPayloadRef.current)
       }
     }
-
+  
     window.addEventListener('beforeunload', handleBeforeUnload)
-
+  
     return () => {
       window.clearInterval(intervalId)
       window.removeEventListener('beforeunload', handleBeforeUnload)
-      if (latestTrackingPayloadRef.current) {
+      if (latestTrackingPayloadRef.current && hasMeaningfulTrackingData) {
         trackUsageSnapshotBeacon(latestTrackingPayloadRef.current)
       }
     }
-  }, [])
+  }, [trackingPayload, hasMeaningfulTrackingData])
 
   async function loadVerticals(nextLevel) {
     const response = await fetchVerticals(nextLevel)

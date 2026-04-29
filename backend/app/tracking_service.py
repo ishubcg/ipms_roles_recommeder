@@ -1,9 +1,8 @@
 from __future__ import annotations
 
 import csv
-import hashlib
 import json
-from datetime import datetime, timezone
+from datetime import datetime
 from pathlib import Path
 from threading import Lock
 
@@ -12,6 +11,7 @@ from fastapi import Request
 from app.config import settings
 
 _TRACKING_LOCK = Lock()
+_DT_FORMAT = "%d-%m-%Y %H:%M:%S"
 
 TRACKING_HEADERS = [
     "visitor_id",
@@ -19,9 +19,6 @@ TRACKING_HEADERS = [
     "started_at",
     "last_activity_at",
     "session_duration_seconds",
-    "ip_hash",
-    "client_ip",
-    "user_agent",
     "office_level",
     "vertical",
     "primary_role",
@@ -36,8 +33,16 @@ TRACKING_HEADERS = [
 ]
 
 
-def _utcnow() -> datetime:
-    return datetime.now(timezone.utc)
+def _now() -> datetime:
+    return datetime.now()
+
+
+def _format_dt(dt: datetime) -> str:
+    return dt.strftime(_DT_FORMAT)
+
+
+def _parse_dt(value: str) -> datetime:
+    return datetime.strptime(value, _DT_FORMAT)
 
 
 def _tracking_dir() -> Path:
@@ -70,47 +75,55 @@ def _read_rows() -> list[dict]:
 
 
 def _write_rows(rows: list[dict]) -> None:
-    file_path = tracking_file_path()
+    rows = sorted(
+        rows,
+        key=lambda row: _parse_dt(row["started_at"]) if row.get("started_at") else datetime.max,
+    )
 
+    file_path = tracking_file_path()
     with file_path.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=TRACKING_HEADERS)
         writer.writeheader()
         writer.writerows(rows)
 
 
-def _extract_client_ip(request: Request) -> str:
-    forwarded_for = request.headers.get("x-forwarded-for", "").strip()
-    if forwarded_for:
-        return forwarded_for.split(",")[0].strip()
-
-    if request.client and request.client.host:
-        return request.client.host
-
-    return ""
-
-
-def _hash_ip(ip: str) -> str:
-    if not ip:
-        return ""
-    raw = f"{settings.tracking_ip_salt}:{ip}"
-    return hashlib.sha256(raw.encode("utf-8")).hexdigest()
-
-
 def _to_int_flag(value) -> str:
     return "1" if bool(value) else "0"
 
 
-def upsert_tracking_row(payload: dict, request: Request) -> dict:
-    now = _utcnow()
-    ip = _extract_client_ip(request)
-    ip_hash = _hash_ip(ip)
-    user_agent = request.headers.get("user-agent", "")
+def _is_meaningful_payload(payload: dict) -> bool:
+    secondary_roles = payload.get("secondary_roles", [])
+    if not isinstance(secondary_roles, list):
+        secondary_roles = []
 
+    return any(
+        [
+            str(payload.get("office_level", "")).strip(),
+            str(payload.get("vertical", "")).strip(),
+            str(payload.get("primary_role", "")).strip(),
+            len(secondary_roles) > 0,
+            int(payload.get("reached_level", 0)) == 1,
+            int(payload.get("reached_vertical", 0)) == 1,
+            int(payload.get("reached_daily_work", 0)) == 1,
+            int(payload.get("reached_primary_role", 0)) == 1,
+            int(payload.get("reached_secondary_roles", 0)) == 1,
+            int(payload.get("reached_output", 0)) == 1,
+            int(payload.get("downloaded_csv", 0)) == 1,
+        ]
+    )
+
+
+def upsert_tracking_row(payload: dict, request: Request) -> dict:
     visitor_id = str(payload.get("visitor_id", "")).strip()
     session_id = str(payload.get("session_id", "")).strip()
 
     if not visitor_id or not session_id:
         raise ValueError("visitor_id and session_id are required.")
+
+    if not _is_meaningful_payload(payload):
+        return {"ok": True, "ignored": True, "session_id": session_id}
+
+    now = _now()
 
     with _TRACKING_LOCK:
         rows = _read_rows()
@@ -125,12 +138,9 @@ def upsert_tracking_row(payload: dict, request: Request) -> dict:
             existing = {
                 "visitor_id": visitor_id,
                 "session_id": session_id,
-                "started_at": now.isoformat(),
-                "last_activity_at": now.isoformat(),
+                "started_at": _format_dt(now),
+                "last_activity_at": _format_dt(now),
                 "session_duration_seconds": "0",
-                "ip_hash": ip_hash,
-                "client_ip": ip if settings.store_raw_ip else "",
-                "user_agent": user_agent,
                 "office_level": "",
                 "vertical": "",
                 "primary_role": "",
@@ -145,19 +155,22 @@ def upsert_tracking_row(payload: dict, request: Request) -> dict:
             }
             rows.append(existing)
 
-        started_at = datetime.fromisoformat(existing["started_at"])
+        started_at = _parse_dt(existing["started_at"])
         duration_seconds = int((now - started_at).total_seconds())
 
         existing["visitor_id"] = visitor_id
-        existing["last_activity_at"] = now.isoformat()
+        existing["last_activity_at"] = _format_dt(now)
         existing["session_duration_seconds"] = str(duration_seconds)
-        existing["ip_hash"] = ip_hash
-        existing["client_ip"] = ip if settings.store_raw_ip else ""
-        existing["user_agent"] = user_agent
 
-        existing["office_level"] = str(payload.get("office_level", "") or existing.get("office_level", "")).strip()
-        existing["vertical"] = str(payload.get("vertical", "") or existing.get("vertical", "")).strip()
-        existing["primary_role"] = str(payload.get("primary_role", "") or existing.get("primary_role", "")).strip()
+        existing["office_level"] = str(
+            payload.get("office_level", "") or existing.get("office_level", "")
+        ).strip()
+        existing["vertical"] = str(
+            payload.get("vertical", "") or existing.get("vertical", "")
+        ).strip()
+        existing["primary_role"] = str(
+            payload.get("primary_role", "") or existing.get("primary_role", "")
+        ).strip()
 
         secondary_roles = payload.get("secondary_roles", [])
         if isinstance(secondary_roles, list):
@@ -187,4 +200,4 @@ def upsert_tracking_row(payload: dict, request: Request) -> dict:
 
         _write_rows(rows)
 
-    return existing
+    return {"ok": True, "ignored": False, "session_id": session_id}
