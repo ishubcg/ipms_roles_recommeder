@@ -11,66 +11,21 @@ from app.search_service import normalize
 def _candidate_payload(role: dict) -> dict:
     return {
         "role": role["role"],
-        "short_role_name": role.get("short_role_name", ""),
+        "hrms_role_name": role.get("hrms_role_name", ""),
         "role_description": role.get("role_description", ""),
         "level": role["level"],
         "vertical": role["vertical"],
         "kpis": [k["kpi"] for k in role["kpis"]],
-        "short_kpis": [k.get("short_kpi", "") for k in role["kpis"]],
+        "hrms_kpi_names": [k.get("hrms_kpi_name", "") for k in role["kpis"]],
+        "kpi_priorities": [k.get("kpi_priority", "") for k in role["kpis"]],
     }
 
-
-# def _llm_recommend(work_text: str, candidates: list[dict], top_k: int) -> list[dict]:
-#     system_prompt = (
-#         "You are an expert role recommendation engine. "
-#         "Map a user's daily work description to the most relevant roles. "
-#         "Use Role Name, Short Role Name, and Role Description as the primary signal. "
-#         "Use KPI information only as supporting context. "
-#         "Return strict JSON only."
-#     )
-
-#     candidate_payload = [_candidate_payload(role) for role in candidates]
-
-#     user_prompt = (
-#         "User daily work description:\n"
-#         f"{work_text}\n\n"
-#         "Candidate roles:\n"
-#         f"{candidate_payload}\n\n"
-#         f"Return a JSON object with a key 'recommendations' containing up to {top_k} items. "
-#         "Each item must have: role, relevance_score (0-100), reason. "
-#         "Only recommend roles from the provided candidate list. "
-#         "Base the ranking mainly on role title and role description."
-#     )
-
-#     response = call_json(system_prompt, user_prompt)
-#     recommendations = response.get("recommendations", []) if isinstance(response, dict) else []
-
-#     role_lookup = {role["role"]: role for role in candidates}
-#     merged = []
-
-#     for item in recommendations:
-#         role_name = item.get("role")
-#         if role_name not in role_lookup:
-#             continue
-
-#         base = role_lookup[role_name]
-#         merged.append(
-#             {
-#                 **base,
-#                 "relevance_score": float(item.get("relevance_score", 0.0)),
-#                 "reason": str(item.get("reason", "")).strip(),
-#                 "matched_kpis": [],
-#             }
-#         )
-
-#     merged.sort(key=lambda x: x.get("relevance_score", 0.0), reverse=True)
-#     return merged[:top_k]
 
 def _llm_recommend(work_text: str, candidates: list[dict], top_k: int) -> list[dict]:
     system_prompt = (
         "You are an expert role recommendation engine. "
         "Map a user's daily work description to the most relevant roles. "
-        "Use Role Name, Short Role Name, and Role Description as the primary signal. "
+        "Use Role Name, HRMS Role Name, and Role Description as the primary signal. "
         "Use KPI information only as supporting context. "
         "Return strict JSON only."
     )
@@ -85,7 +40,6 @@ def _llm_recommend(work_text: str, candidates: list[dict], top_k: int) -> list[d
         f"Return a JSON object with a key 'recommendations' containing up to {top_k} items. "
         "Each item must have: role, relevance_score (0-100), reason. "
         "Only recommend roles from the provided candidate list. "
-        "Base the ranking mainly on role title and role description. "
         "Do not repeat the same role more than once."
     )
 
@@ -125,9 +79,9 @@ def _fallback_recommend(work_text: str, candidates: list[dict], top_k: int) -> l
 
     for role in candidates:
         role_name_score = fuzz.token_set_ratio(query, normalize(role["role"])) / 100.0
-        short_role_name_score = fuzz.token_set_ratio(
+        hrms_role_name_score = fuzz.token_set_ratio(
             query,
-            normalize(role.get("short_role_name", "")),
+            normalize(role.get("hrms_role_name", "")),
         ) / 100.0
         role_description_score = fuzz.token_set_ratio(
             query,
@@ -137,14 +91,18 @@ def _fallback_recommend(work_text: str, candidates: list[dict], top_k: int) -> l
         final_score = round(
             (
                 role_description_score * 0.55
-                + role_name_score * 0.30
-                + short_role_name_score * 0.15
+                + role_name_score * 0.25
+                + hrms_role_name_score * 0.20
             )
             * 100,
             2,
         )
 
-        if role_description_score >= 0.45 or role_name_score >= 0.45 or short_role_name_score >= 0.45:
+        if (
+            role_description_score >= 0.45
+            or role_name_score >= 0.45
+            or hrms_role_name_score >= 0.45
+        ):
             reason = "Matched role title and role description from your daily work description."
         else:
             reason = "Broad similarity to the role title and responsibilities described."

@@ -7,13 +7,14 @@ from pydantic import BaseModel, Field
 
 class KPIItem(BaseModel):
     kpi: str
-    short_kpi: str = Field(default="")
+    hrms_kpi_name: str = Field(default="")
+    kpi_priority: str = Field(default="")
 
 
 class RoleItem(BaseModel):
     vertical: str
     role: str
-    short_role_name: str = Field(default="")
+    hrms_role_name: str = Field(default="")
     role_description: str = Field(default="")
     level: str
     kpis: List[KPIItem]

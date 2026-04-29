@@ -639,15 +639,15 @@ button {
 .summary-grid {
   display: grid;
   grid-template-columns:
+    120px
+    110px
     130px
-    120px
-    120px
-    260px
+    240px
     220px
-    420px
-    420px
-    220px;
-  min-width: 1910px;
+    minmax(320px, 1fr)
+    220px
+    140px;
+  min-width: 1500px;
 }
 
 .summary-table-header {
@@ -745,7 +745,7 @@ button {
       minmax(320px, 1fr)
       180px;
   }
-  
+
   .summary-toolbar {
     flex-direction: column;
     align-items: stretch;

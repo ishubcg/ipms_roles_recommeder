@@ -25,10 +25,11 @@ def convert() -> None:
         "vertical",
         "level",
         "role name",
-        "short role name",
+        "hrms role name",
         "role description",
         "kpi",
-        "short kpis",
+        "hrms kpi name",
+        "kpis priority",
     }
 
     missing = required_columns - set(df.columns)
@@ -41,19 +42,21 @@ def convert() -> None:
         vertical = _clean(row["vertical"])
         level = _clean(row["level"])
         role = _clean(row["role name"])
-        short_role_name = _clean(row["short role name"])
+        hrms_role_name = _clean(row["hrms role name"])
         role_description = _clean(row["role description"])
         kpi = _clean(row["kpi"])
-        short_kpi = _clean(row["short kpis"])
+        hrms_kpi_name = _clean(row["hrms kpi name"])
+        kpi_priority = _clean(row["kpis priority"])
 
-        if not kpi:
+        if not vertical or not level or not role or not kpi:
             continue
 
-        key = (vertical, level, role, short_role_name, role_description)
+        key = (vertical, level, role, hrms_role_name, role_description)
         grouped.setdefault(key, []).append(
             {
                 "kpi": kpi,
-                "short_kpi": short_kpi,
+                "hrms_kpi_name": hrms_kpi_name,
+                "kpi_priority": kpi_priority,
             }
         )
 
@@ -62,11 +65,11 @@ def convert() -> None:
             "vertical": vertical,
             "level": level,
             "role": role,
-            "short_role_name": short_role_name,
+            "hrms_role_name": hrms_role_name,
             "role_description": role_description,
             "kpis": kpis,
         }
-        for (vertical, level, role, short_role_name, role_description), kpis in grouped.items()
+        for (vertical, level, role, hrms_role_name, role_description), kpis in grouped.items()
     ]
 
     with open(OUTPUT_JSON, "w", encoding="utf-8") as file:

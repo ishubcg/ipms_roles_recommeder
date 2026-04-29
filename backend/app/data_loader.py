@@ -41,15 +41,15 @@ def get_roles(level: str, vertical: str) -> List[dict]:
         if role_name not in merged:
             merged[role_name] = {
                 "role": role_name,
-                "short_role_name": row.get("short_role_name", ""),
+                "hrms_role_name": row.get("hrms_role_name", ""),
                 "role_description": row.get("role_description", ""),
                 "level": level,
                 "vertical": vertical,
                 "kpis": [],
             }
         else:
-            if not merged[role_name].get("short_role_name") and row.get("short_role_name"):
-                merged[role_name]["short_role_name"] = row.get("short_role_name", "")
+            if not merged[role_name].get("hrms_role_name") and row.get("hrms_role_name"):
+                merged[role_name]["hrms_role_name"] = row.get("hrms_role_name", "")
             if not merged[role_name].get("role_description") and row.get("role_description"):
                 merged[role_name]["role_description"] = row.get("role_description", "")
 

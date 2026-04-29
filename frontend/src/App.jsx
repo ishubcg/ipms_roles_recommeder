@@ -45,14 +45,14 @@ function toSummaryRows(primaryRole, secondaryRoles) {
   allRoles.forEach((role) => {
     role.kpis.forEach((kpi) => {
       rows.push({
-        roleType: role.roleType,
-        vertical: role.vertical,
         level: role.level,
+        vertical: role.vertical,
+        roleType: role.roleType,
         roleName: role.role,
-        shortRoleName: role.short_role_name || '',
-        roleDescription: role.role_description || '',
+        hrmsRoleName: role.hrms_role_name || '',
         kpi: kpi.kpi,
-        shortKpi: kpi.short_kpi || '',
+        hrmsKpiName: kpi.hrms_kpi_name || '',
+        kpiPriority: kpi.kpi_priority || '',
       })
     })
   })
@@ -62,27 +62,27 @@ function toSummaryRows(primaryRole, secondaryRoles) {
 
 function downloadCsv(rows) {
   const headers = [
-    'Role Type',
-    'Vertical',
     'Level',
+    'Vertical',
+    'Role Type',
     'Role Name',
-    'Short Role Name',
-    'Role Description',
+    'HRMS Role Name',
     'KPI',
-    'Short KPIs',
+    'HRMS KPI Name',
+    'KPIs Priority',
   ]
   const lines = [headers.join(',')]
 
   rows.forEach((row) => {
     const values = [
-      row.roleType,
-      row.vertical,
       row.level,
+      row.vertical,
+      row.roleType,
       row.roleName,
-      row.shortRoleName,
-      row.roleDescription,
+      row.hrmsRoleName,
       row.kpi,
-      row.shortKpi,
+      row.hrmsKpiName,
+      row.kpiPriority,
     ].map((value) => `"${String(value ?? '').replaceAll('"', '""')}"`)
     lines.push(values.join(','))
   })
@@ -246,26 +246,26 @@ function SummaryTable({ rows }) {
     <div className="summary-table-wrap">
       <div className="summary-table-scroll">
         <div className="summary-grid summary-table-header">
-          <div>Role Type</div>
-          <div>Vertical</div>
           <div>Level</div>
+          <div>Vertical</div>
+          <div>Role Type</div>
           <div>Role Name</div>
-          <div>Short Role Name</div>
-          <div>Role Description</div>
+          <div>HRMS Role Name</div>
           <div>KPI</div>
-          <div>Short KPIs</div>
+          <div>HRMS KPI Name</div>
+          <div>KPIs Priority</div>
         </div>
 
         {rows.map((row, index) => (
           <div className="summary-grid summary-row" key={`${row.roleName}-${index}`}>
-            <div>{row.roleType}</div>
-            <div>{row.vertical}</div>
             <div>{row.level}</div>
+            <div>{row.vertical}</div>
+            <div>{row.roleType}</div>
             <div>{row.roleName}</div>
-            <div>{row.shortRoleName}</div>
-            <div>{row.roleDescription}</div>
+            <div>{row.hrmsRoleName}</div>
             <div>{row.kpi}</div>
-            <div>{row.shortKpi}</div>
+            <div>{row.hrmsKpiName}</div>
+            <div>{row.kpiPriority}</div>
           </div>
         ))}
       </div>
