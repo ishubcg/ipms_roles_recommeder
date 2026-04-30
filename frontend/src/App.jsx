@@ -18,9 +18,20 @@ const STEP_LABELS = {
   output: 'Summary',
 }
 
-function isBaLevel(level) {
+// function supportsSecondaryVerticalChange(level) {
+//   const normalized = String(level || '').trim().toLowerCase()
+//   return normalized === 'ba' || normalized === 'ba office'
+// }
+
+function supportsSecondaryVerticalChange(level) {
   const normalized = String(level || '').trim().toLowerCase()
-  return normalized === 'ba' || normalized === 'ba office'
+
+  return (
+    normalized === 'ba' ||
+    normalized === 'ba office' ||
+    normalized === 'circle' ||
+    normalized === 'circle office'
+  )
 }
 
 function roleToken(role) {
@@ -509,11 +520,11 @@ export default function App() {
     setSecondaryFilter('')
     setSelectedSecondaryTokens([])
 
-    if (isBaLevel(level)) {
+    if (supportsSecondaryVerticalChange(level)) {
       const nextVertical = vertical
       setSecondaryVertical(nextVertical)
       setLoading(true)
-
+    
       try {
         const response = await generateRecommendations(nextVertical, [selectedPrimaryRole.role])
         setSecondaryRecommendations(dedupeRolesByIdentity(response.recommendations || []))
@@ -608,7 +619,7 @@ export default function App() {
     setSelectedSecondaryTokens([])
     setError('')
 
-    if (isBaLevel(level)) {
+    if (supportsSecondaryVerticalChange(level)) {
       await refreshSecondaryRecommendations(secondaryVertical || vertical)
     } else {
       const excluded = new Set(
@@ -779,7 +790,7 @@ export default function App() {
               <div className="section-title">Step 5 of 5 — Secondary Roles</div>
               <StepPrompt text="You can now add secondary roles. Please select any additional roles that apply to your work." />
               <div className="helper-text">
-                Add up to {maxSecondaryRoles} secondary roles. For BA levels, you can select a different vertical and refresh recommendations for each additional role.
+                Add up to {maxSecondaryRoles} secondary roles. For BA Office and Circle Office levels, you can select a different vertical and refresh recommendations for each additional role.
               </div>
 
               <div className="selection-limit-note">
@@ -788,7 +799,7 @@ export default function App() {
                   : `You can still select up to ${remainingSecondarySlots} more secondary role(s).`}
               </div>
 
-              {isBaLevel(level) ? (
+              {supportsSecondaryVerticalChange(level) ? (
                 <div className="secondary-toolbar">
                   <div className="field-group slim-field">
                     <label className="field-label">Vertical for this secondary role</label>
